@@ -48,13 +48,28 @@ A Jitter has been used.  Therefore, it's generated value.  Attribute that value 
         - Input: Helps, intent.
         - Operation: Present the Jitter for use and what was used in bringing it together.
         - Output: Log of use, the value of that use, and the helps used.
-    4. Enable Attributing:
+    4. Determine the impact of the consumption of the jitter. NB impact can be reassessed at Time Z intervals
+    5. Attribution: 
+        - Intent: To determine which components of the Jitter was responsible for how much of the impact of each of the components dimensions in current the impact matrix.
+        - Input: The components of the Jitter at use (static), and their provenance through contribution.  Impact matrix, being dynamic based on actual real world impact.
+        - Operation: At time X, considering the components of the Jitter, and the IMpact Matrix at that point, generate a distribution table of how to recognise the contributions, including those used but not recognised by the Jitter, into 
+        - Output
+    
+    
+    Assessing: (contribution.scorecard) 
+        Given a scorecard of what value means (both to do, ), provide a report card for jitter incororating each of the helps used, 
+    5. Enable Attributing:
         - Intent: Given a use, and the record of value, distribute that value to the authors who contributed.
+
+Note: atifact called impact matrix is can be updated with new information at any time.
+
+History -> provence
 
 ## Supporting Processes
 
-    1. Assessing: 
-        Given a scorecard of what value means, provide a report card for each of the helps used.
+
     2. Judging:
-        Run a process against multiple modals, providing scorecard that compares their output against the intent, and ruling on which to go with.
+        Run a process against multiple models, providing scorecard that compares their output against the intent, and ruling on which to go with.
+    3. Upgrading:
+        By which new versions of the attribution bot swarm is upgraded via consensus with the Branch Master bot team.
 
