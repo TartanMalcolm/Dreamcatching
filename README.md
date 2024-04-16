@@ -13,8 +13,7 @@ It's probably wrong.
 
 ### Verbs
 
-    - Devining - a method to ascertain exactly what Dave wants from what Dave actually says
-    - Assessing - a method which requires a value assessment criterior, and which applies that criterior at run time to a help or output.
+    - Evaluating - a method to compare a Help to a list of standards, and report back on how well that Help meets each of those standards.
     - Contributing - a method of storing a help alongside that help's history.  I.e. what did that help refer to or rely on to come into existence. 
     - Jittering - a method of taking in a stuck, searching helps, combining those, generating any required wrapping to make it coherent and allowing Hal to present it to Dave in response to a request by Dave.
     - Attributing - a method to decide, at this point in time, what the relative value to Dave a Jitter was, and to express that as a dynamic (ie just in time) cap table. Taking that dynamic cap table it applies  real world numbers to it (e.g. cash, kudos), and recording or distributing that value.
@@ -22,9 +21,9 @@ It's probably wrong.
 ### Nouns
 
     - Dave.  A human.  Can only talk to Hal.
-    - Hal. A personal AI to Dave, with access to the historic data on preferences, previous requests, context.  Hal can only talk to Dave,  Orchestators and System.
+    - Hal. A personal AI to Dave, with access to the historic data on preferences, previous requests, context.  Hal can only talk to Dave,  Orchestrators and System.
     - System. Baked code that provides the substrate OS calls necessary to store data, run code and run Bots.
-    - Orchestators.  A bot that has access to helps, including Drones, to execute the intent.
+    - Orchestrators.  A bot that has access to helps, including Drones, to execute the intent.
     - Drones.  AI's that are single function and highly confined, but which can be relied on to produce the right output given the right input.
     - Contribution. A record attached to each Help, of who or what allowed that Help to come into existence. Contribution includes references to previous Helps, external data, and Context.
     - Stuck. An NL description of something that has previously been required but wasn't available.
@@ -34,9 +33,12 @@ It's probably wrong.
     - Isolate. A fragment of code or a static piece of data that can be used in the traditional (non-Bot) sense. 
     - Event. A change of state within the System.
     - Observation Event. A request to assess Contribution of a Help against all available data at that point in time.
+    - Disperal Event. Given a tangible benefit, identify who gets what as a portion of that benefit.
     - Intent: What Dave wants the Jitter to do.
+    - Report Card. A list of Impact values, and the assessment of those against a Help.
+    - End User. A person to which praise/blame and benefit of distribution can be given.
+    - Wallet. A dashboard of an End User which displays praise/blame, distribution and whether what they've received in benefit is higher or lower than the current Attribution suggests is owed.
 
-TODO: This isn't complete.  I'll get back to this.
 
 ## Dreamcatching Process
 
@@ -111,7 +113,7 @@ Aim: without permission, improve stuff.
 
         3.2 Judging:
         - Actor: Judge (bot)
-        - Session Aim: Stack rank multiple possible Jitters based on their Report Card, and the coherence of the Evaluation.
+        - Session Aim: Stack rank multiple possible Jitters based on their Report Card, and the coherence of the Report Card.
         - Input: Intent, Jitters, Report Cards.
         - Operation: Consider the Intent, check the internal coherence of the Report Card.  Adjust, normalise and weight the Impact.  Stack rank the Jitters.
         - Output: Jitter Stack Rank.
@@ -140,7 +142,7 @@ Add any additional external information that pretains to the value that a Jitter
 
 #### Attributing
 
-On request, provide the Impact Report for a given Help or Jitter.
+On request (Observation Event), provide the Impact Report for a given Help or Jitter.
 
     1. Attributing
         - Actor: Attributor (bot)
@@ -156,7 +158,7 @@ On request, provide the Impact Report for a given Help or Jitter.
     1. Distributing
         - Bot: Distributor
         - Session Aim: Distribute rewards.
-        - Operation: When an End User is offering to pay or provide any tangible benefit, calculate who gets what portion of that benefit. NB this isn't necessarily cash. This is the disperal event, and so will call on the Attributor to decide the cut. Record the fact in the Wallet of the End User, in order to provide a view of what that End User has received versus, at any point through an Attribution call, what they really should have.
+        - Operation: When an End User is offering to pay or provide any tangible benefit, calculate who gets what portion of that benefit. NB this isn't necessarily cash. This is the Disperal Event, and so will call on the Attributor to decide the cut. Record the fact in the Wallet of the End User, in order to provide a view of what that End User has received versus, at any point through an Attribution call, what they really should have.
         - Output: Updated Wallet. Updated contribution.
         - Talks to:
             - Attributor
