@@ -23,58 +23,65 @@ It's probably wrong.
 
     - Dave.  A human.  Can only talk to Hal.
     - Hal. A personal AI to Dave, with access to the historic data on preferences, previous requests, context.  Hal can only talk to Dave,  Orchestators and System.
-    - System. Baked code that presents capabilities such as recording stucks.
+    - System. Baked code that provides the substrate OS calls necessary to store data, run code and run Bots.
     - Orchestators.  A bot that has access to helps, including Drones, to execute the intent.
     - Drones.  AI's that are single function and highly confined, but which can be relied on to produce the right output given the right input.
-    - Contribution Log. The system, by which any artifact or event is logged.
-    - Stuck. An NL description of something that has previously been required but wasn't available as a Help.
-    - Help. A unit of useful data that can be incorporated into a Jitter.
+    - Contribution. A record attached to each Help, of who or what allowed that Help to come into existence. Contribution includes references to previous Helps, external data, and Context.
+    - Stuck. An NL description of something that has previously been required but wasn't available.
+    - Help. A unit of useful data that can be used to construct a Jitter. Types of Helps: Isolate, data object, Jitter, Bot, Stuck.  Helps incorporate their own Provenance.
+    - Jitter. A just-in-time app, constructing using Helps and, if necessary, a wrapper to make it coherent.  A Jitter, once constructed, is also made available as a Help in future runs.
+    - Provenance. A record of who and what has aided the construction of a Help.
+    - Isolate. A fragment of code or a static piece of data that can be used in the traditional (non-Bot) sense. 
+    - Event. A change of state within the System.
+    - Observation Event. A request to assess Contribution of a Help against all available data at that point in time.
+    - Intent: What Dave wants the Jitter to do.
 
 TODO: This isn't complete.  I'll get back to this.
 
 ## Dreamcatching Process
 
-### Intent
+### Aim
 
-A Jitter has been used, or the knowledge in Helps has been used on other systems.  Therefore, there's been an Impact, which can be positive or negative.  Acknowledge, record and Attribute that to everyone and every supporting system that was necessary to make it happen.
+Dreamcatching aims to:
+    - Record and keep up to date all Contribution to Helps
+    - Provides a method to pull those Helps together into a Jitter and make it available to Dave, updating Contribution as required.
+    - At any Event, provide a Report on the Impact of each contribution to each Help used.
 
 ### Processes
 
 #### Peanut Pushing
 
-Without permission, improve stuff.
+Aim: without permission, improve stuff.
 
 ##### Create Raw
     
     1. Create Raw
-        - Intent: Dave has an idea.  May be as a response to a Stuck or a novel idea.
-        - Session Aim: With Hal or alone, work on the idea, and register the first version on the Contribution Log.
+        - Actor: Isolate
+        - Aim: Create a usable Help.  May be as a response to a Stuck or a novel idea.
         - Input: Stuck, or nothing.
-        - Output: A Help. An update to Contribution Log. 
+        - Operation: With Hal or alone, work on the idea, and register the first version on the System.
+        - Output: A Help and its Provenance. 
         - Talks to:
             - Hal (optional) 
 
 ##### Iterate
 
     1. Iterate Help
-        - Intent: Take an existing Help and push the peanut on.
-        - Session Aim: Dave can improve a Help directly, collaborate to improve it, quality assess it, manage a team to improve it, or otherwise make the Help more usable.  
+        - Actor: Isolate
+        - Aim: Take an existing Help and push the peanut on.
         - Input: Help.  Other evidence of work being carried out.
-        - Output: Updated Help. Update to Contribution Log
+        - Operation: With Hal or alone, improve a Help directly, collaborate to improve it, quality assess it, manage a team to improve it, or otherwise make the Help more usable.  
+        - Output: Updated Help and its Provenance
         - Talks to:
             - Hal (optional) 
-
-##### End output  
-        - A Help, either new or changed.
-        - An update to the record of the Provenance of that Help
 
 #### Build Jitter
 
     1. Dave/HAL
-        - Bot: Hal.
-        - Intent: Provide a consistent Human/AI interface where the AI has access to the context of what Dave has said before, can judge what he wants now, and can model what he actually means.
-        - Session Aim: Try to figure out what Dave actually wants.  Prompt responses from Dave to fill in the gaps.  Use context from previous session summaries.
+        - Actor: Hal (bot).
+        - Aim: Provide a consistent Human/AI interface where the AI has access to the context of what Dave has said before, can judge what he wants now, can model what he actually means and can commission the construction of a Jitter.
         - Input: Dave/Hal session. 
+        - Operation: Try to figure out what Dave actually wants.  Prompt responses from Dave to fill in the gaps.  Use context from previous session summaries. Commission a Jitter. 
         - Output: 
             - Updating the history of this session for future use between Dave/Hal.
             - Dave's Intent. Actioning Jitter Maker when it becomes clear WTF Dave wants.
@@ -83,60 +90,75 @@ Without permission, improve stuff.
             - Jitter Maker
 
     3. Jittering:
-        - Bot: Jitter Maker
-        - Session Aim: Given an Intent, search and pull together Helps, provide any required wrapper to make it coherent.  Assess against intent. Allow Dave to use it.  Identify and Register Stucks. Register Jitter as a Help. Registor use.
-        - Input: Helps, intent.
-        - Operation: Present the Jitter for use and what was used in bringing it together.
-        - Output: Log of use, the value of that use, and the helps used.  Records of any Stucks identified.
+        - Actor: Jitter Maker (bot)
+        - Input: Helps, Intent.
+        - Operation: Given an Intent, search and pull together Helps, provide any required wrapper to make it coherent.  Assess against Intent. Pass the Jitter back.  Identify and Register Stucks. Register Jitter as a Help. Update Contribution.
+        - Output: A Jitter. Updated Contribution. Stucks. 
         - Talks to:
             - Hal
-            - Contribution Recorder
-            - Bot: Evalulator
+            - Create Raw
+            - Evalulator
 
         3.1 Evaluating:
-        - Bot: Evalulator
-        - Session Aim: Identify, given multiple possible Jitters, which best meets Dave's intent.
+        - Actor: Evalulator (bot)
+        - Session Aim: Identify, given multiple possible Jitters, which best meets Dave's Intent.
         - Input: Intent, Jitter.
-        - Operation: Consider the Intent, list the dimensions that Dave cares about.  Using that, consider each proposed Jitter and return your recommendation about which is best.
-        - Output: Recommendation.
-
-    End output:
-        - A Jitter
-        - To the Record, the fact that this was used and the Context, the Helps used in building it, the bots used in building the Jitter, the input from the session with Dave/Hal, the run-time costs, and any value exchange (e.g payment.).
-
-#### Record Updating
-
-Add any additional information that pretains to the value that a Jitter has produced into the Record.
-
-    1. Updating
-        - Bot: Scraper or other source, or random Dave.
-        - Session Aim: Update the Record with new information about the Impact a Jitter or Help has caused.
-        - Input: NL new info
-        - Operation: Update the Record with the new information available.  Dedupe similar updates.
-        - Output: Record update.
+        - Operation: Consider the Intent, list the dimensions that Dave cares about.  Produce a Report Card.
+        - Output: Report Card.
         - Talks to:
-            - Contribution Recorder
+            - Jitter Maker
+            - Judge
 
+        3.2 Judging:
+        - Actor: Judge (bot)
+        - Session Aim: Stack rank multiple possible Jitters based on their Report Card, and the coherence of the Evaluation.
+        - Input: Intent, Jitters, Report Cards.
+        - Operation: Consider the Intent, check the internal coherence of the Report Card.  Adjust, normalise and weight the Impact.  Stack rank the Jitters.
+        - Output: Jitter Stack Rank.
+
+#### Updating Contribution
+
+Add any additional external information that pretains to the value that a Jitter has produced.
+
+    1. Updating, External
+        - Actor: Scraper or other source, or random Dave.
+        - Session Aim: Allow the consideration of information outside of Dreamcatcher to be incorporated into Contribution.
+        - Input: NL new info, external data sources, opinion.
+        - Operation: Update the Contribution of a Help, cascading through it's Provenance.  Dedupe similar updates.
+        - Output: Updated Contribution.
+        - Talks to:
+            - System
+
+    1. Updating, Internal
+        - Actor: Isolate. 
+        - Session Aim: Allow the update of Contribution.
+        - Input: New information on the use of an existing Help.
+        - Operation: Update the Contribution of a Help, cascading through it's Provenance.
+        - Output: Updated Contribution.
+        - Talks to:
+            - System
 
 #### Attributing
 
 On request, provide the Impact Report for a given Help or Jitter.
 
     1. Attributing
-        - Bot: Attributor
-        - Session Aim: Give an NL report on the Impact that a Help/Jitter has had, taking the Record into account.
-        - Input: Record.
-        - Operation: Given what the Record holds now, and (optionally) the impact values the user cares about, provide an report card of what the help/jitter has had.   
+        - Actor: Attributor (bot)
+        - Session Aim: Proportion the Impact (praise/blame) of a Help.  Provide a view of Karma.
+        - Input: Help to consider. (Optionally) Filter.
+        - Operation: Given a Help, proportion NL Impacts (praise/blame) by cascading through the Provenance chain.  Optionally, apply on a filter on what should be considered.  Continue through the cascade until praise/blame can be attributed to each End User.
         - Output: Impact report.
-        - NOTE: This could and probably should be triggered each time Dave looks at his Wallet.
+        - NOTE: This could and probably should be triggered each time Dave looks at his Wallet, or when anyone asks 'what is this End User's Impact?'
+        TODO: How to calibrate.
 
 ##### Distributing
 
-When a debtor is offering to pay the use of a Jitter/Help, calculate who gets what. NB this isn't necessarily cash. This is the disperal event, and so will call on the Attributor to decide the cut.
-
     1. Distributing
-        - Bot: Attributor
-        - Session Aim: Balance Karma.
-        - Operation: Assess what is owed by any value offered, translate into the denomination offered, and record the fact.  
-        - Output: Updated Record.
+        - Bot: Distributor
+        - Session Aim: Distribute rewards.
+        - Operation: When an End User is offering to pay or provide any tangible benefit, calculate who gets what portion of that benefit. NB this isn't necessarily cash. This is the disperal event, and so will call on the Attributor to decide the cut. Record the fact in the Wallet of the End User, in order to provide a view of what that End User has received versus, at any point through an Attribution call, what they really should have.
+        - Output: Updated Wallet. Updated contribution.
+        - Talks to:
+            - Attributor
+            - System
 
