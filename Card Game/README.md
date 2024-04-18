@@ -1,6 +1,19 @@
 # Dreamcatcher Card Game 
 
-1. Bots that are owned and run by the Dreamcatcher are in ./Bots.md.  Format:
+The game is run from the point of view of the Dreamcatcher.  It's run in a series or rounds, using a queue stack for actions requested (this can be async, ie shuffle the queue, but for the first few tracer bullets atomic is probably easier.)  At each round:
+
+    1. Start: The only Bot that can talk to a Dave is that Dave's personal Hal.  This is denoted by e.g. Dave01, who talks to Hal01.
+    1. Hal starts the action stream by commisioning work from other Bots.  In doing so Hal states:
+            1. Which Bot is carrying out the work and what is that work? The Bot can:
+                1. Commission another Bot to do part or all of that work.  
+                1. A Bot that can carry out the work using a Card does so.  A Bot can use Helps as input to a card.
+            1. The result
+    1. Action the stack. Pop an actionWhat is at the top of the queue stack?  Action that using:
+
+
+
+
+1. Hal/Dave - As there are multiple Bots that are owned and run by the Dreamcatcher are in ./Bots.md.  Format:
 '''
     ## Name of Bot(Inputs)
 
@@ -22,9 +35,25 @@
     ## System.Help01: <Unique name of help>
         Description: <The template, content or method this help offers.>
         Owner: System <Who created it>
-        History:
-            Template created YY.MM.DD by us. <Record of how this help has been built up over time.>
+        Draws on: <Record of how this help has been built up over time and which Helps/Bots used.>
+        Events: <Log of information about: where has this has been used, by whom; new external information, e.g. >
+            Template created YY.MM.DD by Dave101.
+        Distribution: <Log of what distribution has already happened.  Ie what is paid out>
+        Metrics: <Quantifiable non-distribution metrics, available at each Assessment to say what should have been paid, verus what was paid.  E.g. for an article - number of direct views, number of times quoted, and by who, number of times linked.  MAY be generated from Events.> 
 '''
+1. Helps record after creation is there to capture qualitative statements and quantative measurements, to make them available for future consideration.  E.g.
+    1. Quantative:
+        1. This article was read by a Student.
+            1. In Events, read 100 times.
+        1. This article was read by the Prime Minister, once.
+        1. This article was quoted in 5 newspapers, and the Prime Minister in a Parliamentary session.
+        1. This article received at time T, $NN dollars of ad revenue.
+        1. The website on which this article was hosted has just received $NNN dollars in sponsership.
+    1. Qualitative:
+        1. DaveNN states that the Prime Minister viewed this article as important in policy making.
+        1. DaveNN+102 states that the policy put in place appears to have made it into law, and that this Help should be considered as contributing to that.
+        1. DaveNN+106 states that this article, because it was part of a wider website, increased the value of that website that is now getting offers to buy from other websites.
+
 1. Cards constrain and describe state changes.  Format:
 '''
     ## Name of State change(inputs)
