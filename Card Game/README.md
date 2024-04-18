@@ -1,6 +1,24 @@
 # Dreamcatcher Card Game 
 
-The game is run from the point of view of the Dreamcatcher.  It's run in a series or rounds, using a queue stack for actions requested (this can be async, ie shuffle the queue, but for the first few tracer bullets atomic is probably easier.)  At each round:
+The game is run from the point of view of the Dreamcatcher.  It has a number of components:
+
+    1. Dreamcatcher (can't be directly altered by the players).  Consists of:
+        1. System: the DC O/S substrate.
+        1. Bots: the bootstrap Bots needed to get the whole thing going.
+        1. Helps: the bootstrap Helps.
+        1. Cards: the rules behind allowable state changes.
+    1. State - a record at Round N of the data that's available on the System.
+    1. Stack - the queue of actions commissioned but not yet actioned.
+    1. Tracer Bullet (ie, for this game)
+        1. Narrative - what happened when, and by whom.
+        1. Bots created during this Narrative, including their state changes
+        1. Helps created during this Narrative, including their state changes
+        1. Stucks created during this Narrative, including their state changes
+
+TODO: Above isn't complete or correct yet.
+
+
+The card game is run in a series or rounds, using a queue stack for actions requested (this can be async, ie shuffle the queue, but for the first few tracer bullets atomic is probably easier.)  At each round:
 
     1. Start: The only Bot that can talk to a Dave is that Dave's personal Hal.  This is denoted by e.g. Dave01, who talks to Hal01.
     1. Hal starts the action stream by commisioning work from other Bots.  In doing so Hal states:
