@@ -6,6 +6,8 @@ Create a Bot to create other Bots (creatorBot), and put in place a Judge (judgeB
 
 ## Plan
 
+Each step below is in a new tab/new session, so assuming there's no leakage in the background.  Each step only brings in a cut and paste NL input from previous steps, and the input from Dave.
+
 1. Dave talks to Hal about creating the creatorBot_v0.1.  After Hal discerns Dave's Intent and asks questions, Hal produces a first go at creatorBot_v0.1 session prompt.
 2. Dave uses creatorBot_v0.1 to generate a session prompt for recipeBot_v0.1.
 3. Dave uses recipeBot_v0.1 with chatGPT4 to create a recipe.
