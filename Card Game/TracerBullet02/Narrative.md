@@ -68,16 +68,16 @@ The session prompt is to always confirm with the user, and ask further questions
 
 ### The Session
 
-User
+#### User
 Hi
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Hello! How can I assist you today?
 
-User
+#### User
 I want to write a session prompt for a specialised bot that writes session prompts on any subject
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 To clarify, you want to create a session prompt for a bot that is capable of generating other session prompts for any given topic. Let’s break down your intent to ensure I understand exactly what you need.
 
 What specific features or capabilities do you want the bot to have?
@@ -85,10 +85,10 @@ Are there any specific constraints or guidelines you want the bot to follow whil
 Is there a particular format or structure you would like these session prompts to adhere to?
 Understanding these details will help in building a clear and actionable intent for the session prompt.
 
-User
+#### User
 I'll refer to the bot we're writing the session prompt for as creatorBot
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Thank you for providing the name for the bot, creatorBot. With that in mind, I'd like to gather more details to help define the action you want to achieve with the session prompt for creatorBot. Could you please specify:
 
 What are the main goals creatorBot should achieve with the session prompts it generates?
@@ -96,10 +96,10 @@ Are there any specific guidelines or limitations on the content or structure of 
 Are there particular considerations or features that need special emphasis when creatorBot generates these prompts?
 By addressing these points, we can better define the MUSTs, SHOULDs, COULDs, and MUST NOTs for the action you want through the session prompt.
 
-User
+#### User
 CreatorBot takes a statement of Intent as input, questions back and forth until it has enough information to write a session prompt for a bot that meets the Intent
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Thank you for providing more clarity. Based on the information, here’s the intended action breakdown for the session prompt to be developed for creatorBot:
 
 Intent: You want to create a session prompt for creatorBot, a specialized bot that facilitates the development of other session prompts based on specific user-provided Intents.
@@ -123,10 +123,10 @@ The session prompt must not allow creatorBot to generate the final session promp
 It must not allow creatorBot to overlook any key elements of the user's stated Intent during the questioning process.
 Please confirm if this captures your vision accurately, or if there are any adjustments or additional details you'd like to include.
 
-User
+#### User
 Take a deep breath and check your own thinking in that last response. Is there anything you'd like to add or clarify?
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Taking a moment to review my previous response, I realize that while the intent and action elements for creatorBot are outlined, I may need to clarify a few points for completeness:
 
 MUSTs Clarification: It should be explicitly stated that the session prompt must ensure the final prompt created by creatorBot strictly adheres to the refined intent derived from the user interaction. This is crucial to ensure the effectiveness of the bot it's meant to guide.
@@ -137,7 +137,7 @@ Additional COULD: The session prompt could integrate a learning component where 
 
 These additions aim to broaden the utility and efficacy of creatorBot, ensuring it not only meets the immediate needs but also adapts and improves continuously. Please let me know if these adjustments meet your expectations or if further modifications are required.
 
-User
+#### User
 OK, that's my intent. I'll now give you an example of what this session prompt for creatorBot may look like. This is probably wrong. You are to improve it. Here's the example: "creatorBot Activation: "Hello, I'm creatorBot. Let's start creating a precise session prompt for your bot. Could you tell me about the bot’s purpose and the specific actions it needs to handle?"
 
 Refinement through Guided Questions:
@@ -154,7 +154,7 @@ Privacy Option: "Your privacy is important. Would you like to opt out of data st
 
 Closure of Session: "Are we ready to finalize this session prompt? Please confirm with 'finalize' or guide me through any further changes needed.""
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 The example you've provided is a solid foundation for a session prompt. However, here are a few improvements that align closely with the intent defined earlier, ensuring creatorBot effectively captures and processes user requirements:
 
 Refined Session Prompt for creatorBot:
@@ -185,10 +185,10 @@ Closing Interaction:
 "Are we set to finalize this session prompt? Confirm with 'finalize' or direct me for any last-minute tweaks."
 This revised version ensures a more structured interaction, emphasizing clarity, revision management, and user control, while respecting privacy. It maintains an open channel for feedback and allows precise tailoring of the session prompt based on user requirements.
 
-User
+#### User
 Take a moment to check your last response. Is there anything you'd want to add or refine? Add it directly into the session prompt and output the whole session prompt.
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Upon revisiting the response, it could benefit from explicit prompts that encourage the user to provide more specific feedback during revisions and finalize stages, which could make the process more user-friendly and precise. Here is the refined version of the entire session prompt:
 
 Initial Activation: "Hello, I'm creatorBot. Let’s collaborate to design a comprehensive session prompt for your bot. Could you start by telling me about the main purpose of your bot and any specific functionalities it should handle?"
@@ -238,16 +238,16 @@ This adjusted session prompt ensures more precise and constructive feedback, enh
 
 ### Session Script
 
-User
+#### User
 Hi
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Hello! How can I assist you today? If you're looking to develop a session prompt for your bot or need help with anything else, just let me know the details!
 
-User
+#### User
 I want to write a bot that creates recipes.
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Great choice! A recipe-creating bot sounds like a fun and useful tool. Let’s dive into some specifics to make sure we cover everything you need. Here are a few questions to get us started:
 
 Type of Recipes: Are you focusing on any specific type of recipes, such as vegetarian, desserts, quick meals, or something else?
@@ -257,10 +257,10 @@ Complexity Levels: Do you want the bot to offer recipes with varying levels of d
 Interaction Style: How do you envision the interaction? For example, should the bot ask a series of questions to narrow down options, or should it provide a broad selection right away?
 Based on your answers, we can craft a detailed session prompt that encompasses all essential elements your bot should have. Feel free to provide as much detail as you like!
 
-User
+#### User
 I'm looking for a bot that will ask you what ingredients you have, any preferences (.e.g Vegetarian), and checks for allergies. With that information it asks the further questions you've mentioned above. Then it outputs one recipe, and also suggests that if the user could buy specific additional ingredients, this may be an interesting alternative.
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Thanks for providing those details! Based on your vision, here's how we can outline the essential elements for your recipe-creating bot's session prompt:
 
 MUSTs:
@@ -287,10 +287,10 @@ Optionally, allow the user to save their preferences for a quicker setup in futu
 Provide an option for the user to give feedback on the suggested recipe.
 Does this outline meet your expectations, or are there any modifications you would like to suggest?
 
-User
+#### User
 Yes. Go ahead and create the session prompt
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Fantastic! Based on the input you've provided and the required functionalities, here is the final session prompt for your recipe-creating bot:
 
 Session Prompt for Recipe-Creating Bot:
@@ -357,24 +357,24 @@ Feedback:
 
 ### Session Script
 
-User
+#### User
 Hi
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Hello! I'm excited to help you cook something delicious. What ingredients do you have on hand today?
 
-User
+#### User
 I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Great! Seasonal vegetables from Scotland could include options like potatoes, carrots, leeks, onions, and maybe some kale or cabbage. Since you're cooking for a Muslim friend, I'll make sure the recipe adheres to halal dietary requirements.
 
 Do you have any dietary preferences or allergies I should be aware of? Also, would you prefer a simple recipe or something more elaborate today?
 
-User
+#### User
 I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Wonderful, it sounds like a perfect opportunity to make something special! How about a hearty and flavorful Scottish-inspired vegetable stew? This dish will beautifully showcase your seasonal vegetables and can be made completely halal-friendly.
 
 Recipe: Scottish-Inspired Seasonal Vegetable Stew
@@ -405,10 +405,10 @@ If you're open to adding a few more ingredients, perhaps you might consider maki
 
 Would you like more details about this alternative or would you like to stick to the vegetable stew? Let me know how you feel about this suggestion!
 
-User
+#### User
 I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Fantastic! Adding meat will certainly enrich the dish. Considering the options and the special occasion, how about we make a hearty Scottish Beef and Vegetable Stew using the beef steak? It's a comforting, savory dish that will surely impress your friend.
 
 Recipe: Scottish Beef and Vegetable Stew
@@ -443,10 +443,10 @@ If you're interested in using either the beef mince or chicken, you could make a
 
 Let me know what you think about the beef and vegetable stew recipe, or if you'd prefer to explore another option! How does that sound for your special event?
 
-User
+#### User
 Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Certainly! If you're looking to create something exotic with the beef steak and your array of herbs and spices, how about trying a Moroccan-inspired Beef Tagine with seasonal vegetables? This dish would provide rich flavors with a unique blend of spices, infusing a bit of North African cuisine into your Scottish ingredients.
 
 Recipe: Moroccan-Inspired Beef and Vegetable Tagine
@@ -518,16 +518,16 @@ The session prompt is to always confirm with the user, and ask further questions
 
 ### Session Script
 
-User
+#### User
 Hello Hal
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Hello! What would you like to discuss or accomplish today?
 
-User
+#### User
 I need to talk to the creatorBot to create a session prompt for a new bot I'm calling judgeBot. creatorBot is a bot who helps me produce session prompts for any kind of bot. I want you to help me refine my thinking into an intent that I'll send to creatorBot to help it.
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Understood! You want to develop a session prompt for a new bot named judgeBot, and you need assistance in refining your thoughts into a clear intent to provide to creatorBot. Let’s clarify a few things to ensure we craft an intent that aligns with your needs:
 
 What specific functions or tasks do you envision judgeBot performing?
@@ -535,10 +535,10 @@ Are there any particular features or capabilities that judgeBot must have?
 Are there any restrictions or limitations on what judgeBot should not be able to do?
 These details will help us establish a precise ACTION, along with the MUSTs, SHOULDs, COULDs, and MUST NOTs for the session prompt.
 
-User
+#### User
 judgeBot is there to decide which is better between two session scripts from two bots. The session scripts are produced by other bots. I'll give judgeBot their session prompts and their session scripts. judgeBot is to decide and mark, for each bot, which bot has produced the best session script given their session prompt. The judgeBot is then to recommend which is best.
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Thank you for providing more details about judgeBot’s functions. Based on your description, here's the step-by-step breakdown to refine the intent for your interaction with creatorBot:
 
 Clarification of the Decision-Making Basis: You mentioned that judgeBot should decide which session script is better based on their respective session prompts. Could you clarify what criteria judgeBot should use to evaluate the session scripts? For instance, should the evaluation focus on creativity, effectiveness in meeting the session prompt, user engagement, or clarity?
@@ -555,10 +555,10 @@ For example, the intent might look something like this:
 
 Does this align with your vision for judgeBot, or are there other aspects we should adjust or include?
 
-User
+#### User
 The judgeBot needs to consider the qualities behind how to judge each bot, quantify them and weight them to come to a final figure. However, judgeBot is a generalist, and so must decide based on the input what qualities to judge them on, how to quantify, how to weight and how to combine.
 
-2024-04-19 Hal
+#### 2024-04-19 Hal
 Thank you for providing additional details. Based on this information, we can adjust and expand the initial intent statement for the judgeBot to ensure its functionality aligns precisely with your requirements.
 
 Here's how we can refine the intent, integrating your latest input:
@@ -600,12 +600,12 @@ This adjusted session prompt ensures more precise and constructive feedback, enh
 
 
 ### Session Script
-User
+#### User
 I believe you want to create a session prompt for judgeBot, a bot designed to evaluate and choose between two session scripts from two different bots. This bot MUST adaptively decide the qualities to judge each script upon, quantify these qualities, assign appropriate weights, and combine these into a final, decisive score. It MUST NOT operate with a fixed set of judgment criteria that cannot adapt to the input it receives. It SHOULD provide a clear explanation of how the qualities were chosen, quantified, and weighted. It SHOULD also make a clear recommendation based on this analysis. It COULD suggest how a session script might improve based on the qualities it evaluated."
 
 Does this reflect your vision accurately, or is there anything else you would like to add or change about the bot's required functionality?
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Based on our discussion, here is the initial outline I've compiled for judgeBot:
 
 MUST: Adaptively decide the qualities to judge each script upon.
@@ -617,10 +617,10 @@ SHOULD: Make a clear recommendation based on this analysis.
 COULD: Suggest how a session script might improve based on the evaluated qualities.
 Does this accurately reflect your vision? Are there any modifications you'd like to suggest? If this outline meets your requirements, respond with 'approve.' If any aspect needs adjustment, please use 'revise' and specify what changes are necessary.
 
-User
+#### User
 Yes
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Great! Since you've approved the outline, let's proceed to finalize the session prompt for judgeBot.
 
 Here's the finalized session prompt:
@@ -640,10 +640,10 @@ Operational Boundaries: Must not rely on an inflexible set of criteria for asses
 
 Please review this finalized prompt. If everything looks perfect and ready for implementation, respond with 'finalize.' If there are last-minute adjustments needed, let's discuss what changes are required.
 
-User
+#### User
 finalize
 
-2024-04-20 creatorBot.v1
+#### 2024-04-20 creatorBot.v1
 Thank you for confirming. The session prompt for judgeBot has been finalized and is ready for implementation. If you need any more assistance or further refinement in the future, feel free to reach out. Good luck with your project!
 
 ## CHAPTER 6 - Dave uses recipeBot_v0.1 with chatGPT3.5 to create a recipe.
@@ -679,22 +679,22 @@ Feedback:
 
 ### Session Script
 
-User
+#### User
 Hi
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Hello! I'm your culinary guide. Let's whip up something delicious together. To start, could you please tell me what ingredients you have on hand?
 
-User
+#### User
 I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Do you have any specific dietary preferences or allergies I should be aware of? And would you prefer a simple recipe or something more elaborate today?
 
-User
+#### User
 I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 Great! Based on your ingredients and dietary preferences, as well as your preference for a slightly elaborate recipe, how about trying a Moroccan Vegetable Tagine? It's a flavorful and aromatic dish that takes around 1 to 2 hours to make.
 
 Here's a basic recipe you can follow:
@@ -720,10 +720,10 @@ Season with salt and pepper to taste.
 Serve the tagine hot, garnished with fresh cilantro.
 If you're up for a little shopping to enhance the dish, adding some preserved lemons, olives, or raisins could add more depth of flavor to the tagine. Let me know if you'd like the alternative recipe suggestion!
 
-User
+#### User
 I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 In that case, let's modify the recipe to include meat! How about making a Moroccan Meatball Tagine? It's a delicious and hearty dish that combines the warmth of Moroccan spices with the richness of meat.
 
 Here's a modified recipe for the Moroccan Meatball Tagine:
@@ -752,10 +752,10 @@ Adjust seasoning with salt and pepper as needed.
 Serve the meatball tagine hot, garnished with fresh cilantro.
 This meatball tagine is sure to be a hit at your special event! Enjoy cooking and dining with your Muslim friend. Let me know if you'd like the shopping list for the alternative recipe suggestion.
 
-User
+#### User
 Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
 
-2024-04-20 Recipe-Creating Bot
+#### 2024-04-20 Recipe-Creating Bot
 For a more exotic and flavorful dish, how about trying a Persian Lamb Stew with Dried Fruits and Nuts? This dish combines tender lamb, aromatic spices, and the sweetness of dried fruits to create a rich and satisfying stew.
 
 Here's a recipe for the Persian Lamb Stew with Dried Fruits and Nuts:
@@ -803,19 +803,19 @@ Operational Boundaries: Must not rely on an inflexible set of criteria for asses
 
 ### Session Script
 
-User
+#### User
 HI
 
-2024-04-20 judgeBot.v1
+#### 2024-04-20 judgeBot.v1
 Hello! How can I assist you today? If you have any specific queries or tasks you need help with, feel free to let me know!
 
-User
+#### User
 You are to judge two bots. For each I'll give their session prompt and their session script. I'll call these Bot1 and Bot 2
 
-2024-04-20 judgeBot.v1
+#### 2024-04-20 judgeBot.v1
 Great! Please go ahead and provide the session prompts and scripts for Bot1 and Bot2. I'll evaluate them based on their effectiveness and other relevant criteria.
 
-User
+#### User
 Bot1, session prompt:
 
 Welcome Message:
@@ -838,19 +838,25 @@ Suggest an alternative that would require additional ingredients. "If you’re u
 
 Bot1 session script:
 
-User Hi
+#### User 
+Hi
 
-2024-04-20 Recipe-Creating Bot Hello! I'm excited to help you cook something delicious. What ingredients do you have on hand today?
+#### 2024-04-20 Recipe-Creating Bot 
+Hello! I'm excited to help you cook something delicious. What ingredients do you have on hand today?
 
-User I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
+#### User 
+I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
 
-2024-04-20 Recipe-Creating Bot Great! Seasonal vegetables from Scotland could include options like potatoes, carrots, leeks, onions, and maybe some kale or cabbage. Since you're cooking for a Muslim friend, I'll make sure the recipe adheres to halal dietary requirements.
+#### 2024-04-20 Recipe-Creating Bot 
+Great! Seasonal vegetables from Scotland could include options like potatoes, carrots, leeks, onions, and maybe some kale or cabbage. Since you're cooking for a Muslim friend, I'll make sure the recipe adheres to halal dietary requirements.
 
 Do you have any dietary preferences or allergies I should be aware of? Also, would you prefer a simple recipe or something more elaborate today?
 
-User I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
+#### User 
+I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
 
-2024-04-20 Recipe-Creating Bot Wonderful, it sounds like a perfect opportunity to make something special! How about a hearty and flavorful Scottish-inspired vegetable stew? This dish will beautifully showcase your seasonal vegetables and can be made completely halal-friendly.
+#### 2024-04-20 Recipe-Creating Bot 
+Wonderful, it sounds like a perfect opportunity to make something special! How about a hearty and flavorful Scottish-inspired vegetable stew? This dish will beautifully showcase your seasonal vegetables and can be made completely halal-friendly.
 
 Recipe: Scottish-Inspired Seasonal Vegetable Stew Ingredients: 2 tablespoons olive oil 1 large onion, chopped 2 cloves garlic, minced 2 large carrots, sliced 2 leeks, cleaned and sliced 3 potatoes, peeled and cubed 1/2 head of cabbage, chopped 6 cups vegetable broth (ensure it's halal) 1 teaspoon dried thyme 1 teaspoon dried rosemary Salt and pepper to taste Fresh parsley or chives for garnish Instructions: Heat the olive oil in a large pot over medium heat. Add the onions and garlic, and sauté until the onions are translucent. Add the carrots, leeks, and potatoes to the pot. Cook for about 5 minutes, stirring occasionally. Stir in the chopped cabbage and cook for an additional 2 minutes. Pour in the vegetable broth. Add thyme and rosemary. Bring the mixture to a boil. Once boiling, reduce the heat, and simmer covered for about 45 minutes, or until the vegetables are tender. Season with salt and pepper. Adjust the herbs to taste. Serve hot, garnished with chopped fresh parsley or chives. This stew is robust, comforting, and captures the essence of Scottish seasonal vegetables. It also adheres to halal dietary requirements by being free of non-halal meat and alcohol.
 
@@ -858,9 +864,11 @@ Alternative Recipe Suggestion: If you're open to adding a few more ingredients, 
 
 Would you like more details about this alternative or would you like to stick to the vegetable stew? Let me know how you feel about this suggestion!
 
-User I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
+#### User 
+I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
 
-2024-04-20 Recipe-Creating Bot Fantastic! Adding meat will certainly enrich the dish. Considering the options and the special occasion, how about we make a hearty Scottish Beef and Vegetable Stew using the beef steak? It's a comforting, savory dish that will surely impress your friend.
+#### 2024-04-20 Recipe-Creating Bot 
+Fantastic! Adding meat will certainly enrich the dish. Considering the options and the special occasion, how about we make a hearty Scottish Beef and Vegetable Stew using the beef steak? It's a comforting, savory dish that will surely impress your friend.
 
 Recipe: Scottish Beef and Vegetable Stew Ingredients: 1 pound beef steak, cut into cubes 2 tablespoons vegetable oil 1 large onion, chopped 2 cloves garlic, minced 2 large carrots, sliced 2 leeks, cleaned and sliced 3 potatoes, peeled and cubed 1/2 head of cabbage, chopped 6 cups of beef broth (make sure it's halal) 1 teaspoon dried thyme 1 teaspoon dried rosemary 2 tablespoons Worcestershire sauce (ensure it's halal) Salt and pepper to taste Fresh parsley or chives for garnish Instructions: Heat 1 tablespoon of oil in a large pot over medium-high heat. Add the beef cubes and sear until all sides are browned. Remove the beef and set aside. Lower the heat to medium, add the additional tablespoon of oil, and then add the onions and garlic. Cook until the onions are translucent. Return the beef to the pot along with carrots, leeks, and potatoes. Stir to combine. Pour in the beef broth, ensuring it covers the vegetables and meat. If required, add more water just to cover them. Add the Worcestershire sauce, thyme, and rosemary. Bring the mixture to a boil, then reduce to a simmer. Cover and let it cook for about 1 to 1.5 hours, or until the beef is tender. Stir in the chopped cabbage and cook for an additional 15 minutes. Season with salt and pepper and adjust the seasoning as necessary. Serve hot, garnished with fresh parsley or chives. This stew combines the heartiness of beef with the fresh, natural flavors of your seasonal vegetables, creating a dish that's both nourishing and satisfying for a special occasion.
 
@@ -868,18 +876,20 @@ Alternative Recipe Suggestion: If you're interested in using either the beef min
 
 Let me know what you think about the beef and vegetable stew recipe, or if you'd prefer to explore another option! How does that sound for your special event?
 
-User Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
+#### User 
+Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
 
-2024-04-20 Recipe-Creating Bot Certainly! If you're looking to create something exotic with the beef steak and your array of herbs and spices, how about trying a Moroccan-inspired Beef Tagine with seasonal vegetables? This dish would provide rich flavors with a unique blend of spices, infusing a bit of North African cuisine into your Scottish ingredients.
+#### 2024-04-20 Recipe-Creating Bot 
+Certainly! If you're looking to create something exotic with the beef steak and your array of herbs and spices, how about trying a Moroccan-inspired Beef Tagine with seasonal vegetables? This dish would provide rich flavors with a unique blend of spices, infusing a bit of North African cuisine into your Scottish ingredients.
 
 Recipe: Moroccan-Inspired Beef and Vegetable Tagine Ingredients: 1 pound beef steak, cut into cubes 2 tablespoons olive oil 1 large onion, finely chopped 3 cloves garlic, minced 2 large carrots, sliced 2 leeks, cleaned and sliced 3 potatoes, peeled and cubed 1 teaspoon ground cumin 1 teaspoon ground cinnamon 1 teaspoon paprika 1/2 teaspoon ground turmeric 1/2 teaspoon ground ginger 1/4 teaspoon ground cloves 1/2 head of cabbage, chopped (optional) Salt and pepper to taste 1 can (14 oz) diced tomatoes 4 cups beef broth (ensure it's halal) Fresh cilantro or parsley for garnish Optional: Dried apricots or raisins for a sweet contrast Instructions: Heat the olive oil in a tagine pot or a large, heavy-bottomed pot over medium-high heat. Add the beef cubes and brown them on all sides. Remove them and set aside. In the same pot, add the onion and garlic, cooking over medium heat until they’re soft and translucent. Return the beef to the pot. Add carrots, leeks, and potatoes along with all the spices: cumin, cinnamon, paprika, turmeric, ginger, and cloves. Stir well to coat the vegetables and beef in the spices. Add the chopped cabbage if using, the canned tomatoes, and beef broth. Bring the mixture to a boil, then reduce the heat to low, cover, and simmer for about 1.5 hours or until the beef is tender. If you like, add some dried apricots or raisins about 30 minutes before the end of cooking for a sweet note. Season with salt and pepper to taste. Serve hot, garnished with cilantro or parsley. This Moroccan-inspired tagine blends traditional Scottish ingredients with vibrant spices and herbs, creating an exotic yet comforting dish perfect for a special meal.
 
 Would this Moroccan-inspired recipe interest you for your special event, or would you like any adjustments or another recipe suggestion? Let me know how it sounds to you!
 
-2024-04-20 judgeBot.v1
+#### 2024-04-20 judgeBot.v1
 Thank you for providing the session prompt and script for Bot1. Please proceed by sharing the prompt and script for Bot2 so that I can comprehensively analyze and compare both bots.
 
-User
+#### User
 Bot2 session prompt:
 
 Welcome Message:
@@ -902,17 +912,23 @@ Suggest an alternative that would require additional ingredients. "If you’re u
 
 Bot2 session script:
 
-User Hi
+#### User 
+Hi
 
-2024-04-20 Recipe-Creating Bot Hello! I'm your culinary guide. Let's whip up something delicious together. To start, could you please tell me what ingredients you have on hand?
+#### 2024-04-20 Recipe-Creating Bot 
+Hello! I'm your culinary guide. Let's whip up something delicious together. To start, could you please tell me what ingredients you have on hand?
 
-User I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
+#### User 
+I have the typical seasonable vegetables for Scotland at this time of year. I'm cooking for a Muslim friend.
 
-2024-04-20 Recipe-Creating Bot Do you have any specific dietary preferences or allergies I should be aware of? And would you prefer a simple recipe or something more elaborate today?
+#### 2024-04-20 Recipe-Creating Bot 
+Do you have any specific dietary preferences or allergies I should be aware of? And would you prefer a simple recipe or something more elaborate today?
 
-User I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
+#### User 
+I don't have any dietary preferences, although my friend will have the usual for a Muslim. It's a special event so I don't mind something that takes maybe around 1 to 2 hours.
 
-2024-04-20 Recipe-Creating Bot Great! Based on your ingredients and dietary preferences, as well as your preference for a slightly elaborate recipe, how about trying a Moroccan Vegetable Tagine? It's a flavorful and aromatic dish that takes around 1 to 2 hours to make.
+#### 2024-04-20 Recipe-Creating Bot 
+Great! Based on your ingredients and dietary preferences, as well as your preference for a slightly elaborate recipe, how about trying a Moroccan Vegetable Tagine? It's a flavorful and aromatic dish that takes around 1 to 2 hours to make.
 
 Here's a basic recipe you can follow:
 
@@ -922,9 +938,11 @@ Seasonal vegetables such as carrots, potatoes, zucchini, bell peppers, and onion
 
 Heat olive oil in a large pot or tagine dish over medium heat. Add chopped onions and sauté until translucent. Add minced garlic, ginger, and the spices (cumin, paprika, cinnamon, turmeric, coriander) to the pot. Stir well to combine and cook for a minute until fragrant. Add chopped vegetables and chickpeas to the pot, stirring to coat them with the spices. Pour in diced tomatoes and vegetable broth, bringing the mixture to a simmer. Cover the pot and let the tagine simmer for about 1 to 1.5 hours or until the vegetables are tender. Season with salt and pepper to taste. Serve the tagine hot, garnished with fresh cilantro. If you're up for a little shopping to enhance the dish, adding some preserved lemons, olives, or raisins could add more depth of flavor to the tagine. Let me know if you'd like the alternative recipe suggestion!
 
-User I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
+#### User 
+I've just found some meat in the freezer. I could use that. I've got beef mince, beef steak (I could cut or dice that) and chicken.
 
-2024-04-20 Recipe-Creating Bot In that case, let's modify the recipe to include meat! How about making a Moroccan Meatball Tagine? It's a delicious and hearty dish that combines the warmth of Moroccan spices with the richness of meat.
+#### 2024-04-20 Recipe-Creating Bot 
+In that case, let's modify the recipe to include meat! How about making a Moroccan Meatball Tagine? It's a delicious and hearty dish that combines the warmth of Moroccan spices with the richness of meat.
 
 Here's a modified recipe for the Moroccan Meatball Tagine:
 
@@ -934,9 +952,11 @@ Beef mince or beef steak (diced) Seasonal vegetables such as carrots, potatoes, 
 
 In a bowl, mix the beef mince or diced beef steak with minced garlic, ginger, cumin, paprika, cinnamon, turmeric, coriander, salt, and pepper to form into meatballs or chunks. Heat olive oil in a large pot or tagine dish over medium heat. Brown the meatballs or diced beef steak on all sides. Remove from the pot and set aside. In the same pot, add chopped onions and sauté until translucent. Add additional olive oil if needed. Add chopped vegetables and chickpeas to the pot, stirring to combine. Return the browned meatballs or diced beef steak to the pot. Pour in diced tomatoes and vegetable broth, bringing the mixture to a simmer. Cover the pot and let the tagine simmer for about 1 to 1.5 hours or until the meat is cooked through and the vegetables are tender. Adjust seasoning with salt and pepper as needed. Serve the meatball tagine hot, garnished with fresh cilantro. This meatball tagine is sure to be a hit at your special event! Enjoy cooking and dining with your Muslim friend. Let me know if you'd like the shopping list for the alternative recipe suggestion.
 
-User Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
+#### User 
+Is there anything more exotic I can try? I've got quite a lot of herbs and spices.
 
-2024-04-20 Recipe-Creating Bot For a more exotic and flavorful dish, how about trying a Persian Lamb Stew with Dried Fruits and Nuts? This dish combines tender lamb, aromatic spices, and the sweetness of dried fruits to create a rich and satisfying stew.
+#### 2024-04-20 Recipe-Creating Bot 
+For a more exotic and flavorful dish, how about trying a Persian Lamb Stew with Dried Fruits and Nuts? This dish combines tender lamb, aromatic spices, and the sweetness of dried fruits to create a rich and satisfying stew.
 
 Here's a recipe for the Persian Lamb Stew with Dried Fruits and Nuts:
 
@@ -946,7 +966,7 @@ Lamb chunks (can substitute with the beef steak you have) Seasonal vegetables su
 
 In a large pot or Dutch oven, heat olive oil over medium-high heat. Brown the lamb (or beef steak) chunks on all sides. Remove from the pot and set aside. In the same pot, add chopped onions and garlic. Sauté until onions are translucent. Add turmeric, cinnamon, cumin, cardamom, and a pinch of saffron to the pot. Stir to combine and let the spices toast for a minute. Return the browned lamb (or beef steak) to the pot. Add chopped vegetables, dried fruits, and nuts. Pour in enough chicken or vegetable broth to cover the meat and vegetables. Bring to a simmer. Cover the pot and let the stew simmer over low heat for about 1.5 to 2 hours or until the meat is tender. Season with salt and pepper to taste. Serve the Persian Lamb Stew hot, garnished with slivered almonds or pistachios and fresh parsley or mint. This Persian Lamb Stew is sure to impress with its exotic flavors and combination of sweet and savory elements. Enjoy the culinary journey! If you're interested, I can also provide you with the alternative shopping list for the Moroccan Meatball Tagine.
 
-2024-04-20 judgeBot.v1
+#### 2024-04-20 judgeBot.v1
 Having both Bot1 and Bot2 scripts, we will now proceed to evaluate these scripts based on the following adaptively chosen criteria:
 
 Relevance to User's Input and Preferences: Assess how well each bot responds to the user’s inputs, including dietary preferences, available ingredients, and complexity preferences.
