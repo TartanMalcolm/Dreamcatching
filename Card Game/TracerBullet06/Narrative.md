@@ -34,25 +34,57 @@ To model out a single type of transaction on a CRM.  That transaction is:
 
 ## Plan
 
-1. Create a folder structure and temp JSON for:
+1. Use Hal to create JSON schema for the following, get him to reconcile and propose improvements, and check for correctness.
     1. Customer
     2. Route
     3. Plans
     4. Constraints, physical/temporal
     5. Constraints, Customer Service.
-2. Create customerServiceBot that answers questions from customerServiceDave.
-3. Create plannerBot, that updates the planning folder while recognising Constraints, physical/temporal
-4. Create testingBot that enforces the JSON and checks for inconsistences between Plans and Routes.
+2. Use Hal to use the schema provided to carry out a test scenario:
+    1. Generate some test data.
+    2. Change a customer delivery date, following all constraints.
+    3. Update constraints.
+3. Create a customerServiceBot that knows and adheres to the schema, and test it manually on a similar scenario.
+4. Create a dutyManagerBot that similarly knows the schema but also knows the live data from test (3)
+5. Createa consistencyBot that looks at the schema and data, and checks for inconsistencies and irregularities.  Mess with it by adding in a few.
+6. Create plannerBot, that updates the planning folder while recognising Constraints, physical/temporal
 
-## CHAPTER 1 - Create a folder structure and temp JSON
+
+## CHAPTER 1 - Use Hal to create JSON schema for the following, get him to reconcile and propose improvements, and check for correctness.
 
 ### Session Prompt
 
 hal_v0.1.md
 
 ### Session Script
-
+ ./Bots/hal_v0.1/sessions/01/session.md
 
 ### Dave's Observations
 
+1. Pretty fucking good actually.  Nice one Hal.
+2. The time consuming part in this run was pre-run time.  You need to go in with a fairly precise idea of the top level structure, but then Hal takes over and makes consistent.
+3. NB that during the creation session I was also able to switch out to a 'Test', then take on different personas.  Need to check if Hal was cheating by using the full session, but don't think so.
+
 ### Output
+
+Have editted down the session to the JSON as I'm getting repeated Error Streaming run.  Possibly session too long?
+
+
+## CHAPTER 2 - Create a folder structure and temp JSON
+
+### Session Prompt
+
+hal_v0.1.md
+
+### Input
+
+### Session Script
+ ./Bots/hal_v0.1/sessions/02/session.md
+
+### Dave's Observations
+
+
+### Output
+
+
+
