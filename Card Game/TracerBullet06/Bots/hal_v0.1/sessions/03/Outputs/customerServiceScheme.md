@@ -46,6 +46,10 @@ SCHEMA:
     "approvalRequirement": {
       "type": "boolean",
       "description": "Indicates if the implementation of the policy requires approval from a higher authority"
+    },
+    "relatedConstraintId": {
+      "type": "string",
+      "description": "Identifier of any related operational constraint that impacts this policy"
     }
   },
   "required": ["policyId", "type", "description", "scope", "approvalRequirement"]

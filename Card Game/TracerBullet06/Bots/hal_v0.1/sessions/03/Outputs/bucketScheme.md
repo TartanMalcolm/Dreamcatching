@@ -24,7 +24,7 @@ SCHEMA:
 {
   "type": "object",
   "properties": {
-    "bucketID": {
+    "bucketId": {
       "type": "string",
       "description": "Unique identifier for the geographic bucket"
     },
@@ -34,8 +34,8 @@ SCHEMA:
         "type": "string",
         "description": "Postcode defining part of the bucket's geographic area"
       },
-      "description": "Array of postcodes that collectively define the bucket's geographic boundaries"
+      "description": "List of postcodes that define the bucket's geographic boundaries"
     }
   },
-  "required": ["bucketID", "postcodes"]
+  "required": ["bucketId", "postcodes"]
 }

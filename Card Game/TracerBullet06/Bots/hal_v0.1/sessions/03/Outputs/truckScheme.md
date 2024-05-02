@@ -40,19 +40,11 @@ SCHEMA:
       "type": "integer",
       "description": "Year the truck was manufactured"
     },
-    "bucketId": {
-      "type": "string",
-      "description": "Identifier of the bucket the truck is currently assigned to"
-    },
-    "driverId": {
-      "type": "string",
-      "description": "Identifier of the driver currently assigned to the truck"
-    },
     "status": {
       "type": "string",
-      "enum": ["In Operation", "Unavailable"],
+      "enum": ["In Operation", "Maintenance", "Unavailable"],
       "description": "Current operational status of the truck"
     }
   },
-  "required": ["truckId", "make", "model", "year", "bucketId", "driverId", "status"]
+  "required":["truckId", "make", "model", "year", "status"]
 }

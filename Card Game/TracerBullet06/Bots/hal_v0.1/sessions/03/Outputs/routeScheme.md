@@ -26,16 +26,20 @@ SCHEMA:
 {
   "type": "object",
   "properties": {
-    "routeID": {
+    "routeId": {
       "type": "string",
       "description": "Unique identifier for the route"
+    },
+    "bucketId": {
+      "type": "string",
+      "description": "Identifier for the bucket or geographic area this route covers"
     },
     "locations": {
       "type": "array",
       "items": {
         "type": "object",
         "properties": {
-          "locationID": {
+          "locationId": {
             "type": "string",
             "description": "Identifier linking to a customer's location"
           },
@@ -44,14 +48,10 @@ SCHEMA:
             "description": "Unique customer identifier linked to the location"
           }
         },
-        "required": ["locationID", "customerID"]
+        "required": ["locationId", "customerID"]
       },
       "description": "Ordered list of locations within the route, each linked to a customer"
-    },
-    "bucketID": {
-      "type": "string",
-      "description": "Identifier for the bucket or geographic area this route covers"
     }
   },
-  "required": ["routeID", "locations", "bucketID"]
+  "required": ["routeId", "bucketId", "locations"]
 }

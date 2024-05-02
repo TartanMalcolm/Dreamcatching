@@ -43,31 +43,33 @@ SCHEMA:
         "type": "string",
         "description": "The entity or individual responsible for the event"
       },
+      "interactionType": {
+        "type": "string",
+        "enum": ["Customer Interaction", "Route Planning", "Truck Usage"],
+        "description": "The category of interaction that the event pertains to"
+      },
       "context": {
         "type": "object",
+        "description": "Contextual data linking the event to other CRM entities",
         "properties": {
           "customerId": {
             "type": "string",
-            "description": "Identifier of the customer involved in the event, if applicable"
+            "description": "Identifier of the customer involved, if applicable"
           },
-		  "otherContexts": {
-            "type": "object",
-            "properties": {
-              "bucketId": {
-                "type": "string",
-                "description": "Identifier of the bucket involved, if applicable"
-              },
-			  "planId": {
-                "type": "string",
-                "description": "Identifier of the plan involved, if applicable"
-              }
-            },
-            "description": "Additional contextual identifiers related to other CRM entities"
+          "routeId": {
+            "type": "string",
+            "description": "Identifier of the route involved, if applicable"
+          },
+          "planId": {
+            "type": "string",
+            "description": "Identifier of the plan involved, if applicable"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "Identifier of the truck involved, if applicable"
           }
-        },
-        "description": "Detailed context linking the event to various CRM entities"
+        }
       }
-    },
-    "required": ["eventId", "timestamp", "description", "actor", "context"]
+    }
   }
 }
