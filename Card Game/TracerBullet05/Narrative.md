@@ -6,7 +6,11 @@ To
 
 ## Plan
 
-1. Use markerBot_v0.1 to provide an improved sessionPrompt for creatorBot_v0.2
+1. Manually create markerBot_v0.1 based on previous bot feedback.  
+2. Manually create mathsBot_v0.2.
+3. Use markerBot_v0.1 to propose improvements to mathsBot_v0.2.
+4. Manually create creatorBot_
+2. Manually create creatorBot_v0.2
 2. Use markerBot_v0.1 to mark markerBot_v0.1, and provide an improved sessionPrompt for markerBot_v0.1.
 3. If we get to markerBot_v0.2, use that to improve the sessionPrompt for creatorBot_v0.2
 4. Repeat this loop, and Dave check for drift.
