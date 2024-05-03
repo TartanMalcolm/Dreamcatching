@@ -40,14 +40,15 @@ To model out a single type of transaction on a CRM.  That transaction is:
     3. Plans
     4. Constraints, physical/temporal
     5. Constraints, Customer Service.
-2. Use Hal to use the schema provided to carry out a test scenario:
-    1. Generate some test data.
-    2. Change a customer delivery date, following all constraints.
+2. Use Hal to improve the schema in the last step:
+    1. Segment the schemes (note, not schemas).
+    2. Ensure internal consistency
     3. Update constraints.
-3. Create a customerServiceBot that knows and adheres to the schema, and test it manually on a similar scenario.
-4. Create a dutyManagerBot that similarly knows the schema but also knows the live data from test (3)
-5. Createa consistencyBot that looks at the schema and data, and checks for inconsistencies and irregularities.  Mess with it by adding in a few.
-6. Create plannerBot, that updates the planning folder while recognising Constraints, physical/temporal
+3. Check the ./Bots/hal_v0.1/sessions/03/Outputs/* for consistency against NL tasks.
+4. Create a customerServiceBot that knows and adheres to the schema, and test it manually on a similar scenario.
+5. Create a dutyManagerBot that similarly knows the schema but also knows the live data from test (3)
+6. Createa consistencyBot that looks at the schema and data, and checks for inconsistencies and irregularities.  Mess with it by adding in a few.
+7. Create plannerBot, that updates the planning folder while recognising Constraints, physical/temporal
 
 
 ## CHAPTER 1 - Use Hal to create JSON schema for the following, get him to reconcile and propose improvements, and check for correctness.
@@ -70,7 +71,7 @@ hal_v0.1.md
 Have editted down the session to the JSON as I'm getting repeated Error Streaming run.  Possibly session too long?
 
 
-## CHAPTER 2 - Create a folder structure and temp JSON
+## CHAPTER 2 - Use Hal to improve the schema in the last step:
 
 ### Session Prompt
 
@@ -78,13 +79,40 @@ hal_v0.1.md
 
 ### Input
 
+Cut and paste manually as required from  ./Bots/hal_v0.1/sessions/02/session.md
+
 ### Session Script
- ./Bots/hal_v0.1/sessions/02/session.md
+ ./Bots/hal_v0.1/sessions/03/session.md
 
 ### Dave's Observations
 
+1. Seems pretty good at tightening up.  Needed to intervene to make sure that the INTENT/JSON format was followed.
+2. I believe added INTENT to a JSON file can actually get a lot better performance, so need to check that next.
 
 ### Output
+
+In ./Bots/hal_v0.1/sessions/03/Outputs
+
+
+## CHAPTER 3 - Check the ./Bots/hal_v0.1/sessions/03/Outputs/* for consistency against NL tasks.
+
+### Session Prompt
+
+hal_v0.1.md
+
+### Input
+
+./Bots/hal_v0.1/sessions/03/Outputs/* 
+
+### Session Script
+
+
+### Dave's Observations
+
+1. 
+### Output
+
+
 
 
 
