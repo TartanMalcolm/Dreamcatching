@@ -1,18 +1,19 @@
 {
   "DataSpecName": "Event Log",
   "Intent": {
-    "OverallIntent": "This is the Event Log DATASPEC.  It is designed to chronologically record activities and interactions involving multiple entities within the CRM system, facilitating accountability, system audits, and operational insights. It captures the nature of each event, the participants involved, and the related operational context.",
+    "OverallIntent": "This is the Event Log DATASPEC. It is designed to chronologically record activities and interactions involving multiple entities within the CRM system, facilitating accountability, system audits, and operational insights. It captures the nature of each event, the participants involved, and the related operational context.",
     "Must": [
       "Be a valid, internally consistent JSON.",
       "Include fields for event identifier (eventId), timestamp, descriptive details of the event (description), actor, and contextual links to other CRM system entities.",
-      "Ensure that each entry has a unique ID and timestamp to preserve the sequence and timing integrity of logged events."
+      "Ensure that each entry has a unique ID and timestamp to preserve the sequence and timing integrity of logged events.",
+      "Log all customer interactions and escalations handled by Customer Service Agents."
     ],
     "Should": [
       "Maintain concise, clear descriptions and actor identification to ensure accountability and clarify the role of various individuals or entities in specific actions or decisions.",
       "Utilize thoroughly defined context structures to link each event with relevant CRM entities such as customers, plans, or buckets."
     ],
     "Could": [
-      "Later incorporate more detailed context categories, example, mapping IDs to names or roles via a lookup for enhanced readability and analysis.",
+      "Later incorporate more detailed context categories, for example, mapping IDs to names or roles via a lookup for enhanced readability and analysis.",
       "Expand to include automated flags or alerts based on specific event types or actor actions that might require immediate attention or follow-up."
     ],
     "MustNot": [
@@ -77,3 +78,4 @@
     "required": ["eventId", "timestamp", "description", "actorId", "actionType", "affectedEntity"]
   }
 }
+

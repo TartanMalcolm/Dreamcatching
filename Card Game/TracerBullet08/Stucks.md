@@ -51,3 +51,6 @@ Next, let’s move on to retrieve the original scheme for the next item in the l
 
 User:
 "Proceed"
+
+5. Hal often truncatates answers e.g. for JSON despite me telling him not to do that.  This means that I can't trust that his output is immediately usable, a characteristic we'll need when getting bots to generate dataspecs.
+

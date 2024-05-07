@@ -1,0 +1,68 @@
+{
+    "DataSpecName": "Duty Manager",
+    "Intent": {
+      "OverallIntent": "This is the Duty Manager DATASPEC. It defines the roles, responsibilities, and capabilities of Duty Managers within the CRM system. This role involves overseeing operational aspects, managing critical real-time operational decisions, handling escalated issues, and ensuring operational compliance.",
+      "Must": [
+        "Be a valid, internally consistent JSON.",
+        "Include fields for identifying the duty manager (managerId), recording basic information, and maintaining access to the Event Log for recording significant actions and decisions.",
+        "Ensure that Duty Managers have the tools and permissions necessary to perform real-time operational adjustments and oversee system operations."
+      ],
+      "Should": [
+        "Facilitate mechanisms for immediate response to system or operational anomalies.",
+        "Utilize the Event Log to document all relevant actions and decisions to maintain a clear audit trail."
+      ],
+      "Could": [
+        "Incorporate decision-support tools to aid in complex problem-solving scenarios."
+      ],
+      "MustNot": [
+        "Allow operations that bypass security or data privacy protocols.",
+        "Enable actions that conflict with predefined operational constraints without proper authorization."
+      ]
+    },
+    "Schema": {
+      "type": "object",
+      "properties": {
+        "managerId": {
+          "type": "string",
+          "description": "Unique identifier for the Duty Manager"
+        },
+        "name": {
+          "type": "object",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "First name of the Duty Manager"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Last name of the Duty Manager"
+            }
+          },
+          "required": ["firstName", "lastName"]
+        },
+        "contactDetails": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Duty Manager's official email address"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Duty Manager's phone number"
+            }
+          },
+          "required": ["email", "phone"]
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Specific permissions granted to the Duty Manager for operational control and adjustments"
+          },
+          "description": "List of permissions detailing the extent of control and the type of operations the Duty Manager can execute"
+        }
+      },
+      "required": ["managerId", "name", "contactDetails", "permissions"]
+    }
+  }
