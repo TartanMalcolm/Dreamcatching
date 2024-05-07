@@ -1,0 +1,119 @@
+{
+  "DataSpecName": "CRM System Definitions",
+  "Intent": {
+    "OverallIntent": "This is the CRM System Definitions DATASPEC.  It defines key components and functionalities of the CRM system that manages all aspects of a trucking company’s operations to enhance efficiency and effectiveness.",
+    "Must": [
+      "Provide explanations for core concepts, roles, actions, inputs, and outputs involved in the CRM System, including specific definitions for 'Template' and 'Instance'.",
+      "Ensure all definitions enhance understanding of how the CRM system integrates and functions within the trucking company."
+    ],
+    "Should": [
+      "Be used in every interaction with the CRM to ensure consistent understanding and application.",
+      "Provide clarity and detailed descriptions to help users understand each aspect of the CRM system without ambiguity."
+    ],
+    "Could": [
+      "Serve as a foundational training tool for new users or as a reference for existing users.",
+      "Be periodically updated to reflect changes in system functionality or company operations."
+    ],
+    "MustNot": [
+      "Omit or alter any provided definitions outside of official updates to ensure consistency and reliability in system usage and understanding."
+    ]
+  },
+  "Schema": {
+    "type": "object",
+    "properties": {
+      "Concepts": {
+        "type": "object",
+        "properties": {
+          "CRM System": {
+            "type": "string",
+            "description": "A software system that manages all aspects of a trucking company’s operations including handling of driver information, truck details, routes, plans, event logging, and operational constraints."
+          },
+          "Operational Integrity": {
+            "type": "string",
+            "description": "The correctness and reliability of the CRM’s functionality, ensuring that operational processes adhere to defined rules and constraints."
+          },
+          "Audit Trail": {
+            "type": "string",
+            "description": "A secure and traceable log of all significant actions and events maintained for accountability and operational history."
+          },
+          "Template": {
+            "type": "string",
+            "description": "A foundational blueprint or framework that defines the structure and elements of particular entities within the CRM system, designed to be reusable and customizable depending on specific needs."
+          },
+          "Instance": {
+            "type": "string",
+            "description": "A specific realization or deployment of a 'Template' filled with actual data, embodying the template’s structure in a practical, operational context within the CRM system."
+          }
+        }
+      },
+      "Actors": {
+        "type": "object",
+        "properties": {
+          "Driver": {
+            "type": "string",
+            "description": "An individual responsible for operating a truck within the fleet, managed within the CRM."
+          },
+          "Fleet Manager": {
+            "type": "string",
+            "description": "A role or individual responsible for the overall management of the truck fleet."
+          },
+          "System Administrator": {
+            "type": "string",
+            "description": "An individual charged with managing the CRM system and ensuring proper configuration and security."
+          }
+        }
+      },
+      "Actions": {
+        "type": "object",
+        "properties": {
+          "Routing": {
+            "type": "string",
+            "description": "The process of defining and managing the paths that trucks take from origin to destination."
+          },
+          "Scheduling": {
+            "type": "string",
+            "description": "Organizing routes into plans that stipulate when and how resources are deployed."
+          },
+          "Logging Events": {
+            "type": "string",
+            "description": "Recording significant activities within the CRM system."
+          }
+        }
+      },
+      "Inputs": {
+        "type": "object",
+        "properties": {
+          "Driver Data": {
+            "type": "string",
+            "description": "Information about drivers including licenses and contact details."
+          },
+          "Truck Specifications": {
+            "type": "string",
+            "description": "Details about each truck in the fleet such as make, model, and year."
+          },
+          "Route Details": {
+            "type": "string",
+            "description": "Information regarding the start and end points of routes and timings."
+          }
+        }
+      },
+      "Outputs": {
+        "type": "object",
+        "properties": {
+          "Operational Reports": {
+            "type": "string",
+            "description": "Documents summarizing the status of routes, truck utilizations, and driver activities."
+          },
+          "Alerts and Notifications": {
+            "type": "string",
+            "description": "Communications issued to inform about important events or actions."
+          },
+          "Compliance Summaries": {
+            "type": "string",
+            "description": "Reports detailing adherence to operational constraints and regulatory requirements."
+          }
+        }
+      }
+    }
+  }
+}

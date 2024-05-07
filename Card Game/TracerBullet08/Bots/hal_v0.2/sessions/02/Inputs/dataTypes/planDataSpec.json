@@ -1,0 +1,53 @@
+{
+  "DataSpecName": "Plan",
+  "Intent": {
+    "OverallIntent": "This is the Plan DATASPEC. Plan provides temporal dimensions to the routing operations in the CRM system of a trucking company, specifying when particular routes are active. It will connect route details with specific dates and times, aiding in operational planning and management on a weekly basis.",
+    "Must": [
+      "Be a valid, internally consistent JSON.",
+      "Include fields for the plan identifier (planId), the identifier linking to a pre-defined route (routeId), the start of the week (weekStarting), and a detailed schedule of times when the route is to be driven (scheduledTimes).",
+      "Ensure all required temporal data is included to define when routes will be executed, avoiding any ambiguity in route activation."
+    ],
+    "Should": [
+      "Cover a complete week’s schedule to allow effective planning and resource allocation, ensuring the CRM system can efficiently manage weekly operations.",
+      "Provide clear descriptions for each time-related field to ensure ease of understanding and use."
+    ],
+    "Could": [
+      "Later incorporate elements such as adjustments for rescheduling or cancellations, allowing operational flexibility based on real-time needs or unforeseen changes.",
+      "Enhance monitoring and reporting features to manage and analyze route efficiency and timely executions."
+    ],
+    "MustNot": [
+      "Omit any temporal data essential for the operational use of routes, as this would hinder the effectiveness of logistical and scheduling processes."
+    ]
+  },
+  "Schema": {
+    "type": "object",
+    "properties": {
+      "planId": {
+        "type": "string",
+        "description": "Unique identifier for the plan"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the plan's purpose and scope"
+      },
+      "activeFrom": {
+        "type": "string",
+        "format": "date",
+        "description": "Start date from which the plan is active"
+      },
+      "activeTo": {
+        "type": "string",
+        "format": "date",
+        "description": "End date until which the plan remains active"
+      },
+      "routes": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "description": "List of route identifiers included in this plan"
+        }
+      }
+    },
+    "required": ["planId", "description", "activeFrom", "activeTo", "routes"]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "DataSpecName": "Roles",
+  "Intent": {
+    "OverallIntent": "This is the Roles DATASPEC.  It aims to provide a structured framework that defines and limits the roles and responsibilities of various human users interacting with the CRM system of a trucking company. This is designed to maintain operational efficiency, compliance, and effective decision-making across different CRM interactions.",
+    "Must": [
+      "Be a valid, internally consistent JSON.",
+      "Clearly enumerate responsibilities specific to each role to prevent overlap and ensure clear demarcation of duties.",
+      "Link each role to their respective operational Collections such as Routes, Customers, Trucks ensuring seamless integration.",
+      "Include mechanisms for audit trails to track decisions made by the Duty Manager and Customer Service Agents."
+    ],
+    "Should": [
+      "Facilitate clear definitions that support scalability and flexibility for evolving business needs without conflicting with established responsibilities.",
+      "Provide access levels for each role to protect sensitive information pertinent to the operations and interactions within the CRM."
+    ],
+    "Could": [
+      "Incorporate a feedback mechanism for roles like Drivers and Customer Service Agents to suggest improvements in operational processes or customer relations.",
+      "Offer role-based customization options that allow adjusting certain Collection parameters according to specific user needs or business growth phases."
+    ],
+    "MustNot": [
+      "Duty Manager must not bypass CRM system constraints and operational policies laid out in Operational Constraints.",
+      "Customer Service Agents must not make changes to customer or route data without following proper authorization and verification processes.",
+      "Drivers must not access or alter customer or operational data beyond their designated privilege levels.",
+      "Customers must not be granted access to back-end operational data or sensitive company information."
+    ]
+  },
+  "Schema": {
+    "type": "object",
+    "properties": {
+      "roles": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "roleName": {
+              "type": "string",
+              "description": "Name of the role within the CRM system"
+            },
+            "responsibilities": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Detailed list of responsibilities assigned to the role"
+              }
+            },
+            "permissions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "Specific permissions that enable the role to perform certain actions within the CRM system"
+              }
+            }
+          },
+          "required": ["roleName", "responsibilities", "permissions"]
+        }
+      }
+    },
+    "required": ["roles"]
+  }
+}
