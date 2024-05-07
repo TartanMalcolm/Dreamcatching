@@ -30,22 +30,57 @@ Allow any ambiguity in the event's chronological sequence, actor involvement, or
 {
   "type": "object",
   "properties": {
-    "locationId": {
+    "eventId": {
       "type": "string",
-      "description": "Unique identifier for the location"
+      "description": "Unique identifier for the event"
     },
-    "address": {
+    "timestamp": {
       "type": "string",
-      "description": "Physical address of the location"
+      "format": "date-time",
+      "description": "Time at which the event occurred"
     },
-    "latitude": {
+    "description": {
       "type": "string",
-      "description": "Geographic latitude of the location"
+      "description": "Details about the event"
     },
-    "longitude": {
+    "actorId": {
       "type": "string",
-      "description": "Geographic longitude of the location"
+      "description": "Identifier for the individual or system component that caused or executed the event"
+    },
+    "actorRole": {
+      "type": "string",
+      "description": "Role of the individual or system component, such as Duty Manager or Customer Service Agent"
+    },
+    "actionType": {
+      "type": "string",
+      "description": "Type of action performed, such as 'ModifyRoute', 'UpdateSchedule', or 'ResolveComplaint'"
+    },
+    "affectedEntity": {
+      "type": "string",
+      "description": "CRM entity affected by the event, such as 'Route', 'CustomerProfile', or 'ServicePlan'"
+    },
+    "contextualDetails": {
+      "type": "object",
+      "properties": {
+        "originalValue": {
+          "type": "string",
+          "description": "Original value before the change, if applicable"
+        },
+        "newValue": {
+          "type": "string",
+          "description": "New value after the change, if applicable"
+        }
+      },
+      "description": "Detailed information about what was affected and how, providing context for the event"
+    },
+    "contextualLinks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Links to other CRM system entities related to the event"
+      },
+      "description": "Related CRM entities important for understanding the event"
     }
   },
-  "required": ["locationId", "address", "latitude", "longitude"]
+  "required": ["eventId", "timestamp", "description", "actorId", "actionType", "affectedEntity"]
 }

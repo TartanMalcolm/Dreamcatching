@@ -24,45 +24,36 @@ Customer Service Agents must not make changes to customer or route data without 
 Drivers must not access or alter customer or operational data beyond their designated privilege levels.
 Customers must not be granted access to back-end operational data or sensitive company information.
 
-## SCHEMA:
-{
+## SCHEMA:{
   "type": "object",
-  "description": "Defines roles and responsibilities within the CRM system.",
   "properties": {
-    "userRoles": {
+    "roles": {
       "type": "array",
-      "description": "Delineates the specific roles and bounds of their responsibilities.",
       "items": {
         "type": "object",
         "properties": {
-          "roleID": {
-            "type": "string",
-            "description": "Unique identifier for the role"
-          },
           "roleName": {
             "type": "string",
-            "description": "Name of the role"
+            "description": "Name of the role within the CRM system"
           },
           "responsibilities": {
             "type": "array",
             "items": {
               "type": "string",
-              "description": "Detailed list of role-specific duties and limits"
-            },
-            "description": "Detailed responsibilities and operational limits"
+              "description": "Detailed list of responsibilities assigned to the role"
+            }
           },
-          "interactionPoints": {
+          "permissions": {
             "type": "array",
             "items": {
               "type": "string",
-              "description": "CRM components the role interacts with, detailing scope of interaction"
-            },
-            "description": "Defined interaction points within the CRM system"
+              "description": "Specific permissions that enable the role to perform certain actions within the CRM system"
+            }
           }
         },
-        "required": ["roleID", "roleName", "responsibilities"]
+        "required": ["roleName", "responsibilities", "permissions"]
       }
     }
   },
-  "required": ["userRoles"]
+  "required": ["roles"]
 }

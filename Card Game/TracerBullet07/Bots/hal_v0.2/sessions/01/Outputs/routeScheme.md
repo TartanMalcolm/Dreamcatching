@@ -27,7 +27,6 @@ A route must not include locations from multiple buckets, ensuring each route's 
 Must not omit any essential linkages to customer data for any location in the route.
 
 ## SCHEMA:
-
 {
   "type": "object",
   "properties": {
@@ -54,7 +53,37 @@ Must not omit any essential linkages to customer data for any location in the ro
     "planId": {
       "type": "string",
       "description": "Identifier for the plan that includes this route"
+    },
+    "modifications": {
+      "type": "array",
+      "description": "Log of all modifications made to the route details",
+      "items": {
+        "type": "object",
+        "properties": {
+          "modifiedBy": {
+            "type": "string",
+            "description": "Identifier of the user or role who made the modification"
+          },
+          "modificationTime": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Timestamp when the modification was made"
+          },
+          "modificationDetails": {
+            "type": "string",
+            "description": "Description of what was changed in the route details"
+          }
+        }
+      }
+    },
+    "modificationPermissions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Roles authorized to modify the route details"
+      },
+      "description": "Specific roles, such as 'Duty Manager', that are permitted to make changes under certain conditions"
     }
   },
-  "required": ["routeId", "origin", "destination", "distance", "estimatedTime", "planId"]
+  "required": ["routeId", "origin", "destination", "distance", "estimatedTime", "planId", "modifications", "modificationPermissions"]
 }
