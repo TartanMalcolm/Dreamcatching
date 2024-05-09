@@ -1,20 +1,20 @@
 {
   "DataSpecName": "Route",
   "Intent": {
-    "OverallIntent": "This is the Route DATASPEC. Route is designed to structure and manage route data within a CRM system for a trucking company. Each route consists of an ordered list of locations, each associated with a customer, and is confined to a specific geographic 'bucket', ensuring efficient management and planning of delivery paths within distinct areas.",
+    "OverallIntent": "This is the Route DATASPEC. The route is designed to structure and manage route data within a CRM system for a trucking company. Each route consists of an ordered list of locations, each associated with a customer, and is confined to a specific geographic 'bucket', ensuring efficient management and planning of delivery paths within distinct areas.",
     "Must": [
       "Be a valid, internally consistent JSON.",
-      "Include fields for the route identifier, list of location identifiers (linked to Customer data), and the bucket identifier it belongs to.",
-      "Ensure that all routes remain constrained within a single bucket.",
-      "Each location within the route must be linked or related to customer data to facilitate clear logistical planning."
+      "Include fields for the route identifier, the ordered list of location identifiers (linked to Customer data), and the bucket identifier it belongs to.",
+      "Ensure that all routes remain confined within a single bucket.",
+      "Each location within the route must be linked to or related to customer data to facilitate clear logistical planning."
     ],
     "Should": [
       "Include clear descriptions for each field and linkage to the appropriate data from other Collections (e.g., customer data for location identifiers) to facilitate understanding and correct usage of the data.",
       "Provide foundational structure that allows future expansion for storing and representing geographic area data more complexly, such as polygons for greater precision in routing."
     ],
     "Could": [
-      "Could prepare for integration with mapping tools by anticipating the inclusion of more complex geographic data structures such as coordinates or polygons.",
-      "Consider including optimization or sequence algorithms suggestions for route planning based on geographic or temporal parameters."
+      "Prepare for integration with mapping tools by anticipating the inclusion of more complex geographic data structures such as coordinates or polygons.",
+      "Consider including optimization or sequence algorithms for route planning based on geographic or temporal parameters."
     ],
     "MustNot": [
       "A route must not include locations from multiple buckets, ensuring each route's geographic containment for logistical efficiency and planning simplicity.",
@@ -28,13 +28,17 @@
         "type": "string",
         "description": "Unique identifier for the route"
       },
-      "origin": {
-        "type": "string",
-        "description": "Identifier for the starting location of the route"
+      "locations": {
+        "type": "array",
+        "description": "Ordered list of location identifiers for the route",
+        "items": {
+          "type": "string",
+          "description": "Identifier for each location in the route"
+        }
       },
-      "destination": {
+      "bucketId": {
         "type": "string",
-        "description": "Identifier for the ending location of the route"
+        "description": "Identifier for the geographic bucket to which the route is confined"
       },
       "distance": {
         "type": "string",
@@ -44,9 +48,13 @@
         "type": "string",
         "description": "Estimated time to complete the route"
       },
-      "planId": {
-        "type": "string",
-        "description": "Identifier for the plan that includes this route"
+      "planIds": {
+        "type": "array",
+        "description": "Identifiers for the plans that include this route",
+        "items": {
+          "type": "string",
+          "description": "Identifier for each plan"
+        }
       },
       "modifications": {
         "type": "array",
@@ -79,6 +87,6 @@
         "description": "Specific roles, such as 'Duty Manager', that are permitted to make changes under certain conditions"
       }
     },
-    "required": ["routeId", "origin", "destination", "distance", "estimatedTime", "planId", "modifications", "modificationPermissions"]
+    "required": ["routeId", "locations", "bucketId", "distance", "estimatedTime", "planIds", "modifications", "modificationPermissions"]
   }
 }

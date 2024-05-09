@@ -1,0 +1,72 @@
+[
+    {
+        "routeId": "ROUTE-01",
+        "locations": ["LOC-001", "LOC-002", "LOC-003", "LOC-004"],
+        "bucketId": "BUCKET-01",
+        "distance": "50 miles",
+        "estimatedTime": "1 hour",
+        "planIds": ["PLAN-001", "PLAN-002"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-02",
+        "locations": ["LOC-005", "LOC-006", "LOC-007", "LOC-008"],
+        "bucketId": "BUCKET-01",
+        "distance": "30 miles",
+        "estimatedTime": "45 minutes",
+        "planIds": ["PLAN-002", "PLAN-003"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-03",
+        "locations": ["LOC-009", "LOC-010", "LOC-011", "LOC-012"],
+        "bucketId": "BUCKET-01",
+        "distance": "60 miles",
+        "estimatedTime": "1 hour 10 minutes",
+        "planIds": ["PLAN-003"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-04",
+        "locations": ["LOC-013", "LOC-014", "LOC-015", "LOC-016"],
+        "bucketId": "BUCKET-01",
+        "distance": "40 miles",
+        "estimatedTime": "50 minutes",
+        "planIds": ["PLAN-004"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-05",
+        "locations": ["LOC-017", "LOC-018", "LOC-019", "LOC-020"],
+        "bucketId": "BUCKET-01",
+        "distance": "35 miles",
+        "estimatedTime": "40 minutes",
+        "planIds": ["PLAN-004", "PLAN-005"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-06",
+        "locations": ["LOC-001", "LOC-011", "LOC-012", "LOC-018"],
+        "bucketId": "BUCKET-01",
+        "distance": "65 miles",
+        "estimatedTime": "1 hour 20 minutes",
+        "planIds": ["PLAN-001", "PLAN-005"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    },
+    {
+        "routeId": "ROUTE-07",
+        "locations": ["LOC-002", "LOC-013", "LOC-019", "LOC-020"],
+        "bucketId": "BUCKET-01",
+        "distance": "45 miles",
+        "estimatedTime": "55 minutes",
+        "planIds": ["PLAN-003", "PLAN-004"],
+        "modifications": [],
+        "modificationPermissions": ["Duty Manager", "Route Planner"]
+    }
+]

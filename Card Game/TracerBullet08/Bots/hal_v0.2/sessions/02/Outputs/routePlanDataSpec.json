@@ -1,0 +1,74 @@
+{
+    "DataSpecName": "RoutePlan",
+    "Intent": {
+      "OverallIntent": "This combined RoutePlan DATASPEC is designed to manage operational data about plans that incorporate specific routing details. It merges planning and routing into a single structure to streamline operations, facilitate temporal and spatial planning, and improve route efficiency within the CRM system of a trucking company.",
+      "Must": [
+        "Be a valid, internally consistent JSON.",
+        "Include fields for both planning and routing, such as plan identifiers, route lists with detailed locations, scheduling details, and the geographical bucket.",
+        "Ensure that all operational data directly correlates with the defined tactical plans and customer service targets."
+      ],
+      "Should": [
+        "Provide an integrated view of how routes are scheduled and executed across different time periods, reflecting both immediate and future operational needs.",
+        "Facilitate easier adjustments to routes based on real-time operative demands or changes in customer preferences."
+      ],
+      "Could": [
+        "Support more advanced features like automatic re-routing and real-time updates based on traffic conditions or other external factors."
+      ],
+      "MustNot": [
+        "Include any route outside the designated geographic bucket boundaries to ensure compliance with logistical constraints."
+      ]
+    },
+    "Schema": {
+      "type": "object",
+      "properties": {
+        "routePlanId": {
+          "type": "string",
+          "description": "Unique identifier for the combined route and plan"
+        },
+        "description": {
+          "type": "string",
+          "description": "Detailed description of the plan and its operational scope"
+        },
+        "activeFrom": {
+          "type": "string",
+          "format": "date",
+          "description": "Start date from which the plan is active"
+        },
+        "activeTo": {
+          "type": "string",
+          "format": "date",
+          "description": "End date until which the plan remains active"
+        },
+        "scheduledRoutes": {
+          "type": "array",
+          "description": "List of detailed routes, each with their specific scheduled dates and related locations",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "Specific date for the route execution"
+              },
+              "locations": {
+                "type": "array",
+                "description": "Ordered list of location identifiers included in the route",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "estimatedTime": {
+                "type": "string",
+                "description": "Estimated time to complete the route"
+              }
+            }
+          }
+        },
+        "bucketId": {
+          "type": "string",
+          "description": "Identifier for the geographic bucket to which the route plan is confined"
+        }
+      },
+      "required": ["routePlanId", "description", "activeFrom", "activeTo", "scheduledRoutes", "bucketId"]
+    }
+  }

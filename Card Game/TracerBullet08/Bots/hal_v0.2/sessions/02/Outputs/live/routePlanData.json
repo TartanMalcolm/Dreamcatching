@@ -1,0 +1,73 @@
+[
+    {
+        "routePlanId": "RP-01",
+        "description": "Weekly schedule covering all customers with preferences for mornings and weekdays",
+        "activeFrom": "2023-01-01",
+        "activeTo": "2023-01-07",
+        "scheduledRoutes": [
+            {
+                "date": "2023-01-03",
+                "locations": ["LOC-001", "LOC-003", "LOC-005"],
+                "estimatedTime": "2 hours"
+            },
+            {
+                "date": "2023-01-05",
+                "locations": ["LOC-002", "LOC-004", "LOC-006"],
+                "estimatedTime": "3 hours"
+            }
+        ],
+        "bucketId": "BUCKET-01"
+    },
+    {
+        "routePlanId": "RP-02",
+        "description": "Weekly schedule for customers preferring weekends and evenings",
+        "activeFrom": "2023-01-08",
+        "activeTo": "2023-01-14",
+        "scheduledRoutes": [
+            {
+                "date": "2023-01-08",
+                "locations": ["LOC-007", "LOC-008", "LOC-009"],
+                "estimatedTime": "2.5 hours"
+            },
+            {
+                "date": "2023-01-14",
+                "locations": ["LOC-010", "LOC-012", "LOC-014"],
+                "estimatedTime": "1.5 hours"
+            }
+        ],
+        "bucketId": "BUCKET-01"
+    },
+    {
+        "routePlanId": "RP-03",
+        "description": "Mid-January plan for afternoon preferences and avoiding Mondays",
+        "activeFrom": "2023-01-15",
+        "activeTo": "2023-01-21",
+        "scheduledRoutes": [
+            {
+                "date": "2023-01-17",
+                "locations": ["LOC-011", "LOC-013", "LOC-015"],
+                "estimatedTime": "2 hours"
+            },
+            {
+                "date": "2023-01-19",
+                "locations": ["LOC-016", "LOC-017"],
+                "estimatedTime": "2 hours"
+            }
+        ],
+        "bucketId": "BUCKET-01"
+    },
+    {
+        "routePlanId": "RP-04",
+        "description": "End of the month plan covering any remaining customers and locations",
+        "activeFrom": "2023-01-22",
+        "activeTo": "2023-01-28",
+        "scheduledRoutes": [
+            {
+                "date": "2023-01-23",
+                "locations": ["LOC-018", "LOC-019", "LOC-020"],
+                "estimatedTime": "3 hours"
+            }
+        ],
+        "bucketId": "BUCKET-01"
+    }
+]
