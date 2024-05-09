@@ -1,0 +1,362 @@
+[
+    {
+        "customerId": "CUST-001",
+        "personalInfo": {
+            "firstName": "Alice",
+            "lastName": "Johnson",
+            "contactDetails": {
+                "email": "alice.j@example.com",
+                "phone": "555-0201"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Email",
+            "schedulePreferences": ["Weekends", "Evenings"]
+        },
+        "locationId": "LOC-001",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-002",
+        "personalInfo": {
+            "firstName": "Bob",
+            "lastName": "Brown",
+            "contactDetails": {
+                "email": "bob.b@example.com",
+                "phone": "555-0202"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Phone",
+            "schedulePreferences": ["Mornings"]
+        },
+        "locationId": "LOC-002",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-003",
+        "personalInfo": {
+            "firstName": "Carol",
+            "lastName": "Davis",
+            "contactDetails": {
+                "email": "carol.d@example.com",
+                "phone": "555-0203"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "SMS",
+            "schedulePreferences": ["Afternoons", "No Mondays"]
+        },
+        "locationId": "LOC-003",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-004",
+        "personalInfo": {
+            "firstName": "David",
+            "lastName": "Evans",
+            "contactDetails": {
+                "email": "david.e@example.com",
+                "phone": "555-0204"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Email",
+            "schedulePreferences": ["Weekdays"]
+        },
+        "locationId": "LOC-004",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-005",
+        "personalInfo": {
+            "firstName": "Eva",
+            "lastName": "Franklin",
+            "contactDetails": {
+                "email": "eva.f@example.com",
+                "phone": "555-0205"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Phone",
+            "schedulePreferences": ["Weekends", "Mornings"]
+        },
+        "locationId": "LOC-005",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-006",
+        "personalInfo": {
+            "firstName": "Frank",
+            "lastName": "Green",
+            "contactDetails": {
+                "email": "frank.g@example.com",
+                "phone": "555-0206"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Email",
+            "schedulePreferences": ["Evenings"]
+        },
+        "locationId": "LOC-006",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-007",
+        "personalInfo": {
+            "firstName": "Grace",
+            "lastName": "Hill",
+            "contactDetails": {
+                "email": "grace.h@example.com",
+                "phone": "555-0207"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "SMS",
+            "schedulePreferences": ["No Weekends"]
+        },
+        "locationId": "LOC-007",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-008",
+        "personalInfo": {
+            "firstName": "Henry",
+            "lastName": "Irving",
+            "contactDetails": {
+                "email": "henry.i@example.com",
+                "phone": "555-0208"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Phone",
+            "schedulePreferences": ["Afternoons", "Weekends"]
+        },
+        "locationId": "LOC-008",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-009",
+        "personalInfo": {
+            "firstName": "Ivy",
+            "lastName": "Jensen",
+            "contactDetails": {
+                "email": "ivy.j@example.com",
+                "phone": "555-0209"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Email",
+            "schedulePreferences": ["Weekdays"]
+        },
+        "locationId": "LOC-009",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-010",
+        "personalInfo": {
+            "firstName": "Jack",
+            "lastName": "Kellerman",
+            "contactDetails": {
+                "email": "jack.k@example.com",
+                "phone": "555-0210"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "SMS",
+            "schedulePreferences": ["No Mornings"]
+        },
+        "locationId": "LOC-010",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-011",
+        "personalInfo": {
+            "firstName": "Kim",
+            "lastName": "Lang",
+            "contactDetails": {
+                "email": "kim.l@example.com",
+                "phone": "555-0211"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Phone",
+            "schedulePreferences": ["Weekends"]
+        },
+        "locationId": "LOC-011",
+        "interactionLog": [],
+        "modificationsLog": []
+    },
+    {
+        "customerId": "CUST-012",
+        "personalInfo": {
+            "firstName": "Liam",
+            "lastName": "Moss",
+            "contactDetails": {
+                "email": "liam.m@example.com",
+                "phone": "555-0212"
+            }
+        },
+        "servicePreferences": {
+            "preferredContactMethod": "Email",
+            "schedulePreferences": ["Evenings", "Afternoons"]
+        },
+        "locationId": "LOC-012",
+        "interactionLog": [],
+        "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-013",
+            "personalInfo": {
+                "firstName": "Mandy",
+                "lastName": "Norris",
+                "contactDetails": {
+                    "email": "mandy.n@example.com",
+                    "phone": "555-0213"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "Phone",
+                "schedulePreferences": ["Weekends", "Mornings"]
+            },
+            "locationId": "LOC-013",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-014",
+            "personalInfo": {
+                "firstName": "Nolan",
+                "lastName": "Olsen",
+                "contactDetails": {
+                    "email": "nolan.o@example.com",
+                    "phone": "555-0214"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "SMS",
+                "schedulePreferences": ["No Weekends", "Evenings"]
+            },
+            "locationId": "LOC-014",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-015",
+            "personalInfo": {
+                "firstName": "Olivia",
+                "lastName": "Pitt",
+                "contactDetails": {
+                    "email": "olivia.p@example.com",
+                    "phone": "555-0215"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "Email",
+                "schedulePreferences": ["Afternoons", "No Mondays"]
+            },
+            "locationId": "LOC-015",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-016",
+            "personalInfo": {
+                "firstName": "Peter",
+                "lastName": "Quinn",
+                "contactDetails": {
+                    "email": "peter.q@example.com",
+                    "phone": "555-0216"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "Phone",
+                "schedulePreferences": ["Mornings", "Weekdays"]
+            },
+            "locationId": "LOC-016",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-017",
+            "personalInfo": {
+                "firstName": "Quincy",
+                "lastName": "Rivers",
+                "contactDetails": {
+                    "email": "quincy.r@example.com",
+                    "phone": "555-0217"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "SMS",
+                "schedulePreferences": ["Evenings", "Weekends"]
+            },
+            "locationId": "LOC-017",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-018",
+            "personalInfo": {
+                "firstName": "Rachel",
+                "lastName": "Stevens",
+                "contactDetails": {
+                    "email": "rachel.s@example.com",
+                    "phone": "555-0218"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "Email",
+                "schedulePreferences": ["Weekdays", "No Evenings"]
+            },
+            "locationId": "LOC-018",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-019",
+            "personalInfo": {
+                "firstName": "Steven",
+                "lastName": "Thompson",
+                "contactDetails": {
+                    "email": "steven.t@example.com",
+                    "phone": "555-0219"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "Phone",
+                "schedulePreferences": ["Afternoons"]
+            },
+            "locationId": "LOC-019",
+            "interactionLog": [],
+            "modificationsLog": []
+        },
+        {
+            "customerId": "CUST-020",
+            "personalInfo": {
+                "firstName": "Teresa",
+                "lastName": "Upton",
+                "contactDetails": {
+                    "email": "teresa.u@example.com",
+                    "phone": "555-0220"
+                }
+            },
+            "servicePreferences": {
+                "preferredContactMethod": "SMS",
+                "schedulePreferences": ["Mornings", "No Weekends"]
+            },
+            "locationId": "LOC-020",
+            "interactionLog": [],
+            "modificationsLog": []
+        }
+]

@@ -1,0 +1,60 @@
+{
+    "DataSpecName": "Customer Service Agent",
+    "Intent": {
+        "OverallIntent": "This is the Customer Service Agent DATASPEC. It defines the roles, responsibilities, and capabilities of Customer Service Agents within the CRM system. This role involves directly interacting with customers, managing service requests, updating customer records, and appropriately utilizing the Event Log for any noteworthy interactions or escalations.",
+        "Must": [
+            "Be a valid, internally consistent JSON.",
+            "Include fields for identifying the agent (agentId), recording their basic information.",
+            "Ensure appropriate use of the Event Log for documenting all interactions and escalations."
+        ],
+        "Should": [
+            "Provide facilities for consultation and subsequent referencing to the Event Log.",
+            "Maintain confidentiality and integrity when accessing customer information."
+        ],
+        "Could": [
+            "Include tools or features that streamline the logging process to the Event Log."
+        ],
+        "MustNot": [
+            "Omit accurate logging of customer interactions within the Event Log.",
+            "Allow alterations to customer records without proper documentation in the Event Log."
+        ]
+    },
+    "Schema": {
+        "type": "object",
+        "properties": {
+            "agentId": {
+                "type": "string",
+                "description": "Unique identifier for the customer service agent"
+            },
+            "name": {
+                "type": "object",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "First name of the agent"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Last name of the agent"
+                    }
+                },
+                "required": ["firstName", "lastName"]
+            },
+            "contactDetails": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Agent's official email address"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Agent's phone number"
+                    }
+                },
+                "required": ["email", "phone"]
+            }
+        },
+        "required": ["agentId", "name", "contactDetails"]
+    }
+}

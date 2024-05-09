@@ -1,22 +1,22 @@
 {
     "DataSpecName": "Duty Manager",
     "Intent": {
-      "OverallIntent": "This is the Duty Manager DATASPEC. It defines the roles, responsibilities, and capabilities of Duty Managers within the CRM system. This role involves overseeing operational aspects, managing critical real-time operational decisions, handling escalated issues, and ensuring operational compliance.",
+      "OverallIntent": "This is the Duty Manager DATASPEC. It outlines the roles, responsibilities, and capabilities of Duty Managers within the CRM system, specializing in overseeing operational aspects, managing critical real-time decisions, addressing escalated issues, and ensuring operational compliance.",
       "Must": [
         "Be a valid, internally consistent JSON.",
-        "Include fields for identifying the duty manager (managerId), recording basic information, and maintaining access to the Event Log for recording significant actions and decisions.",
-        "Ensure that Duty Managers have the tools and permissions necessary to perform real-time operational adjustments and oversee system operations."
+        "Contain fields for the unique identifier (managerId), personal information (name), contact details, and permissions allowing them to perform necessary operational tasks.",
+        "Guarantee that Duty Managers have adequate tools and permissions for real-time operational management and system oversight."
       ],
       "Should": [
-        "Facilitate mechanisms for immediate response to system or operational anomalies.",
-        "Utilize the Event Log to document all relevant actions and decisions to maintain a clear audit trail."
+        "Provide mechanisms for quick response to operational deviations or anomalies.",
+        "Utilize the Event Log to systematically record decisions and actions for transparency and audit purposes."
       ],
       "Could": [
-        "Incorporate decision-support tools to aid in complex problem-solving scenarios."
+        "Expand to include decision-support functionalities to assist in resolving complex operational scenarios."
       ],
       "MustNot": [
-        "Allow operations that bypass security or data privacy protocols.",
-        "Enable actions that conflict with predefined operational constraints without proper authorization."
+        "Permit actions that undermine security or data privacy standards.",
+        "Allow any operation conflicting with established guidelines without due authorization."
       ]
     },
     "Schema": {
@@ -58,9 +58,9 @@
           "type": "array",
           "items": {
             "type": "string",
-            "description": "Specific permissions granted to the Duty Manager for operational control and adjustments"
+            "description": "Specific permissions granted to the Duty Manager for operational control such as 'Operational Adjustment', 'System Oversight', and 'Emergency Handling'"
           },
-          "description": "List of permissions detailing the extent of control and the type of operations the Duty Manager can execute"
+          "description": "List of permissions that detail the extent and type of operations the Duty Manager can execute"
         }
       },
       "required": ["managerId", "name", "contactDetails", "permissions"]

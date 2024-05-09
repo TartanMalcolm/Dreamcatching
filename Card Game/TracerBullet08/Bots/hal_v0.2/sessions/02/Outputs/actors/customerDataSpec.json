@@ -1,0 +1,121 @@
+{
+    "DataSpecName": "Customer",
+    "Intent": {
+        "OverallIntent": "This is the Customer Record DATASPEC. It is designed to maintain a comprehensive record of customer information within the CRM system. This scheme serves as the central reference for customer identity, allowing operations such as service scheduling, interaction logging, and customer service management to reference and update customer data accordingly.",
+        "Must": [
+            "Be a valid, internally consistent JSON.",
+            "Include fields for the unique customer identifier (customerId), personal information (name, contact details), and preferences (servicePreferences).",
+            "Ensure that each customer's record is reflective of the most up-to-date information for effective service delivery and communication."
+        ],
+        "Should": [
+            "Include detailed interaction logs to track customer engagements and requests.",
+            "Provide modifications log to track changes made to the customer record, ensuring an audit trail for compliance and review purposes."
+        ],
+        "Could": [
+            "Later include additional fields related to customer feedback or satisfaction scores to enhance service customization and improvement strategies."
+        ],
+        "MustNot": [
+            "Omit any of the required fields that are crucial for ensuring operational efficacy and comprehensive customer relationship management."
+        ]
+    },
+    "Schema": {
+        "type": "object",
+        "properties": {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the customer"
+            },
+            "personalInfo": {
+                "type": "object",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "First name of the customer"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Last name of the customer"
+                    },
+                    "contactDetails": {
+                        "type": "object",
+                        "properties": {
+                            "email": {
+                                "type": "string",
+                                "description": "Customer's email address"
+                            },
+                            "phone": {
+                                "type": "string",
+                                "description": "Customer's phone number"
+                            }
+                        },
+                        "required": ["email", "phone"]
+                    }
+                },
+                "required": ["firstName", "lastName", "contactDetails"]
+            },
+            "servicePreferences": {
+                "type": "object",
+                "properties": {
+                    "preferredContactMethod": {
+                        "type": "string",
+                        "enum": ["Email", "Phone", "SMS"],
+                        "description": "Preferred method of communication"
+                    },
+                    "schedulePreferences": {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "description": "Special scheduling requests or preferences"
+                        },
+                        "description": "List of any special scheduling preferences or needs"
+                    }
+                }
+            },
+            "interactionLog": {
+                "type": "array",
+                "description": "Log of all interactions with the customer",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "interactionDate": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date and time of the interaction"
+                        },
+                        "interactionType": {
+                            "type": "string",
+                            "description": "Type of interaction (e.g., service call, complaint, feedback)"
+                        },
+                        "details": {
+                            "type": "string",
+                            "description": "Details about the interaction"
+                        }
+                    }
+                }
+            },
+            "modificationsLog": {
+                "type": "array",
+                "description": "Log of all modifications made to the customer's record",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "modifiedBy": {
+                            "type": "string",
+                            "description": "Identifier of the user who made the modification"
+                        },
+                        "modificationDate": {
+                            "type": "string",
+                            "format": "date-time",
+                            "description": "Date and time when the record was modified"
+                        },
+                        "modificationDetails": {
+                            "type": "string",
+                            "description": "Explanation of what was changed"
+                        }
+                    }
+                }
+            }
+        },
+        "required": ["customerId", "personalInfo", "servicePreferences", "interactionLog", "modificationsLog"]
+    }
+}

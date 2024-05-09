@@ -1,0 +1,42 @@
+{
+    "DataSpecName": "Location",
+    "Intent": {
+        "OverallIntent": "This is the Location DATASPEC. It provides centralized and accurate management of geographic data related to trucking operations, ensuring all entities within the CRM utilize consistent location information for efficient planning and oversight.",
+        "Must": [
+            "Maintain precise geographic data, ensuring all location data stored are accurate and reflect correct geographic coordinates.",
+            "Update regularly to reflect operational or geographic changes."
+        ],
+        "Should": [
+            "Support real-time updates to enhance responsiveness in operational planning and execution.",
+            "Integrate geofencing capabilities to trigger alerts or specific actions when geographic boundaries are crossed."
+        ],
+        "Could": [
+            "Provide reverse geocoding services to convert geographic coordinates into readable addresses, aiding logistical planning and communication."
+        ],
+        "MustNot": [
+            "Use any known inaccurate or outdated geographic data to prevent operational inefficiencies and potential safety issues."
+        ]
+    },
+    "Schema": {
+        "type": "object",
+        "properties": {
+            "locationId": {
+                "type": "string",
+                "description": "Unique identifier for the location"
+            },
+            "address": {
+                "type": "string",
+                "description": "Physical address of the location"
+            },
+            "latitude": {
+                "type": "string",
+                "description": "Geographic latitude of the location"
+            },
+            "longitude": {
+                "type": "string",
+                "description": "Geographic longitude of the location"
+            }
+        },
+        "required": ["locationId", "address", "latitude", "longitude"]
+    }
+}
