@@ -1,0 +1,74 @@
+{
+    "DataSpecName": "Route Plan",
+    "Intent": {
+        "OverallIntent": "This is the Route Plan DATASPEC. Route Plan provides temporal dimensions to the routing operations in the CRM system of a trucking company, specifying when particular routes are active. It will connect route details with specific dates and times, aiding in operational planning and management on a weekly basis.",
+        "Must": [
+            "Be a valid, internally consistent JSON.",
+            "Ensure all required temporal data is included, clearly defining the period and times when routes will be executed to avoid any ambiguity."
+        ],
+        "Should": [
+            "Cover the complete weekly schedules to allow effective planning and resource allocation ensuring the CRM can manage operations efficiently.",
+            "Provide clear descriptions for each field related to scheduling to ensure ease of understanding and use, thereby minimizing potential errors."
+        ],
+        "Could": [
+            "Expand to include elements for rescheduling or cancellations, enabling operational flexibility based on real-time challenges or changes."
+        ],
+        "MustNot": [
+            "Neglect any necessary temporal details crucial for the application and operational use of routes, which could compromise the efficacy of logistical processes."
+        ]
+    },
+    "Schema": {
+        "type": "object",
+        "properties": {
+            "routePlanId": {
+                "type": "string",
+                "description": "Unique identifier for the plan"
+            },
+            "description": {
+                "type": "string",
+                "description": "Detailed description of the plan's purpose and operational scope"
+            },
+            "activeFrom": {
+                "type": "string",
+                "format": "date",
+                "description": "Start date from which the plan is active"
+            },
+            "activeTo": {
+                "type": "string",
+                "format": "date",
+                "description": "End date until which the plan remains active"
+            },
+            "scheduledRoutes": {
+                "type": "array",
+                "description": "Detailed schedule of the routes, including days and times they are to be driven",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "date": {
+                            "type": "string",
+                            "format": "date",
+                            "description": "Specific date on which the route will be driven"
+                        },
+                        "locations": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "description": "List of locations included in this specific route"
+                            },
+                            "description": "Identifiers of the locations included in the route"
+                        },
+                        "estimatedTime": {
+                            "type": "string",
+                            "description": "Estimated time required to complete the route"
+                        }
+                    }
+                }
+            },
+            "bucketId": {
+                "type": "string",
+                "description": "Identifier for the geographic bucket to which the plan is confined"
+            }
+        },
+        "required": ["planId", "description", "activeFrom", "activeTo", "scheduledRoutes"]
+    }
+}
