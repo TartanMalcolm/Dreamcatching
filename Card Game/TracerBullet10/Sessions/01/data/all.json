@@ -1,0 +1,2906 @@
+{
+    "description": "List of customer service agent records",
+    "type": "array",
+    "items": [
+      {
+        "agentId": {
+          "type": "string",
+          "description": "Unique identifier for the agent",
+          "value": "CSA-001"
+        },
+        "name": {
+          "type": "object",
+          "description": "Name of the agent",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Agent's first name",
+              "value": "John"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Agent's last name",
+              "value": "Doe"
+            }
+          }
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the agent",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Agent's email address",
+              "value": "john.doe@example.com"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Agent's phone number",
+              "value": "555-0101"
+            }
+          }
+        }
+      },
+      {
+        "agentId": {
+          "type": "string",
+          "description": "Unique identifier for the agent",
+          "value": "CSA-002"
+        },
+        "name": {
+          "type": "object",
+          "description": "Name of the agent",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Agent's first name",
+              "value": "Jane"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Agent's last name",
+              "value": "Smith"
+            }
+          }
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the agent",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Agent's email address",
+              "value": "jane.smith@example.com"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Agent's phone number",
+              "value": "555-0102"
+            }
+          }
+        }
+      },
+      {
+        "agentId": {
+          "type": "string",
+          "description": "Unique identifier for the agent",
+          "value": "CSA-003"
+        },
+        "name": {
+          "type": "object",
+          "description": "Name of the agent",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Agent's first name",
+              "value": "James"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Agent's last name",
+              "value": "Wilson"
+            }
+          }
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the agent",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Agent's email address",
+              "value": "james.wilson@example.com"
+            },
+            "phone": {
+              "type": "string",
+              "description": "Agent's phone number",
+              "value": "555-0103"
+            }
+          }
+        }
+      }
+    ]
+  }{
+    "description": "Customer records",
+    "type": "array",
+    "items": [
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-001"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Alice"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Johnson"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "alice.j@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-2234"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-001"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-002"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Bob"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Brown"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "bob.b@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0202"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-002"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-003"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Carol"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Davis"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "carol.d@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0203"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "No Mondays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-003"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-004"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "David"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Evans"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "david.e@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0204"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-004"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-005"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Eva"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Franklin"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "eva.f@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0205"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-005"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-006"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Frank"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Green"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "frank.g@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0206"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-006"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-007"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Grace"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Hill"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "grace.h@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0207"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-007"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-008"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Henry"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Irving"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "henry.i@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0208"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-008"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-009"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Ivy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Jensen"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "ivy.j@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0209"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-009"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-010"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Jack"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Kellerman"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "jack.k@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0210"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-010"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-011"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Kim"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Lang"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "kim.l@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0211"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-011"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-012"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Liam"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Moss"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "liam.m@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0212"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings", "Afternoons"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-012"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-013"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Mandy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Norris"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "mandy.n@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0213"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-013"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-014"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Nolan"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Olsen"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "nolan.o@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0214"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Weekends", "Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-014"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-015"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Olivia"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Pitt"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "olivia.p@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0215"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "No Mondays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-015"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-016"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Peter"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Quinn"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "peter.q@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0216"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings", "Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-016"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-017"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Quincy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Rivers"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "quincy.r@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0217"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings", "Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-017"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-018"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Rachel"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Stevens"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "rachel.s@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0218"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays", "No Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-018"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-019"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Steven"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Thompson"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "steven.t@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0219"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-019"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-020"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Teresa"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Upton"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "teresa.u@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0220"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings", "No Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-020"
+        }
+      }
+    ]
+  }
+  {
+    "CustomerServicePolicies": [
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-001"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Option"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Offer extended service hours as a flexible option during peak seasons or promotional events upon customer request."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Plan"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "Duty Manager"
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-002"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Option"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents may offer a callback if a solution to a customer's request will take longer than a reasonable phone call duration. The customer can state that they are willing to remain on the call, in which case no callback is required."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "General"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Update Event Log on agreeing a callback and on calling the customer back."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-003"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Rule"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Any service interruption reported by a customer must be followed up with an official notification to the customer about the progress within 24 hours."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Incident"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "On receiving a service interruption report, update Event Log. Within 24 hours, contact customer and attempt to find new pick-up time with customer. Repeat until service interruption is closed."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-004"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Rule"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents must confirm customer feedback after every complaint is addressed. This may require a callback."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Post-Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Agent to record customer feedback in the Event Log, and record a Support Ticket in the Event Log if the customer feedback involves follow up actions."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-005"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Guideline"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents are encouraged to anticipate potential issues noted in the event log and contact customers who may be affected in order to inform them preemptively."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Pre-Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Record contact in the event log."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-006"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Guideline"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "If a customer asks or insists on escalation, first consider whether this is appropriate given the situation, and if it is escalate to Duty Manager. Examples of 'appropriate' include: service calls that the agent cannot handle directly and where the customer insists on escalation; calls from a customer that cannot be handled directly by the agent."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "During Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "Duty Manager"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Agent to log escalation request in the event log and inform the customer of a callback."
+        }
+      }
+    ]
+  }{
+    "Schema": {
+      "type": "object",
+      "description": "The overarching structure defining the schema for managing data and operations within a trucking company's CRM system.",
+      "properties": {
+        "Concepts": {
+          "type": "object",
+          "description": "Core elements and principles fundamental to the CRM system's operation and governance.",
+          "properties": {
+            "CRM System": {
+              "type": "string",
+              "description": "A comprehensive system managing data and operations of a trucking company, including but not limited to drivers, trucks, customer interactions, and route planning."
+            },
+            "Operational Integrity": {
+              "type": "string",
+              "description": "Ensuring the CRM operates with maximum reliability and accuracy, facilitating optimal operations management and compliance with regulatory standards."
+            },
+            "Audit Trail": {
+              "type": "string",
+              "description": "A complete and secure record of all transactions and changes within the CRM, used for monitoring and verification purposes."
+            }
+          }
+        },
+        "Actors": {
+          "type": "object",
+          "description": "Key roles within the trucking company that interact with or are impacted by the CRM system.",
+          "properties": {
+            "Driver": {
+              "type": "string",
+              "description": "Operational staff responsible for the physical operation of trucks within the company."
+            },
+            "Duty Manager": {
+              "type": "string",
+              "description": "A manager responsible for supervising operational shifts, making critical decisions, and handling high-priority operational issues."
+            },
+            "Customer Service Agent": {
+              "type": "string",
+              "description": "Personnel tasked with handling client inquiries, managing service requests, and ensuring customer satisfaction."
+            }
+          }
+        },
+        "Actions": {
+          "type": "object",
+          "description": "Specific tasks and processes within the CRM system to maintain operational efficiency and compliance.",
+          "properties": {
+            "Routing": {
+              "type": "string",
+              "description": "Defining the travel path and operational details for driver routes to assure efficient delivery and operation."
+            },
+            "Scheduling": {
+              "type": "string",
+              "description": "Organizing and managing the time-specific dispatch of routes and resources to ensure timely operations."
+            },
+            "Logging Events": {
+              "type": "string",
+              "description": "The action of documenting all significant activities and operational changes in the CRM for regulatory compliance and operational analysis."
+            }
+          }
+        },
+        "Inputs": {
+          "type": "object",
+          "description": "Data and feedback received by the CRM system, crucial for its continuous operation and improvement.",
+          "properties": {
+            "Route Details": {
+              "type": "string",
+              "description": "Specifications and information regarding the planning and execution of specific routes."
+            },
+            "Customer Feedback": {
+              "type": "string",
+              "description": "Input received from customers regarding services which can affect continuous improvement efforts."
+            }
+          }
+        },
+        "Outputs": {
+          "type": "object",
+          "description": "Reports and notifications generated by the CRM system to inform and alert staff and management about operations.",
+          "properties": {
+            "Operational Reports": {
+              "type": "string",
+              "description": "Periodic reports detailing the performance and status of various CRM-managed operations to aid in decision-making."
+            },
+            "Alerts and Notifications": {
+              "type": "string",
+              "description": "Real-time updates issued by the CRM to notify or alert staff and management concerning critical events or changes."
+            },
+            "Compliance Summaries": {
+              "type": "string",
+              "description": "Reports compiling compliance-related data to ensure all operations adhere to set regulations and constraints."
+            }
+          }
+        }
+      }
+    }
+  }{
+    "description": "List of driver records",
+    "type": "array",
+    "items": [
+      {
+        "driverId": {
+          "type": "string",
+          "description": "Unique identifier for the driver",
+          "value": "DRV-001"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Driver's first name",
+          "value": "Michael"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "Driver's last name",
+          "value": "Smith"
+        },
+        "licenseNumber": {
+          "type": "string",
+          "description": "Driver's license number",
+          "value": "SMI1234567"
+        },
+        "currentTruckId": {
+          "type": "string",
+          "description": "Identifier for the truck currently assigned to the driver",
+          "value": "TRUCK-01"
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the driver",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Driver's email address",
+              "value": "michael.smith@example.com"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "description": "Driver's phone number",
+              "value": "555-1001"
+            }
+          }
+        }
+      },
+      {
+        "driverId": {
+          "type": "string",
+          "description": "Unique identifier for the driver",
+          "value": "DRV-002"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Driver's first name",
+          "value": "Laura"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "Driver's last name",
+          "value": "Jones"
+        },
+        "licenseNumber": {
+          "type": "string",
+          "description": "Driver's license number",
+          "value": "JON7654321"
+        },
+        "currentTruckId": {
+          "type": "string",
+          "description": "Identifier for the truck currently assigned to the driver",
+          "value": "TRUCK-02"
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the driver",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Driver's email address",
+              "value": "laura.jones@example.com"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "description": "Driver's phone number",
+              "value": "555-1002"
+            }
+          }
+        }
+      },
+      {
+        "driverId": {
+          "type": "string",
+          "description": "Unique identifier for the driver",
+          "value": "DRV-003"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Driver's first name",
+          "value": "Robert"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "Driver's last name",
+          "value": "Williams"
+        },
+        "licenseNumber": {
+          "type": "string",
+          "description": "Driver's license number",
+          "value": "WIL2345678"
+        },
+        "currentTruckId": {
+          "type": "string",
+          "description": "Identifier for the truck currently assigned to the driver",
+          "value": "TRUCK-03"
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the driver",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Driver's email address",
+              "value": "robert.williams@example.com"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "description": "Driver's phone number",
+              "value": "555-1003"
+            }
+          }
+        }
+      },
+      {
+        "driverId": {
+          "type": "string",
+          "description": "Unique identifier for the driver",
+          "value": "DRV-004"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "Driver's first name",
+          "value": "Jessica"
+        },
+        "lastName": {
+          "type": "string",
+          "description": "Driver's last name",
+          "value": "Brown"
+        },
+        "licenseNumber": {
+          "type": "string",
+          "description": "Driver's license number",
+          "value": "BRO3456789"
+        },
+        "currentTruckId": {
+          "type": "string",
+          "description": "Identifier for the truck currently assigned to the driver",
+          "value": "TRUCK-04"
+        },
+        "contactDetails": {
+          "type": "object",
+          "description": "Contact details of the driver",
+          "properties": {
+            "email": {
+              "type": "string",
+              "description": "Driver's email address",
+              "value": "jessica.brown@example.com"
+            },
+            "phoneNumber": {
+              "type": "string",
+              "description": "Driver's phone number",
+              "value": "555-1004"
+            }
+          }
+        }
+      }
+    ]
+  }
+```json
+{
+  "description": "List of manager records",
+  "type": "array",
+  "items": [
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "Emily"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Taylor"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "emily.taylor@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3001"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": {
+          "type": "string",
+          "value": [
+            "Operational Adjustment",
+            "System Oversight",
+            "Decision Making"
+          ]
+        }
+      }
+    },
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "James"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Morris"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "james.morris@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3002"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": {
+          "type": "string",
+          "value": [
+            "Operational Adjustment",
+            "System Oversight",
+            "Emergency Handling"
+          ]
+        }
+      }
+    }
+  ]
+}{
+    "events": [
+      {
+        "eventId": {
+          "description": "A unique identifier for an event in the event log.",
+          "value": "event001"
+        },
+        "timestamp": {
+          "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+          "value": "2023-01-10T08:30:00Z"
+        },
+        "content": {
+          "description": "A detailed description of what the event entails.",
+          "value": "Customer Interaction - Discussion about upcoming delivery schedule"
+        },
+        "actor": {
+          "description": "The actor who created this event.",
+          "value": {
+            "role": {
+              "description": "The role of the actor who created this event.",
+              "value": "Customer Service Agent"
+            },
+            "name": {
+              "description": "The name of the actor who created this event.",
+              "value": "Jane Smith"
+            }
+          }
+        },
+        "interactionType": {
+          "description": "The type of interaction or event being logged.",
+          "value": "Customer Interaction"
+        },
+        "context": {
+          "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+          "value": {
+            "customerId": {
+              "description": "A unique identifier for the customer associated with the event.",
+              "value": "CUST-002"
+            },
+            "routeId": {
+              "description": "A unique identifier for the route associated with the event.",
+              "value": "ROUTE-005"
+            },
+            "planId": {
+              "description": "A unique identifier for the plan associated with the event.",
+              "value": "PLAN-012"
+            },
+            "truckId": {
+              "description": "A unique identifier for the truck associated with the event.",
+              "value": "TRUCK-103"
+            }
+          }
+        }
+      },
+      {
+        "eventId": {
+          "description": "A unique identifier for an event in the event log.",
+          "value": "event002"
+        },
+        "timestamp": {
+          "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+          "value": "2023-01-11T14:15:00Z"
+        },
+        "content": {
+          "description": "A detailed description of what the event entails.",
+          "value": "Route Planning - Optimization of delivery routes for efficiency"
+        },
+        "actor": {
+          "description": "The actor who created this event.",
+          "value": {
+            "role": {
+              "description": "The role of the actor who created this event.",
+              "value": "Duty Manager"
+            },
+            "name": {
+              "description": "The name of the actor who created this event.",
+              "value": "James Wilson"
+            }
+          }
+        },
+        "interactionType": {
+          "description": "The type of interaction or event being logged.",
+          "value": "Route Planning"
+        },
+        "context": {
+          "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+          "value": {
+            "customerId": {
+              "description": "A unique identifier for the customer associated with the event.",
+              "value": "CUST-005"
+            },
+            "routeId": {
+              "description": "A unique identifier for the route associated with the event.",
+              "value": "ROUTE-010"
+            },
+            "planId": {
+              "description": "A unique identifier for the plan associated with the event.",
+              "value": "PLAN-018"
+            },
+            "truckId": {
+              "description": "A unique identifier for the truck associated with the event.",
+              "value": "TRUCK-107"
+            }
+          }
+        }
+      },
+      {
+        "eventId": {
+          "description": "A unique identifier for an event in the event log.",
+          "value": "event003"
+        },
+        "timestamp": {
+          "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+          "value": "2023-01-12T10:00:00Z"
+        },
+        "content": {
+          "description": "A detailed description of what the event entails.",
+          "value": "Truck Usage - Maintenance check for Truck-105"
+        },
+        "actor": {
+          "description": "The actor who created this event.",
+          "value": {
+            "role": {
+              "description": "The role of the actor who created this event.",
+              "value": "Driver"
+            },
+            "name": {
+              "description": "The name of the actor who created this event.",
+              "value": "Laura Jones"
+            }
+          }
+        },
+        "interactionType": {
+          "description": "The type of interaction or event being logged.",
+          "value": "Truck Usage"
+        },
+        "context": {
+          "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+          "value": {
+            "customerId": {
+              "description": "A unique identifier for the customer associated with the event.",
+              "value": "CUST-008"
+            },
+            "routeId": {
+              "description": "A unique identifier for the route associated with the event.",
+              "value": "ROUTE-015"
+            },
+            "planId": {
+              "description": "A unique identifier for the plan associated with the event.",
+              "value": "PLAN-025"
+            },
+            "truckId": {
+              "description": "A unique identifier for the truck associated with the event.",
+              "value": "TRUCK-105"
+            }
+          }
+        }
+      }
+    ]
+  }{
+    "locations": [
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-001"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "123 Elm St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.7817"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6501"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-002"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "456 Oak St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.7900"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6441"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-003"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "789 Pine St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8000"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6600"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-004"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "321 Maple St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8200"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6550"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-005"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "654 Spruce St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8300"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6700"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-006"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "987 Cedar St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8400"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6400"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-007"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "246 Willow St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8500"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6300"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-008"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "135 Birch St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8600"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6200"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-009"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "875 Maple Ln, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8700"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6100"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-010"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "964 Oak Ave, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8800"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.6000"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-011"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "253 Pine Cir, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.8900"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5900"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-012"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "342 Elm Dr, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9000"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5800"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-013"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "431 Birch Pass, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9100"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5700"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-014"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "520 Cedar Rd, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9200"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5600"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-015"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "619 Spruce Way, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9300"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5500"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-016"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "708 Willow St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9400"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5400"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-017"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "797 Maple Ct, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9500"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5300"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-018"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "886 Oak Ln, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9600"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5200"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-019"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "975 Pine St, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9700"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5100"
+        }
+      },
+      {
+        "locationId": {
+          "description": "A unique identifier for the location.",
+          "value": "LOC-020"
+        },
+        "address": {
+          "description": "The full address of the location.",
+          "value": "1064 Elm Ave, Springfield, IL"
+        },
+        "latitude": {
+          "description": "The latitude coordinates of the location.",
+          "value": "39.9800"
+        },
+        "longitude": {
+          "description": "The longitude coordinates of the location.",
+          "value": "-89.5000"
+        }
+      }
+    ]
+  }{
+    "OperationalConstraints": [
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-001"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Route"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All routes must strictly adhere to predefined paths that have been optimized for cost and time efficiency."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-002"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Plan"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "Plans must be activated within the specified start times to ensure synchronization across operations."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-003"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Both"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "Every customer interaction must be logged in the CRM system's Event Log."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-004"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Route"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "Trucks must not be loaded beyond their maximum specified capacity."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-005"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Both"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All data entries in the CRM must be verified for accuracy upon entry and during routine audits."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-006"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Both"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All CRM system interactions must comply with current cyber-security policies."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-007"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Plan"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All operational schedules must be adhered to, with any deviations approved by a dispatch manager."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-008"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Both"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "Any changes made to operational plans or routes must be documented in real-time within the system."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-009"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Both"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All data pertaining to operations must be retained according to legal and company guidelines."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      },
+      {
+        "constraintId": {
+          "description": "A unique identifier for the operational constraint.",
+          "value": "OC-010"
+        },
+        "scope": {
+          "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+          "value": "Route"
+        },
+        "description": {
+          "description": "A detailed description of the operational constraint.",
+          "value": "All routes must be verified against current traffic and road conditions before dispatch."
+        },
+        "enforcementLevel": {
+          "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+          "value": "Mandatory"
+        }
+      }
+    ]
+  }{
+    "roles": [
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Duty Manager"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Route planning and optimization",
+            "Customer issue resolution",
+            "Overseeing operational efficiency"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "Edit route plans",
+            "Access customer data",
+            "Generate reports"
+          ]
+        }
+      },
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Customer Service Agent"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Handling customer queries and complaints",
+            "Assisting with route scheduling",
+            "Providing customer support"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "View customer details",
+            "Update customer information",
+            "Submit feedback"
+          ]
+        }
+      },
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Driver"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Following assigned routes",
+            "Completing deliveries on time",
+            "Vehicle maintenance checks"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "View assigned routes",
+            "Mark deliveries as completed",
+            "Report vehicle issues"
+          ]
+        }
+      }
+    ]
+  }{
+    "routePlans": [
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-01"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Weekly schedule covering all customers with preferences for mornings and weekdays"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-01"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-07"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-03"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-001", "LOC-003", "LOC-005"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-05"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-002", "LOC-004", "LOC-006"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "3 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-02"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Weekly schedule for customers preferring weekends and evenings"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-08"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-14"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-08"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-007", "LOC-008", "LOC-009"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2.5 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-14"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-010", "LOC-012", "LOC-014"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "1.5 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-03"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Mid-January plan for afternoon preferences and avoiding Mondays"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-15"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-21"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-17"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-011", "LOC-013", "LOC-015"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-19"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-016", "LOC-017"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-04"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "End of the month plan covering any remaining customers and locations"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-22"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-28"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-23"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-018", "LOC-019", "LOC-020"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "3 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      }
+    ]
+  }
