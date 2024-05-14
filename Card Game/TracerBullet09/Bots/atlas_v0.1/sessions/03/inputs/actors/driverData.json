@@ -1,0 +1,46 @@
+[
+    {
+        "driverId": "DRV-001",
+        "firstName": "Michael",
+        "lastName": "Smith",
+        "licenseNumber": "SMI1234567",
+        "currentTruckId": "TRUCK-01",
+        "contactDetails": {
+            "email": "michael.smith@example.com",
+            "phoneNumber": "555-1001"
+        }
+    },
+    {
+        "driverId": "DRV-002",
+        "firstName": "Laura",
+        "lastName": "Jones",
+        "licenseNumber": "JON7654321",
+        "currentTruckId": "TRUCK-02",
+        "contactDetails": {
+            "email": "laura.jones@example.com",
+            "phoneNumber": "555-1002"
+        }
+    },
+    {
+        "driverId": "DRV-003",
+        "firstName": "Robert",
+        "lastName": "Williams",
+        "licenseNumber": "WIL2345678",
+        "currentTruckId": "TRUCK-03",
+        "contactDetails": {
+            "email": "robert.williams@example.com",
+            "phoneNumber": "555-1003"
+        }
+    },
+    {
+        "driverId": "DRV-004",
+        "firstName": "Jessica",
+        "lastName": "Brown",
+        "licenseNumber": "BRO3456789",
+        "currentTruckId": "TRUCK-04",
+        "contactDetails": {
+            "email": "jessica.brown@example.com",
+            "phoneNumber": "555-1004"
+        }
+    }
+]

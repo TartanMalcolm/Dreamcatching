@@ -1,0 +1,43 @@
+{
+    "events": [
+      {
+        "eventId": "event001",
+        "timestamp": "2023-01-10T08:30:00Z",
+        "description": "Customer Interaction - Discussion about upcoming delivery schedule",
+        "actor": "Customer Service Agent - Jane Smith",
+        "interactionType": "Customer Interaction",
+        "context": {
+          "customerId": "CUST-002",
+          "routeId": "ROUTE-005",
+          "planId": "PLAN-012",
+          "truckId": "TRUCK-103"
+        }
+      },
+      {
+        "eventId": "event002",
+        "timestamp": "2023-01-11T14:15:00Z",
+        "description": "Route Planning - Optimization of delivery routes for efficiency",
+        "actor": "Duty Manager - James Wilson",
+        "interactionType": "Route Planning",
+        "context": {
+          "customerId": "CUST-005",
+          "routeId": "ROUTE-010",
+          "planId": "PLAN-018",
+          "truckId": "TRUCK-107"
+        }
+      },
+      {
+        "eventId": "event003",
+        "timestamp": "2023-01-12T10:00:00Z",
+        "description": "Truck Usage - Maintenance check for Truck-105",
+        "actor": "Driver - Laura Jones",
+        "interactionType": "Truck Usage",
+        "context": {
+          "customerId": "CUST-008",
+          "routeId": "ROUTE-015",
+          "planId": "PLAN-025",
+          "truckId": "TRUCK-105"
+        }
+      }
+    ]
+  }

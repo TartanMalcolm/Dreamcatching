@@ -1,0 +1,1267 @@
+{
+    "description": "Customer records",
+    "type": "array",
+    "items": [
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-001"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Alice"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Johnson"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "alice.j@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-2234"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-001"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-002"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Bob"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Brown"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "bob.b@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0202"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-002"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-003"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Carol"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Davis"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "carol.d@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0203"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "No Mondays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-003"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-004"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "David"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Evans"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "david.e@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0204"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-004"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-005"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Eva"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Franklin"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "eva.f@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0205"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-005"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-006"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Frank"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Green"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "frank.g@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0206"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-006"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-007"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Grace"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Hill"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "grace.h@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0207"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-007"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-008"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Henry"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Irving"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "henry.i@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0208"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-008"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-009"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Ivy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Jensen"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "ivy.j@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0209"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-009"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-010"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Jack"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Kellerman"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "jack.k@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0210"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-010"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-011"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Kim"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Lang"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "kim.l@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0211"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-011"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-012"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Liam"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Moss"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "liam.m@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0212"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings", "Afternoons"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-012"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-013"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Mandy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Norris"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "mandy.n@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0213"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekends", "Mornings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-013"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-014"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Nolan"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Olsen"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "nolan.o@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0214"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["No Weekends", "Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-014"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-015"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Olivia"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Pitt"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "olivia.p@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0215"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons", "No Mondays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-015"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-016"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Peter"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Quinn"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "peter.q@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0216"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings", "Weekdays"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-016"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-017"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Quincy"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Rivers"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "quincy.r@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0217"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Evenings", "Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-017"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-018"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Rachel"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Stevens"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "rachel.s@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0218"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Email"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Weekdays", "No Evenings"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-018"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-019"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Steven"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Thompson"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "steven.t@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0219"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "Phone"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Afternoons"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-019"
+        }
+      },
+      {
+        "customerId": {
+          "type": "string",
+          "description": "Unique identifier for the customer",
+          "value": "CUST-020"
+        },
+        "personalInfo": {
+          "type": "object",
+          "description": "Personal Information of the customer",
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "description": "Customer's first name",
+              "value": "Teresa"
+            },
+            "lastName": {
+              "type": "string",
+              "description": "Customer's last name",
+              "value": "Upton"
+            },
+            "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the customer",
+              "properties": {
+                "email": {
+                  "type": "string",
+                  "description": "Customer's email address",
+                  "value": "teresa.u@example.com"
+                },
+                "phone": {
+                  "type": "string",
+                  "description": "Customer's preferred mobile or landline telephone number",
+                  "value": "555-0220"
+                }
+              }
+            }
+          }
+        },
+        "servicePreferences": {
+          "type": "object",
+          "description": "Service preferences of the customer",
+          "properties": {
+            "preferredContactMethod": {
+              "type": "string",
+              "description": "Preferred method of contact for the customer",
+              "value": "SMS"
+            },
+            "schedulePreferences": {
+              "type": "array",
+              "description": "Preferred scheduling times for the customer",
+              "items": {
+                "type": "string",
+                "value": ["Mornings", "No Weekends"]
+              }
+            }
+          }
+        },
+        "locationId": {
+          "type": "string",
+          "description": "Identifier for the customer's location",
+          "value": "LOC-020"
+        }
+      }
+    ]
+  }
+  

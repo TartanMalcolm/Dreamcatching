@@ -1,0 +1,70 @@
+{
+    "roles": [
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Duty Manager"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Route planning and optimization",
+            "Customer issue resolution",
+            "Overseeing operational efficiency"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "Edit route plans",
+            "Access customer data",
+            "Generate reports"
+          ]
+        }
+      },
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Customer Service Agent"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Handling customer queries and complaints",
+            "Assisting with route scheduling",
+            "Providing customer support"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "View customer details",
+            "Update customer information",
+            "Submit feedback"
+          ]
+        }
+      },
+      {
+        "roleName": {
+          "description": "The name of the role within the organization.",
+          "value": "Driver"
+        },
+        "responsibilities": {
+          "description": "A list of key responsibilities associated with this role.",
+          "value": [
+            "Following assigned routes",
+            "Completing deliveries on time",
+            "Vehicle maintenance checks"
+          ]
+        },
+        "permissions": {
+          "description": "A list of permissions granted to this role.",
+          "value": [
+            "View assigned routes",
+            "Mark deliveries as completed",
+            "Report vehicle issues"
+          ]
+        }
+      }
+    ]
+  }

@@ -1,0 +1,210 @@
+{
+    "routePlans": [
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-01"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Weekly schedule covering all customers with preferences for mornings and weekdays"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-01"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-07"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-03"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-001", "LOC-003", "LOC-005"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-05"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-002", "LOC-004", "LOC-006"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "3 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-02"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Weekly schedule for customers preferring weekends and evenings"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-08"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-14"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-08"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-007", "LOC-008", "LOC-009"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2.5 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-14"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-010", "LOC-012", "LOC-014"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "1.5 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-03"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "Mid-January plan for afternoon preferences and avoiding Mondays"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-15"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-21"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-17"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-011", "LOC-013", "LOC-015"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            },
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-19"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-016", "LOC-017"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "2 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      },
+      {
+        "routePlanId": {
+          "description": "A unique identifier for the route plan.",
+          "value": "RP-04"
+        },
+        "description": {
+          "description": "A detailed description of the route plan.",
+          "value": "End of the month plan covering any remaining customers and locations"
+        },
+        "activeFrom": {
+          "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-22"
+        },
+        "activeTo": {
+          "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+          "value": "2023-01-28"
+        },
+        "scheduledRoutes": {
+          "description": "A list of scheduled routes within the active period.",
+          "value": [
+            {
+              "date": {
+                "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+                "value": "2023-01-23"
+              },
+              "locations": {
+                "description": "A list of location IDs included in the route.",
+                "value": ["LOC-018", "LOC-019", "LOC-020"]
+              },
+              "estimatedTime": {
+                "description": "The estimated time required to complete the route.",
+                "value": "3 hours"
+              }
+            }
+          ]
+        },
+        "bucketId": {
+          "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+          "value": "BUCKET-01"
+        }
+      }
+    ]
+  }

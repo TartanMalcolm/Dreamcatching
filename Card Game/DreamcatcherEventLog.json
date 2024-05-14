@@ -1,0 +1,32 @@
+{
+    "dreamcatcherEventLog": [
+      {
+        "datetime": "11 May 2024",
+        "summary": "The session file detailed various interactions related to a Customer Relationship Management (CRM) system, focusing on linking different parts of the system through identifiers. The INTENT in the session appears to be concerned with retrieving specific information from the CRM records, understanding the interrelations within the CRM system, and verifying data consistency and linkage between customer details, location identifiers, and route plans.
+  
+  Notable Events in the Session:
+  Understanding Data Linkage: The session begins with queries aimed at understanding how various parts of the CRM system are linked. Particularly, it delves into how customers are linked to locations and route plans via locationId, which shows a meticulous intent to understand or verify the integration and coherence in data handling within the CRM system .
+  
+  Specific Data Queries: You queried specific details such as the list of customer service agents, duty managers, drivers, and customer records like Kim Lang's pickup times and locations. This suggests an auditing or data verification task, possibly aiming to ensure the CRM data's accuracy and up-to-date status or to prepare for operational activities .
+  
+  Deep Dive into Data Specifications: There was a clear intent to understand the data specifications and how they dictate the linkage of data within the system. This points towards a quality control or system audit purpose, likely to ensure that the system adheres to predefined data integrity and operational efficiency standards .
+  
+  Summary of Your INTENT from the Session:
+  MUST: Retrieve and verify correct CRM system records linkage between customers, locations, and route plans. Validate that system specifications regarding data integrity are being followed.
+  
+  SHOULD: Gain an operational understanding of who is involved in the CRM (customer agents, duty managers, drivers) and specific operational details (like pickup schedules).
+  
+  COULD: Improve the coherence and integration within the CRM data handling possibly by identifying outdated or incorrect linkages or areas for operational efficiency improvements.
+  
+  MUST NOT: Allow any misunderstandings or errors in linking and reporting of data, particularly involving customer details and operational schedules, which could potentially affect service deliveries.
+  
+  This analysis allows you to further refine your queries or actions based on the verified findings and the operational insights you have gathered from the CRM system. If there are any other specific details or further analysis you need, please let me know how I can assist!",
+        "reference": "https://github.com/TartanMalcolm/Dreamcatching/tree/main/Card%20Game/TracerBullet09/Bots/atlas_v0.1/sessions/01"
+      },
+      {
+        "datetime": "12 May 2024",
+        "summary": "temp",
+        "reference": "temp"
+      }
+    ]
+  }

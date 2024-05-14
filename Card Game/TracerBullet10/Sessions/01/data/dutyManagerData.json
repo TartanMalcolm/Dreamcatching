@@ -1,0 +1,110 @@
+
+```json
+{
+  "description": "List of manager records",
+  "type": "array",
+  "items": [
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "Emily"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Taylor"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "emily.taylor@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3001"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": {
+          "type": "string",
+          "value": [
+            "Operational Adjustment",
+            "System Oversight",
+            "Decision Making"
+          ]
+        }
+      }
+    },
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "James"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Morris"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "james.morris@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3002"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": {
+          "type": "string",
+          "value": [
+            "Operational Adjustment",
+            "System Oversight",
+            "Emergency Handling"
+          ]
+        }
+      }
+    }
+  ]
+}
