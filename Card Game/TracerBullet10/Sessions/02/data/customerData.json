@@ -1,3 +1,7 @@
+Here's the customer data.  Respond with ONLY yes if you've read it, or no if there's a problem.
+
+---
+
 {
     "description": "List of customer service Customer records",
     "type": "array",
@@ -664,5 +668,9 @@
                     }
                 }
             }
-        },
-       
+        }   
+    ]
+}       
+
+
+---
