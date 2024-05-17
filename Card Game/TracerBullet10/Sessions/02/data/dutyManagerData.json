@@ -1,6 +1,5 @@
-
 {
-  "description": "List of manager records",
+  "description": "List of duty manager records",
   "type": "array",
   "items": [
     {
@@ -44,14 +43,20 @@
       "permissions": {
         "type": "array",
         "description": "Permissions granted to the manager",
-        "items": {
-          "type": "string",
-          "value": [
-            "Operational Adjustment",
-            "System Oversight",
-            "Decision Making"
-          ]
-        }
+        "items": [
+          {
+            "type": "string",
+            "value": "Operational Adjustment"
+          },
+          {
+            "type": "string",
+            "value": "System Oversight"
+          },
+          {
+            "type": "string",
+            "value": "Decision Making"
+          }
+        ]
       }
     },
     {
@@ -95,14 +100,20 @@
       "permissions": {
         "type": "array",
         "description": "Permissions granted to the manager",
-        "items": {
-          "type": "string",
-          "value": [
-            "Operational Adjustment",
-            "System Oversight",
-            "Emergency Handling"
-          ]
-        }
+        "items": [
+          {
+            "type": "string",
+            "value": "Operational Adjustment"
+          },
+          {
+            "type": "string",
+            "value": "System Oversight"
+          },
+          {
+            "type": "string",
+            "value": "Emergency Handling"
+          }
+        ]
       }
     }
   ]

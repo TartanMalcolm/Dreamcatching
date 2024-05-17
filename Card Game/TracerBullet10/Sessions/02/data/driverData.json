@@ -1,0 +1,202 @@
+{
+  "description": "List of driver records",
+  "type": "array",
+  "items": [
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Michael"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Smith"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "SMI1234567"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-01"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "michael.smith@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1001"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Laura"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Jones"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "JON7654321"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-02"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "laura.jones@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1002"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-003"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Robert"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Williams"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "WIL2345678"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-03"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "robert.williams@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1003"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-004"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Jessica"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Brown"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "BRO3456789"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-04"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "jessica.brown@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1004"
+          }
+        }
+      }
+    }
+  ]
+}

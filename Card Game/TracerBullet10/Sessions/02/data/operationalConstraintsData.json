@@ -1,0 +1,226 @@
+{
+  "description": "List of operational constraint records",
+  "type": "array",
+  "items": [
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-001"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Route"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All routes must strictly adhere to predefined paths that have been optimized for cost and time efficiency."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-002"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Plan"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Plans must be activated within the specified start times to ensure synchronization across operations."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-003"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Every customer interaction must be logged in the CRM system's Event Log."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-004"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Route"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Trucks must not be loaded beyond their maximum specified capacity."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-005"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All data entries in the CRM must be verified for accuracy upon entry and during routine audits."
+      },
+      "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-006"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All CRM system interactions must comply with current cyber-security policies."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-007"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Plan"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All operational schedules must be adhered to, with any deviations approved by a dispatch manager."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-008"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "Any changes made to operational plans or routes must be documented in real-time within the system."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-009"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All data pertaining to operations must be retained according to legal and company guidelines."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-010"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Route"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All routes must be verified against current traffic and road conditions before dispatch."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   }
+ ]
+}

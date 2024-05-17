@@ -104,7 +104,7 @@
 5. Are all scopes within the valid expected categories (e.g., 'Plan', 'General', 'Incident', 'Post-Interaction', 'Pre-Interaction', 'During Interaction')?
 6. Are all approval requirements valid and specified (e.g., 'None', 'Duty Manager')?
 7. If present, are all action fields non-empty strings?
-8. Are there any data fields in the customer service policy data not tested by the above list?"
+8. Are there any data fields in the customer service policy data not tested by the above list?
 
 ### Definitions Data Validation
 1. Is the 'type' field for 'Schema' defined as 'object'?

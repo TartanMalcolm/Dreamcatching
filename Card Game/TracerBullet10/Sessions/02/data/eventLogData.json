@@ -1,0 +1,198 @@
+{
+  "description": "List of event log records",
+  "type": "array",
+  "items": [
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event001"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-10T08:30:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Customer Interaction - Discussion about upcoming delivery schedule"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Customer Service Agent"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "Jane Smith"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Customer Interaction"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-002"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-005"
+          },
+          "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-012"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-103"
+          }
+        }
+      }
+    },
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event002"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-11T14:15:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Route Planning - Optimization of delivery routes for efficiency"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Duty Manager"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "James Wilson"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Route Planning"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-005"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-010"
+          },
+          "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-018"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-107"
+          }
+        }
+      }
+    },
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event003"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-12T10:00:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Truck Usage - Maintenance check for Truck-105"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Driver"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "Laura Jones"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Truck Usage"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-008"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-015"
+          },
+          "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-025"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-105"
+          }
+        }
+      }
+    }
+  ]
+}

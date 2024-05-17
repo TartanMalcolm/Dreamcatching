@@ -1,0 +1,668 @@
+{
+    "description": "List of customer service Customer records",
+    "type": "array",
+    "items": [
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-001"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Alice"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Johnson"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "alice.j@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-2234"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-002"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Bob"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Brown"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "bob.b@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0202"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-003"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Carol"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Davis"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "carol.d@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0203"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-004"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "David"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Evans"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "david.e@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0204"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-005"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Eva"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Franklin"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "eva.f@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0205"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-006"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Frank"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Green"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "frank.g@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0206"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-007"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Grace"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Hill"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "grace.h@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0207"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-008"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Henry"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Irving"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "henry.i@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0208"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-009"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Ivy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Jensen"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "ivy.j@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0209"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-010"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Jack"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Kellerman"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "jack.k@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0210"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-011"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Kim"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Lang"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "kim.l@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0211"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-012"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Liam"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Moss"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "liam.m@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0212"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-013"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Mandy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Norris"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "mandy.n@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0213"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-014"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Nolan"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Olsen"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "nolan.o@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0214"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-015"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Olivia"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Pitt"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "olivia.p@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0215"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-016"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Peter"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Quinn"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "peter.q@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0216"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-017"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Quincy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Rivers"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "quincy.r@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0217"
+                    }
+                }
+            }
+        },
+       

@@ -1,0 +1,1793 @@
+{
+  "description": "List of customer service agent records",
+  "type": "array",
+  "items": [
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "John"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Doe"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "john.doe@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0101"
+          }
+        }
+      }
+    },
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "Jane"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Smith"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "jane.smith@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0102"
+          }
+        }
+      }
+    },
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-003"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "James"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Wilson"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "james.wilson@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0103"
+          }
+        }
+      }
+    }
+  ]
+}
+{
+  "description": "List of driver records",
+  "type": "array",
+  "items": [
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Michael"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Smith"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "SMI1234567"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-01"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "michael.smith@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1001"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Laura"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Jones"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "JON7654321"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-02"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "laura.jones@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1002"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-003"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Robert"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Williams"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "WIL2345678"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-03"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "robert.williams@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1003"
+          }
+        }
+      }
+    },
+    {
+      "driverId": {
+        "type": "string",
+        "description": "Unique identifier for the driver",
+        "value": "DRV-004"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the driver",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Driver's first name",
+            "value": "Jessica"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Driver's last name",
+            "value": "Brown"
+          }
+        }
+      },
+      "licenseNumber": {
+        "type": "string",
+        "description": "Driver's license number",
+        "value": "BRO3456789"
+      },
+      "currentTruckId": {
+        "type": "string",
+        "description": "Identifier for the truck currently assigned to the driver",
+        "value": "TRUCK-04"
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the driver",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Driver's email address",
+            "value": "jessica.brown@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Driver's phone number",
+            "value": "555-1004"
+          }
+        }
+      }
+    }
+  ]
+}
+{
+  "description": "List of manager records",
+  "type": "array",
+  "items": [
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "Emily"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Taylor"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "emily.taylor@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3001"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": [
+          {
+            "type": "string",
+            "value": "Operational Adjustment"
+          },
+          {
+            "type": "string",
+            "value": "System Oversight"
+          },
+          {
+            "type": "string",
+            "value": "Decision Making"
+          }
+        ]
+      }
+    },
+    {
+      "managerId": {
+        "type": "string",
+        "description": "Unique identifier for the manager",
+        "value": "DM-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the manager",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Manager's first name",
+            "value": "James"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Manager's last name",
+            "value": "Morris"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the manager",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Manager's email address",
+            "value": "james.morris@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Manager's phone number",
+            "value": "555-3002"
+          }
+        }
+      },
+      "permissions": {
+        "type": "array",
+        "description": "Permissions granted to the manager",
+        "items": [
+          {
+            "type": "string",
+            "value": "Operational Adjustment"
+          },
+          {
+            "type": "string",
+            "value": "System Oversight"
+          },
+          {
+            "type": "string",
+            "value": "Emergency Handling"
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "description": "List of event log records",
+  "type": "array",
+  "items": [
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event001"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-10T08:30:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Customer Interaction - Discussion about upcoming delivery schedule"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Customer Service Agent"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "Jane Smith"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Customer Interaction"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-002"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-005"
+          },
+          "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-012"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-103"
+          }
+        }
+      }
+    },
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event002"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-11T14:15:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Route Planning - Optimization of delivery routes for efficiency"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Duty Manager"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "James Wilson"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Route Planning"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-005"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-010"
+          },
+          "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-018"
+          },
+          "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-107"
+          }
+        }
+      }
+    },
+    {
+      "eventId": {
+        "type": "string",
+        "description": "A unique identifier for an event in the event log.",
+        "value": "event003"
+      },
+      "timestamp": {
+        "type": "string",
+        "description": "The specific time when the event occurred, formatted in ISO 8601 format (YYYY-MM-DDTHH:MM:SSZ).",
+        "value": "2023-01-12T10:00:00Z"
+      },
+      "content": {
+        "type": "string",
+        "description": "A detailed description of what the event entails.",
+        "value": "Truck Usage - Maintenance check for Truck-105"
+      },
+      "actor": {
+        "type": "object",
+        "description": "The actor who created this event.",
+        "properties": {
+          "role": {
+            "type": "string",
+            "description": "The role of the actor who created this event.",
+            "value": "Driver"
+          },
+          "name": {
+            "type": "string",
+            "description": "The name of the actor who created this event.",
+            "value": "Laura Jones"
+          }
+        }
+      },
+      "interactionType": {
+        "type": "string",
+        "description": "The type of interaction or event being logged.",
+        "value": "Truck Usage"
+      },
+      "context": {
+        "type": "object",
+        "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+          "customerId": {
+            "type": "string",
+            "description": "A unique identifier for the customer associated with the event.",
+            "value": "CUST-008"
+          },
+          "routeId": {
+            "type": "string",
+            "description": "A unique identifier for the route associated with the event.",
+            "value": "ROUTE-015"
+                    },
+                    "planId": {
+            "type": "string",
+            "description": "A unique identifier for the plan associated with the event.",
+            "value": "PLAN-025"
+                    },
+                    "truckId": {
+            "type": "string",
+            "description": "A unique identifier for the truck associated with the event.",
+            "value": "TRUCK-105"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+   {
+   "description": "List of location records",
+   "type": "array",
+   "items": [
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-001"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "123 Elm St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.7817"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6501"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-002"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "456 Oak St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.7900"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6441"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-003"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "789 Pine St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8000"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6600"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-004"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "321 Maple St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8200"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6550"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-005"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "654 Spruce St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8300"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6700"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-006"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "987 Cedar St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8400"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6400"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-007"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "246 Willow St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8500"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6300"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-008"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "135 Birch St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8600"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6200"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-009"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "875 Maple Ln, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8700"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6100"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-010"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "964 Oak Ave, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8800"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.6000"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-011"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "253 Pine Cir, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.8900"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5900"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-012"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "342 Elm Dr, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9000"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5800"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-013"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "431 Birch Pass, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9100"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5700"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-014"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "520 Cedar Rd, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9200"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5600"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-015"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "619 Spruce Way, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9300"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5500"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-016"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "708 Willow St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9400"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5400"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-017"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "797 Maple Ct, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9500"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5300"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-018"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "886 Oak Ln, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9600"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5200"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-019"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "975 Pine St, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9700"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5100"
+       }
+     },
+     {
+       "locationId": {
+         "type": "string",
+         "description": "A unique identifier for the location.",
+         "value": "LOC-020"
+       },
+       "address": {
+         "type": "string",
+         "description": "The full address of the location.",
+         "value": "1064 Elm Ave, Springfield, IL"
+       },
+       "latitude": {
+         "type": "string",
+         "description": "The latitude coordinates of the location.",
+         "value": "39.9800"
+       },
+       "longitude": {
+         "type": "string",
+         "description": "The longitude coordinates of the location.",
+         "value": "-89.5000"
+       }
+     }
+   ]
+ }
+ {
+   "description": "List of operational constraint records",
+   "type": "array",
+   "items": [
+     {
+       "constraintId": {
+         "type": "string",
+         "description": "A unique identifier for the operational constraint.",
+         "value": "OC-001"
+       },
+       "scope": {
+         "type": "string",
+         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+         "value": "Route"
+       },
+       "description": {
+         "type": "string",
+         "description": "A detailed description of the operational constraint.",
+         "value": "All routes must strictly adhere to predefined paths that have been optimized for cost and time efficiency."
+       },
+       "enforcementLevel": {
+         "type": "string",
+         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+         "value": "Mandatory"
+       }
+     },
+     {
+       "constraintId": {
+         "type": "string",
+         "description": "A unique identifier for the operational constraint.",
+         "value": "OC-002"
+       },
+       "scope": {
+         "type": "string",
+         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+         "value": "Plan"
+       },
+       "description": {
+         "type": "string",
+         "description": "A detailed description of the operational constraint.",
+         "value": "Plans must be activated within the specified start times to ensure synchronization across operations."
+       },
+       "enforcementLevel": {
+         "type": "string",
+         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+         "value": "Mandatory"
+       }
+     },
+     {
+       "constraintId": {
+         "type": "string",
+         "description": "A unique identifier for the operational constraint.",
+         "value": "OC-003"
+       },
+       "scope": {
+         "type": "string",
+         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+         "value": "Both"
+       },
+       "description": {
+         "type": "string",
+         "description": "A detailed description of the operational constraint.",
+         "value": "Every customer interaction must be logged in the CRM system's Event Log."
+       },
+       "enforcementLevel": {
+         "type": "string",
+         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+         "value": "Mandatory"
+       }
+     },
+     {
+       "constraintId": {
+         "type": "string",
+         "description": "A unique identifier for the operational constraint.",
+         "value": "OC-004"
+       },
+       "scope": {
+         "type": "string",
+         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+         "value": "Route"
+       },
+       "description": {
+         "type": "string",
+         "description": "A detailed description of the operational constraint.",
+         "value": "Trucks must not be loaded beyond their maximum specified capacity."
+       },
+       "enforcementLevel": {
+         "type": "string",
+         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+         "value": "Mandatory"
+       }
+     },
+     {
+       "constraintId": {
+         "type": "string",
+         "description": "A unique identifier for the operational constraint.",
+         "value": "OC-005"
+       },
+       "scope": {
+         "type": "string",
+         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+         "value": "Both"
+       },
+       "description": {
+         "type": "string",
+         "description": "A detailed description of the operational constraint.",
+         "value": "All data entries in the CRM must be verified for accuracy upon entry and during routine audits."
+       },
+       "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-006"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All CRM system interactions must comply with current cyber-security policies."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-007"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Plan"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All operational schedules must be adhered to, with any deviations approved by a dispatch manager."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-008"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Any changes made to operational plans or routes must be documented in real-time within the system."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-009"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All data pertaining to operations must be retained according to legal and company guidelines."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-010"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Route"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All routes must be verified against current traffic and road conditions before dispatch."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    }
+  ]
+}
+{
+  "description": "List of role records",
+  "type": "array",
+  "items": [
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Duty Manager"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Route planning and optimization"
+          },
+          {
+            "type": "string",
+            "value": "Customer issue resolution"
+          },
+          {
+            "type": "string",
+            "value": "Overseeing operational efficiency"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Edit route plans"
+          },
+          {
+            "type": "string",
+            "value": "Access customer data"
+          },
+          {
+            "type": "string",
+            "value": "Generate reports"
+          }
+        ]
+      }
+    },
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Customer Service Agent"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Handling customer queries and complaints"
+          },
+          {
+            "type": "string",
+            "value": "Assisting with route scheduling"
+          },
+          {
+            "type": "string",
+            "value": "Providing customer support"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "View customer details"
+          },
+          {
+            "type": "string",
+            "value": "Update customer information"
+          },
+          {
+            "type": "string",
+            "value": "Submit feedback"
+          }
+        ]
+      }
+    },
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Driver"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Following assigned routes"
+          },
+          {
+            "type": "string",
+            "value": "Completing deliveries on time"
+          },
+          {
+            "type": "string",
+            "value": "Vehicle maintenance checks"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "View assigned routes"
+          },
+          {
+            "type": "string",
+            "value": "Mark deliveries as completed"
+          },
+          {
+            "type": "string",
+            "value": "Report vehicle issues"
+          }
+        ]
+      }
+    }
+  ]
+}
+{
+  "description": "List of route plan records",
+  "type": "array",
+  "items": [
+    {
+      "routePlanId": {
+        "type": "string",
+        "description": "A unique identifier for the route plan.",
+        "value": "RP-01"
+      },
+      "planDescription": {
+        "type": "string",
+        "description": "A detailed description of the route plan.",
+        "value": "Weekly schedule covering all customers with preferences for mornings and weekdays"
+      },
+      "activeFrom": {
+        "type": "string",
+        "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-01"
+      },
+      "activeTo": {
+        "type": "string",
+        "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-07"
+      },
+      "scheduledRoutes": {
+        "type": "array",
+        "description": "A list of scheduled routes within the active period.",
+        "items": [
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-03"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-001"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-003"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-005"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "2 hours"
+            }
+          },
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-05"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-002"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-004"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-006"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "3 hours"
+            }
+          }
+        ]
+      },
+      "bucketId": {
+        "type": "string",
+        "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+        "value": "BUCKET-01"
+      }
+    },
+    {
+      "routePlanId": {
+        "type": "string",
+        "description": "A unique identifier for the route plan.",
+        "value": "RP-02"
+      },
+      "planDescription": {
+        "type": "string",
+        "description": "A detailed description of the route plan.",
+        "value": "Weekly schedule for customers preferring weekends and evenings"
+      },
+      "activeFrom": {
+        "type": "string",
+        "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-08"
+      },
+      "activeTo": {
+        "type": "string",
+        "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-14"
+      },
+      "scheduledRoutes": {
+        "type": "array",
+        "description": "A list of scheduled routes within the active period.",
+        "items": [
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-08"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-007"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-008"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-009"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "2.5 hours"
+            }
+          },
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-14"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-010"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-012"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-014"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "1.5 hours"
+            }
+          }
+        ]
+      },
+      "bucketId": {
+        "type": "string",
+        "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+        "value": "BUCKET-01"
+      }
+    },
+    {
+      "routePlanId": {
+        "type": "string",
+        "description": "A unique identifier for the route plan.",
+        "value": "RP-03"
+      },
+      "planDescription": {
+        "type": "string",
+        "description": "A detailed description of the route plan.",
+        "value": "Mid-January plan for afternoon preferences and avoiding Mondays"
+      },
+      "activeFrom": {
+        "type": "string",
+        "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-15"
+      },
+      "activeTo": {
+        "type": "string",
+        "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-21"
+      },
+      "scheduledRoutes": {
+        "type": "array",
+        "description": "A list of scheduled routes within the active period.",
+        "items": [
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-17"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-011"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-013"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-015"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "2 hours"
+            }
+          },
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-19"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-016"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-017"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "2 hours"
+            }
+          }
+        ]
+      },
+      "bucketId": {
+        "type": "string",
+        "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+        "value": "BUCKET-01"
+      }
+    },
+    {
+      "routePlanId": {
+        "type": "string",
+        "description": "A unique identifier for the route plan.",
+        "value": "RP-04"
+      },
+      "planDescription": {
+        "type": "string",
+        "description": "A detailed description of the route plan.",
+        "value": "End of the month plan covering any remaining customers and locations"
+      },
+      "activeFrom": {
+        "type": "string",
+        "description": "The start date when the route plan becomes active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-22"
+      },
+      "activeTo": {
+        "type": "string",
+        "description": "The end date when the route plan is no longer active, formatted as YYYY-MM-DD.",
+        "value": "2023-01-28"
+      },
+      "scheduledRoutes": {
+        "type": "array",
+        "description": "A list of scheduled routes within the active period.",
+        "items": [
+          {
+            "date": {
+              "type": "string",
+              "description": "The date of the scheduled route, formatted as YYYY-MM-DD.",
+              "value": "2023-01-23"
+            },
+            "locations": {
+              "type": "array",
+              "description": "A list of location IDs included in the route.",
+              "items": [
+                {
+                  "type": "string",
+                  "value": "LOC-018"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-019"
+                },
+                {
+                  "type": "string",
+                  "value": "LOC-020"
+                }
+              ]
+            },
+            "estimatedTime": {
+              "type": "string",
+              "description": "The estimated time required to complete the route.",
+              "value": "3 hours"
+            }
+          }
+        ]
+      },
+      "bucketId": {
+        "type": "string",
+        "description": "A unique identifier for the grouping or 'bucket' to which this route plan belongs.",
+        "value": "BUCKET-01"
+      }
+    }
+  ]
+}

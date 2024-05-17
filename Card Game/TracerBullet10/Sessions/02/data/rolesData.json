@@ -1,0 +1,135 @@
+{
+  "description": "List of role records",
+  "type": "array",
+  "items": [
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Duty Manager"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Route planning and optimization"
+          },
+          {
+            "type": "string",
+            "value": "Customer issue resolution"
+          },
+          {
+            "type": "string",
+            "value": "Overseeing operational efficiency"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Edit route plans"
+          },
+          {
+            "type": "string",
+            "value": "Access customer data"
+          },
+          {
+            "type": "string",
+            "value": "Generate reports"
+          }
+        ]
+      }
+    },
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Customer Service Agent"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Handling customer queries and complaints"
+          },
+          {
+            "type": "string",
+            "value": "Assisting with route scheduling"
+          },
+          {
+            "type": "string",
+            "value": "Providing customer support"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "View customer details"
+          },
+          {
+            "type": "string",
+            "value": "Update customer information"
+          },
+          {
+            "type": "string",
+            "value": "Submit feedback"
+          }
+        ]
+      }
+    },
+    {
+      "roleName": {
+        "type": "string",
+        "description": "The name of the role within the organization.",
+        "value": "Driver"
+      },
+      "responsibilities": {
+        "type": "array",
+        "description": "A list of key responsibilities associated with this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "Following assigned routes"
+          },
+          {
+            "type": "string",
+            "value": "Completing deliveries on time"
+          },
+          {
+            "type": "string",
+            "value": "Vehicle maintenance checks"
+          }
+        ]
+      },
+      "permissions": {
+        "type": "array",
+        "description": "A list of permissions granted to this role.",
+        "items": [
+          {
+            "type": "string",
+            "value": "View assigned routes"
+          },
+          {
+            "type": "string",
+            "value": "Mark deliveries as completed"
+          },
+          {
+            "type": "string",
+            "value": "Report vehicle issues"
+          }
+        ]
+      }
+    }
+  ]
+}

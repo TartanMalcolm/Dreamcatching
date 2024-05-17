@@ -1,0 +1,123 @@
+{
+  "description": "List of customer service agent records",
+  "type": "array",
+  "items": [
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-001"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "John"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Doe"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "john.doe@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0101"
+          }
+        }
+      }
+    },
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-002"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "Jane"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Smith"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "jane.smith@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0102"
+          }
+        }
+      }
+    },
+    {
+      "agentId": {
+        "type": "string",
+        "description": "Unique identifier for the agent",
+        "value": "CSA-003"
+      },
+      "name": {
+        "type": "object",
+        "description": "Name of the agent",
+        "properties": {
+          "firstName": {
+            "type": "string",
+            "description": "Agent's first name",
+            "value": "James"
+          },
+          "lastName": {
+            "type": "string",
+            "description": "Agent's last name",
+            "value": "Wilson"
+          }
+        }
+      },
+      "contactDetails": {
+        "type": "object",
+        "description": "Contact details of the agent",
+        "properties": {
+          "email": {
+            "type": "string",
+            "description": "Agent's email address",
+            "value": "james.wilson@example.com"
+          },
+          "phone": {
+            "type": "string",
+            "description": "Agent's phone number",
+            "value": "555-0103"
+          }
+        }
+      }
+    }
+  ]
+}

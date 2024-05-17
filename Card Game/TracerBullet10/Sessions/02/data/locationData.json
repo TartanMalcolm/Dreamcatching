@@ -1,0 +1,446 @@
+{
+  "description": "List of location records",
+  "type": "array",
+  "items": [
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-001"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "123 Elm St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.7817"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6501"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-002"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "456 Oak St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.7900"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6441"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-003"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "789 Pine St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8000"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6600"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-004"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "321 Maple St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8200"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6550"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-005"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "654 Spruce St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8300"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6700"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-006"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "987 Cedar St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8400"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6400"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-007"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "246 Willow St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8500"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6300"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-008"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "135 Birch St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8600"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6200"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-009"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "875 Maple Ln, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8700"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6100"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-010"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "964 Oak Ave, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8800"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6000"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-011"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "253 Pine Cir, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8900"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5900"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-012"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "342 Elm Dr, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9000"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5800"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-013"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "431 Birch Pass, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9100"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5700"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-014"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "520 Cedar Rd, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9200"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5600"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-015"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "619 Spruce Way, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9300"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5500"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-016"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "708 Willow St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9400"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5400"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-017"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "797 Maple Ct, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9500"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5300"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-018"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "886 Oak Ln, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9600"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5200"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-019"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "975 Pine St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9700"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5100"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-020"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "1064 Elm Ave, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9800"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5000"
+      }
+    }
+  ]
+}
