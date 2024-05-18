@@ -1,3 +1,6 @@
+Here's the customer service policies data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Customer Service Policies Data'
+
+---
 {
     "description": "Customer Service Policies",
     "type": "array",

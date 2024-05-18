@@ -1,3 +1,6 @@
+Here's the customer agent data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Customer Agent Data'
+
+---
 {
   "description": "List of customer service agent records",
   "type": "array",

@@ -1,3 +1,6 @@
+Here's the operational constraints data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Operational constraints Data'
+
+---
 {
   "description": "List of operational constraint records",
   "type": "array",

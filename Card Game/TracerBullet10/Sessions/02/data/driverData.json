@@ -1,4 +1,6 @@
-{
+Here's the driver data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'driver Data'
+
+---{
   "description": "List of driver records",
   "type": "array",
   "items": [

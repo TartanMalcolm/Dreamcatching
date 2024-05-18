@@ -1,3 +1,6 @@
+Here's the roles data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Roles Data'
+
+---
 {
   "description": "List of role records",
   "type": "array",

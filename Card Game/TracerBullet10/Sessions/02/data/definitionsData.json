@@ -1,3 +1,6 @@
+Here's the deinitions data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Definitions'
+
+---
 {
     "description": "Definitions of terms within the CRM",
     "type": "array",

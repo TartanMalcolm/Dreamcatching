@@ -1,3 +1,6 @@
+Here's the location data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'location Data'
+
+---
 {
   "description": "List of location records",
   "type": "array",

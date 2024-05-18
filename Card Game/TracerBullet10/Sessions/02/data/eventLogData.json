@@ -1,3 +1,6 @@
+Here's the event log data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'Event log Data'
+
+---
 {
   "description": "List of event log records",
   "type": "array",
