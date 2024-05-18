@@ -677,3 +677,4 @@ You must always provide the plan in JSON format and not attempt to compute the f
 
 Use the provided data sources and example JSON data to generate your plans, but always provide the plan in JSON format and do not attempt to compute the final answer.
 
+YOU MUST be SPECIFIC and COMPLETE in your ACTIONS.  For both the <Action to be taken> AND the <Expected output of the step>, reword each one twice.
