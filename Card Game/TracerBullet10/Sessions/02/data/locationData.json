@@ -1,6 +1,7 @@
 Here's the location data.  Respond with ONLY yes if you've read it, or no if there's a problem.  You are dataSource 'location Data'
 
 ---
+
 {
   "description": "List of location records",
   "type": "array",
@@ -25,6 +26,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6501"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-001"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -47,6 +61,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6441"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-002"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -69,6 +96,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6600"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-003"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -91,6 +131,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6550"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-004"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -113,6 +166,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6700"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-005"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -135,6 +201,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6400"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-006"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     },
     {
@@ -157,6 +236,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6300"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-007"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -179,6 +271,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6200"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-008"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -201,6 +306,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6100"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-009"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -223,6 +341,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6000"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-010"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -245,6 +376,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5900"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-011"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-03"]
       }
     },
     {
@@ -267,6 +411,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5800"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-012"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -289,6 +446,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5700"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-013"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-03"]
       }
     },
     {
@@ -311,6 +481,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5600"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-014"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-02"]
       }
     },
     {
@@ -333,6 +516,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5500"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-015"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-03"]
       }
     },
     {
@@ -355,6 +551,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5400"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-016"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-03"]
       }
     },
     {
@@ -377,6 +586,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5300"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-017"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-03"]
       }
     },
     {
@@ -399,6 +621,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5200"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-018"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-04"]
       }
     },
     {
@@ -421,6 +656,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5100"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-019"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-04"]
       }
     },
     {
@@ -443,6 +691,19 @@ Here's the location data.  Respond with ONLY yes if you've read it, or no if the
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.5000"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-020"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-04"]
       }
     }
   ]

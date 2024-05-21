@@ -138,44 +138,52 @@ This is an example of the CRM JSON data you are to build your plans around.  It 
   "type": "array",
   "items": [
     {
-      "customerId": {
-        "type": "string",
-        "description": "Unique identifier for the Customer",
-        "value": "CUST-001"
-      },
-      "name": {
-        "type": "object",
-        "description": "Name of the Customer",
-        "properties": {
-          "firstName": {
-            "type": "string",
-            "description": "Customer's first name",
-            "value": "Alice"
+          "customerId": {
+              "type": "string",
+              "description": "Unique identifier for the Customer",
+              "value": "CUST-001"
           },
-          "lastName": {
-            "type": "string",
-            "description": "Customer's last name",
-            "value": "Johnson"
-          }
-        }
-      },
-      "contactDetails": {
-        "type": "object",
-        "description": "Contact details of the Customer",
-        "properties": {
-          "email": {
-            "type": "string",
-            "description": "Customer's email address",
-            "value": "alice.j@example.com"
+          "name": {
+              "type": "object",
+              "description": "Name of the Customer",
+              "properties": {
+                  "firstName": {
+                      "type": "string",
+                      "description": "Customer's first name",
+                      "value": "Alice"
+                  },
+                  "lastName": {
+                      "type": "string",
+                      "description": "Customer's last name",
+                      "value": "Johnson"
+                  }
+              }
           },
-          "phone": {
-            "type": "string",
-            "description": "Customer's phone number",
-            "value": "555-2234"
+          "contactDetails": {
+              "type": "object",
+              "description": "Contact details of the Customer",
+              "properties": {
+                  "email": {
+                      "type": "string",
+                      "description": "Customer's email address",
+                      "value": "alice.j@example.com"
+                  },
+                  "phone": {
+                      "type": "string",
+                      "description": "Customer's phone number",
+                      "value": "555-2234"
+                  }
+              }
+          },
+          "locationIds": {
+              "type": "array",
+              "description": "List of location IDs associated with the customer",
+              "items": {
+                  "type": "string"
+              },
+              "value": ["LOC-001"]
           }
-        }
       }
-    }
   ]
 }
 
@@ -463,6 +471,19 @@ This is an example of the CRM JSON data you are to build your plans around.  It 
         "type": "string",
         "description": "The longitude coordinates of the location.",
         "value": "-89.6501"
+      },
+      "customerId": {
+        "type": "string",
+        "description": "ID of the customer associated with this location",
+        "value": "CUST-001"
+      },
+      "routePlanIds": {
+        "type": "array",
+        "description": "List of route plan IDs visiting this location",
+        "items": {
+          "type": "string"
+        },
+        "value": ["RP-01"]
       }
     }
   ]
@@ -588,15 +609,18 @@ This is an example of the CRM JSON data you are to build your plans around.  It 
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-001"
+                  "value": "LOC-001",
+                  "customerId": "CUST-001"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-003"
+                  "value": "LOC-003",
+                  "customerId": "CUST-003"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-005"
+                  "value": "LOC-005",
+                  "customerId": "CUST-005"
                 }
               ]
             },
@@ -618,15 +642,18 @@ This is an example of the CRM JSON data you are to build your plans around.  It 
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-002"
+                  "value": "LOC-002",
+                  "customerId": "CUST-002"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-004"
+                  "value": "LOC-004",
+                  "customerId": "CUST-004"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-006"
+                  "value": "LOC-006",
+                  "customerId": "CUST-006"
                 }
               ]
             },
@@ -666,7 +693,7 @@ You must always provide the plan in JSON format and not attempt to compute the f
 
 ### Data Sources within the CRM:
 
-- **routePlans**: For any questions related to routes, scheduled routes, or route plans.
+- **routePlans**: For any questions related to routes, scheduled routes, or route plans.  
 - **locations**: For any questions related to location details.
 - **events**: For any questions related to events logged in the system.
 - **customerServicePolicies**: For any questions regarding customer service policies.
@@ -674,6 +701,8 @@ You must always provide the plan in JSON format and not attempt to compute the f
 - **customers**: For any questions related to customer information.
 - **managers**: For any questions related to manager details.
 - **roles**: For any questions about various roles and their responsibilities within the CRM.
+
+ALWAYS write ACTIONS ONLY EVER referring to items within the JSON for that DATASOURCE.
 
 Use the provided data sources and example JSON data to generate your plans, but always provide the plan in JSON format and do not attempt to compute the final answer.
 

@@ -43,15 +43,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-001"
+                  "value": "LOC-001",
+                  "customerId": "CUST-001"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-003"
+                  "value": "LOC-003",
+                  "customerId": "CUST-003"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-005"
+                  "value": "LOC-005",
+                  "customerId": "CUST-005"
                 }
               ]
             },
@@ -73,15 +76,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-002"
+                  "value": "LOC-002",
+                  "customerId": "CUST-002"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-004"
+                  "value": "LOC-004",
+                  "customerId": "CUST-004"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-006"
+                  "value": "LOC-006",
+                  "customerId": "CUST-006"
                 }
               ]
             },
@@ -136,15 +142,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-007"
+                  "value": "LOC-007",
+                  "customerId": "CUST-007"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-008"
+                  "value": "LOC-008",
+                  "customerId": "CUST-008"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-009"
+                  "value": "LOC-009",
+                  "customerId": "CUST-009"
                 }
               ]
             },
@@ -166,15 +175,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-010"
+                  "value": "LOC-010",
+                  "customerId": "CUST-010"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-012"
+                  "value": "LOC-012",
+                  "customerId": "CUST-012"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-014"
+                  "value": "LOC-014",
+                  "customerId": "CUST-014"
                 }
               ]
             },
@@ -229,15 +241,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-011"
+                  "value": "LOC-011",
+                  "customerId": "CUST-011"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-013"
+                  "value": "LOC-013",
+                  "customerId": "CUST-013"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-015"
+                  "value": "LOC-015",
+                  "customerId": "CUST-015"
                 }
               ]
             },
@@ -259,11 +274,13 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-016"
+                  "value": "LOC-016",
+                  "customerId": "CUST-016"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-017"
+                  "value": "LOC-017",
+                  "customerId": "CUST-017"
                 }
               ]
             },
@@ -318,15 +335,18 @@ Here's the routePlan agent data.  Respond with ONLY yes if you've read it, or no
               "items": [
                 {
                   "type": "string",
-                  "value": "LOC-018"
+                  "value": "LOC-018",
+                  "customerId": "CUST-018"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-019"
+                  "value": "LOC-019",
+                  "customerId": "CUST-019"
                 },
                 {
                   "type": "string",
-                  "value": "LOC-020"
+                  "value": "LOC-020",
+                  "customerId": "CUST-020"
                 }
               ]
             },

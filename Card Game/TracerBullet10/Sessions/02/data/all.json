@@ -1,3 +1,4 @@
+
 {
   "description": "List of customer service agent records",
   "type": "array",
@@ -121,6 +122,943 @@
     }
   ]
 }
+
+{
+    "description": "List of customer service Customer records",
+    "type": "array",
+    "items": [
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-001"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Alice"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Johnson"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "alice.j@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-2234"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-002"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Bob"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Brown"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "bob.b@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0202"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-003"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Carol"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Davis"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "carol.d@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0203"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-004"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "David"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Evans"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "david.e@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0204"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-005"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Eva"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Franklin"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "eva.f@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0205"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-006"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Frank"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Green"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "frank.g@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0206"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-007"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Grace"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Hill"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "grace.h@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0207"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-008"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Henry"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Irving"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "henry.i@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0208"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-009"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Ivy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Jensen"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "ivy.j@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0209"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-010"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Jack"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Kellerman"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "jack.k@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0210"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-011"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Kim"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Lang"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "kim.l@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0211"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-012"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Liam"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Moss"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "liam.m@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0212"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-013"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Mandy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Norris"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "mandy.n@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0213"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-014"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Nolan"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Olsen"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "nolan.o@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0214"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-015"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Olivia"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Pitt"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "olivia.p@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0215"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-016"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Peter"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Quinn"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "peter.q@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0216"
+                    }
+                }
+            }
+        },
+        {
+            "customerId": {
+                "type": "string",
+                "description": "Unique identifier for the Customer",
+                "value": "CUST-017"
+            },
+            "name": {
+                "type": "object",
+                "description": "Name of the Customer",
+                "properties": {
+                    "firstName": {
+                        "type": "string",
+                        "description": "Customer's first name",
+                        "value": "Quincy"
+                    },
+                    "lastName": {
+                        "type": "string",
+                        "description": "Customer's last name",
+                        "value": "Rivers"
+                    }
+                }
+            },
+            "contactDetails": {
+                "type": "object",
+                "description": "Contact details of the Customer",
+                "properties": {
+                    "email": {
+                        "type": "string",
+                        "description": "Customer's email address",
+                        "value": "quincy.r@example.com"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Customer's phone number",
+                        "value": "555-0217"
+                    }
+                }
+            }
+        }   
+    ]
+}       
+
+
+{
+    "description": "Customer Service Policies",
+    "type": "array",
+    "items": [
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-001"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Option"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Offer extended service hours as a flexible option during peak seasons or promotional events upon customer request."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Plan"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "Duty Manager"
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-002"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Option"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents may offer a callback if a solution to a customer's request will take longer than a reasonable phone call duration. The customer can state that they are willing to remain on the call, in which case no callback is required."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "General"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Update Event Log on agreeing a callback and on calling the customer back."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-003"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Rule"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Any service interruption reported by a customer must be followed up with an official notification to the customer about the progress within 24 hours."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Incident"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "On receiving a service interruption report, update Event Log. Within 24 hours, contact customer and attempt to find new pick-up time with customer. Repeat until service interruption is closed."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-004"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Rule"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents must confirm customer feedback after every complaint is addressed. This may require a callback."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Post-Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Agent to record customer feedback in the Event Log, and record a Support Ticket in the Event Log if the customer feedback involves follow up actions."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-005"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Guideline"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "Agents are encouraged to anticipate potential issues noted in the event log and contact customers who may be affected in order to inform them preemptively."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "Pre-Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "None"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Record contact in the event log."
+        }
+      },
+      {
+        "policyId": {
+          "description": "A unique identifier for the customer service policy.",
+          "value": "CSP-006"
+        },
+        "type": {
+          "description": "The type of the policy (e.g., Option, Rule, Guideline).",
+          "value": "Guideline"
+        },
+        "description": {
+          "description": "A detailed description of the policy.",
+          "value": "If a customer asks or insists on escalation, first consider whether this is appropriate given the situation, and if it is escalate to Duty Manager. Examples of 'appropriate' include: service calls that the agent cannot handle directly and where the customer insists on escalation; calls from a customer that cannot be handled directly by the agent."
+        },
+        "scope": {
+          "description": "The scope within which the policy applies (e.g., Plan, General, Incident, Post-Interaction, Pre-Interaction, During Interaction).",
+          "value": "During Interaction"
+        },
+        "approvalRequirement": {
+          "description": "The approval requirement needed to implement this policy (e.g., None, Duty Manager).",
+          "value": "Duty Manager"
+        },
+        "action": {
+          "description": "The action required when this policy is applied.",
+          "value": "Agent to log escalation request in the event log and inform the customer of a callback."
+        }
+      }
+    ]
+  }
+  
+{
+    "description": "Definitions of terms within the CRM",
+    "type": "array",
+    "items": [
+        {
+            "schemaId": {
+                "type": "string",
+                "description": "A unique identifier for the schema component",
+                "value": "Schema"
+            },
+            "details": {
+                "type": "object",
+                "description": "Overarching structure defining the schema for managing data and operations within a trucking company's CRM system",
+                "properties": {
+                    "Concepts": {
+                        "type": "object",
+                        "description": "Core elements and principles fundamental to the CRM system's operation and governance",
+                        "properties": {
+                            "CRM System": {
+                                "type": "string",
+                                "description": "A comprehensive system managing data and operations of a trucking company, including but not limited to drivers, trucks, customer interactions, and route planning."
+                            },
+                            "Operational Integrity": {
+                                "type": "string",
+                                "description": "Ensuring the CRM operates with maximum reliability and accuracy, facilitating optimal operations management and compliance with regulatory standards."
+                            },
+                            "Audit Trail": {
+                                "type": "string",
+                                "description": "A complete and secure record of all transactions and changes within the CRM, used for monitoring and verification purposes."
+                            }
+                        }
+                    },
+                    "Actors": {
+                        "type": "object",
+                        "description": "Key roles within the trucking company that interact with or are impacted by the CRM system",
+                        "properties": {
+                            "Driver": {
+                                "type": "string",
+                                "description": "Operational staff responsible for the physical operation of trucks within the company."
+                            },
+                            "Duty Manager": {
+                                "type": "string",
+                                "description": "A manager responsible for supervising operational shifts, making critical decisions, and handling high-priority operational issues."
+                            },
+                            "Customer Service Agent": {
+                                "type": "string",
+                                "description": "Personnel tasked with handling client inquiries, managing service requests, and ensuring customer satisfaction."
+                            }
+                        }
+                    },
+                    "Actions": {
+                        "type": "object",
+                        "description": "Specific tasks and processes within the CRM system to maintain operational efficiency and compliance",
+                        "properties": {
+                            "Routing": {
+                                "type": "string",
+                                "description": "Defining the travel path and operational details for driver routes to assure efficient delivery and operation."
+                            },
+                            "Scheduling": {
+                                "type": "string",
+                                "description": "Organizing and managing the time-specific dispatch of routes and resources to ensure timely operations."
+                            },
+                            "Logging Events": {
+                                "type": "string",
+                                "description": "The action of documenting all significant activities and operational changes in the CRM for regulatory compliance and operational analysis."
+                            }
+                        }
+                    },
+                    "Inputs": {
+                        "type": "object",
+                        "description": "Data and feedback received by the CRM system, crucial for its continuous operation and improvement",
+                        "properties": {
+                            "Route Details": {
+                                "type": "string",
+                                "description": "Specifications and information regarding the planning and execution of specific routes."
+                            },
+                            "Customer Feedback": {
+                                "type": "string",
+                                "description": "Input received from customers regarding services which can affect continuous improvement efforts."
+                            }
+                        }
+                    },
+                    "Outputs": {
+                        "type": "object",
+                        "description": "Reports and notifications generated by the CRM system to inform and alert staff and management about operations",
+                        "properties": {
+                            "Operational Reports": {
+                                "type": "string",
+                                "description": "Periodic reports detailing the performance and status of various CRM-managed operations to aid in decision-making."
+                            },
+                            "Alerts and Notifications": {
+                                "type": "string",
+                                "description": "Real-time updates issued by the CRM to notify or alert staff and management concerning critical events or changes."
+                            },
+                            "Compliance Summaries": {
+                                "type": "string",
+                                "description": "Reports compiling compliance-related data to ensure all operations adhere to set regulations and constraints."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+
 {
   "description": "List of driver records",
   "type": "array",
@@ -323,8 +1261,9 @@
     }
   ]
 }
+
 {
-  "description": "List of manager records",
+  "description": "List of duty manager records",
   "type": "array",
   "items": [
     {
@@ -443,6 +1382,7 @@
     }
   ]
 }
+
 {
   "description": "List of event log records",
   "type": "array",
@@ -615,6 +1555,7 @@
       "context": {
         "type": "object",
         "description": "Additional context relevant to the event, such as customer, route, plan, and truck details.",
+        "properties": {
           "customerId": {
             "type": "string",
             "description": "A unique identifier for the customer associated with the event.",
@@ -624,675 +1565,479 @@
             "type": "string",
             "description": "A unique identifier for the route associated with the event.",
             "value": "ROUTE-015"
-                    },
-                    "planId": {
+          },
+          "planId": {
             "type": "string",
             "description": "A unique identifier for the plan associated with the event.",
             "value": "PLAN-025"
-                    },
-                    "truckId": {
+          },
+          "truckId": {
             "type": "string",
             "description": "A unique identifier for the truck associated with the event.",
             "value": "TRUCK-105"
-                    }
-                  }
-                }
-              }
-            ]
           }
-   {
-   "description": "List of location records",
-   "type": "array",
-   "items": [
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-001"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "123 Elm St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.7817"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6501"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-002"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "456 Oak St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.7900"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6441"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-003"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "789 Pine St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8000"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6600"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-004"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "321 Maple St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8200"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6550"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-005"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "654 Spruce St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8300"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6700"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-006"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "987 Cedar St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8400"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6400"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-007"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "246 Willow St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8500"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6300"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-008"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "135 Birch St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8600"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6200"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-009"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "875 Maple Ln, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8700"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6100"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-010"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "964 Oak Ave, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8800"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.6000"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-011"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "253 Pine Cir, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.8900"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5900"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-012"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "342 Elm Dr, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9000"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5800"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-013"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "431 Birch Pass, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9100"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5700"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-014"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "520 Cedar Rd, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9200"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5600"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-015"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "619 Spruce Way, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9300"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5500"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-016"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "708 Willow St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9400"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5400"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-017"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "797 Maple Ct, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9500"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5300"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-018"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "886 Oak Ln, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9600"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5200"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-019"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "975 Pine St, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9700"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5100"
-       }
-     },
-     {
-       "locationId": {
-         "type": "string",
-         "description": "A unique identifier for the location.",
-         "value": "LOC-020"
-       },
-       "address": {
-         "type": "string",
-         "description": "The full address of the location.",
-         "value": "1064 Elm Ave, Springfield, IL"
-       },
-       "latitude": {
-         "type": "string",
-         "description": "The latitude coordinates of the location.",
-         "value": "39.9800"
-       },
-       "longitude": {
-         "type": "string",
-         "description": "The longitude coordinates of the location.",
-         "value": "-89.5000"
-       }
-     }
-   ]
- }
- {
-   "description": "List of operational constraint records",
-   "type": "array",
-   "items": [
-     {
-       "constraintId": {
-         "type": "string",
-         "description": "A unique identifier for the operational constraint.",
-         "value": "OC-001"
-       },
-       "scope": {
-         "type": "string",
-         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-         "value": "Route"
-       },
-       "description": {
-         "type": "string",
-         "description": "A detailed description of the operational constraint.",
-         "value": "All routes must strictly adhere to predefined paths that have been optimized for cost and time efficiency."
-       },
-       "enforcementLevel": {
-         "type": "string",
-         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-         "value": "Mandatory"
-       }
-     },
-     {
-       "constraintId": {
-         "type": "string",
-         "description": "A unique identifier for the operational constraint.",
-         "value": "OC-002"
-       },
-       "scope": {
-         "type": "string",
-         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-         "value": "Plan"
-       },
-       "description": {
-         "type": "string",
-         "description": "A detailed description of the operational constraint.",
-         "value": "Plans must be activated within the specified start times to ensure synchronization across operations."
-       },
-       "enforcementLevel": {
-         "type": "string",
-         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-         "value": "Mandatory"
-       }
-     },
-     {
-       "constraintId": {
-         "type": "string",
-         "description": "A unique identifier for the operational constraint.",
-         "value": "OC-003"
-       },
-       "scope": {
-         "type": "string",
-         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-         "value": "Both"
-       },
-       "description": {
-         "type": "string",
-         "description": "A detailed description of the operational constraint.",
-         "value": "Every customer interaction must be logged in the CRM system's Event Log."
-       },
-       "enforcementLevel": {
-         "type": "string",
-         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-         "value": "Mandatory"
-       }
-     },
-     {
-       "constraintId": {
-         "type": "string",
-         "description": "A unique identifier for the operational constraint.",
-         "value": "OC-004"
-       },
-       "scope": {
-         "type": "string",
-         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-         "value": "Route"
-       },
-       "description": {
-         "type": "string",
-         "description": "A detailed description of the operational constraint.",
-         "value": "Trucks must not be loaded beyond their maximum specified capacity."
-       },
-       "enforcementLevel": {
-         "type": "string",
-         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-         "value": "Mandatory"
-       }
-     },
-     {
-       "constraintId": {
-         "type": "string",
-         "description": "A unique identifier for the operational constraint.",
-         "value": "OC-005"
-       },
-       "scope": {
-         "type": "string",
-         "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-         "value": "Both"
-       },
-       "description": {
-         "type": "string",
-         "description": "A detailed description of the operational constraint.",
-         "value": "All data entries in the CRM must be verified for accuracy upon entry and during routine audits."
-       },
-       "enforcementLevel": {
+        }
+      }
+    }
+  ]
+}
+
+{
+  "description": "List of location records",
+  "type": "array",
+  "items": [
+    {
+      "locationId": {
         "type": "string",
-        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-        "value": "Mandatory"
+        "description": "A unique identifier for the location.",
+        "value": "LOC-001"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "123 Elm St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.7817"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6501"
       }
     },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-002"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "456 Oak St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.7900"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6441"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-003"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "789 Pine St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8000"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6600"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-004"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "321 Maple St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8200"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6550"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-005"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "654 Spruce St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8300"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6700"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-006"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "987 Cedar St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8400"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6400"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-007"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "246 Willow St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8500"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6300"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-008"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "135 Birch St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8600"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6200"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-009"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "875 Maple Ln, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8700"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6100"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-010"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "964 Oak Ave, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8800"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.6000"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-011"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "253 Pine Cir, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.8900"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5900"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-012"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "342 Elm Dr, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9000"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5800"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-013"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "431 Birch Pass, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9100"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5700"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-014"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "520 Cedar Rd, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9200"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5600"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-015"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "619 Spruce Way, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9300"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5500"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-016"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "708 Willow St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9400"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5400"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-017"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "797 Maple Ct, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9500"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5300"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-018"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "886 Oak Ln, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9600"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5200"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-019"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "975 Pine St, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9700"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5100"
+      }
+    },
+    {
+      "locationId": {
+        "type": "string",
+        "description": "A unique identifier for the location.",
+        "value": "LOC-020"
+      },
+      "address": {
+        "type": "string",
+        "description": "The full address of the location.",
+        "value": "1064 Elm Ave, Springfield, IL"
+      },
+      "latitude": {
+        "type": "string",
+        "description": "The latitude coordinates of the location.",
+        "value": "39.9800"
+      },
+      "longitude": {
+        "type": "string",
+        "description": "The longitude coordinates of the location.",
+        "value": "-89.5000"
+      }
+    }
+  ]
+}
+
+{
+  "description": "List of operational constraint records",
+  "type": "array",
+  "items": [
     {
       "constraintId": {
         "type": "string",
         "description": "A unique identifier for the operational constraint.",
-        "value": "OC-006"
-      },
-      "scope": {
-        "type": "string",
-        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-        "value": "Both"
-      },
-      "description": {
-        "type": "string",
-        "description": "A detailed description of the operational constraint.",
-        "value": "All CRM system interactions must comply with current cyber-security policies."
-      },
-      "enforcementLevel": {
-        "type": "string",
-        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-        "value": "Mandatory"
-      }
-    },
-    {
-      "constraintId": {
-        "type": "string",
-        "description": "A unique identifier for the operational constraint.",
-        "value": "OC-007"
-      },
-      "scope": {
-        "type": "string",
-        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-        "value": "Plan"
-      },
-      "description": {
-        "type": "string",
-        "description": "A detailed description of the operational constraint.",
-        "value": "All operational schedules must be adhered to, with any deviations approved by a dispatch manager."
-      },
-      "enforcementLevel": {
-        "type": "string",
-        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-        "value": "Mandatory"
-      }
-    },
-    {
-      "constraintId": {
-        "type": "string",
-        "description": "A unique identifier for the operational constraint.",
-        "value": "OC-008"
-      },
-      "scope": {
-        "type": "string",
-        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-        "value": "Both"
-      },
-      "description": {
-        "type": "string",
-        "description": "A detailed description of the operational constraint.",
-        "value": "Any changes made to operational plans or routes must be documented in real-time within the system."
-      },
-      "enforcementLevel": {
-        "type": "string",
-        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-        "value": "Mandatory"
-      }
-    },
-    {
-      "constraintId": {
-        "type": "string",
-        "description": "A unique identifier for the operational constraint.",
-        "value": "OC-009"
-      },
-      "scope": {
-        "type": "string",
-        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
-        "value": "Both"
-      },
-      "description": {
-        "type": "string",
-        "description": "A detailed description of the operational constraint.",
-        "value": "All data pertaining to operations must be retained according to legal and company guidelines."
-      },
-      "enforcementLevel": {
-        "type": "string",
-        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
-        "value": "Mandatory"
-      }
-    },
-    {
-      "constraintId": {
-        "type": "string",
-        "description": "A unique identifier for the operational constraint.",
-        "value": "OC-010"
+        "value": "OC-001"
       },
       "scope": {
         "type": "string",
@@ -1302,16 +2047,215 @@
       "description": {
         "type": "string",
         "description": "A detailed description of the operational constraint.",
-        "value": "All routes must be verified against current traffic and road conditions before dispatch."
+        "value": "All routes must strictly adhere to predefined paths that have been optimized for cost and time efficiency."
       },
       "enforcementLevel": {
         "type": "string",
         "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
         "value": "Mandatory"
       }
-    }
-  ]
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-002"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Plan"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Plans must be activated within the specified start times to ensure synchronization across operations."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-003"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Every customer interaction must be logged in the CRM system's Event Log."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-004"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Route"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "Trucks must not be loaded beyond their maximum specified capacity."
+      },
+      "enforcementLevel": {
+        "type": "string",
+        "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+        "value": "Mandatory"
+      }
+    },
+    {
+      "constraintId": {
+        "type": "string",
+        "description": "A unique identifier for the operational constraint.",
+        "value": "OC-005"
+      },
+      "scope": {
+        "type": "string",
+        "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+        "value": "Both"
+      },
+      "description": {
+        "type": "string",
+        "description": "A detailed description of the operational constraint.",
+        "value": "All data entries in the CRM must be verified for accuracy upon entry and during routine audits."
+      },
+      "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-006"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All CRM system interactions must comply with current cyber-security policies."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-007"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Plan"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All operational schedules must be adhered to, with any deviations approved by a dispatch manager."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-008"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "Any changes made to operational plans or routes must be documented in real-time within the system."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-009"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Both"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All data pertaining to operations must be retained according to legal and company guidelines."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   },
+   {
+     "constraintId": {
+       "type": "string",
+       "description": "A unique identifier for the operational constraint.",
+       "value": "OC-010"
+     },
+     "scope": {
+       "type": "string",
+       "description": "The scope within which the constraint applies (e.g., Route, Plan, Both).",
+       "value": "Route"
+     },
+     "description": {
+       "type": "string",
+       "description": "A detailed description of the operational constraint.",
+       "value": "All routes must be verified against current traffic and road conditions before dispatch."
+     },
+     "enforcementLevel": {
+       "type": "string",
+       "description": "The level of enforcement required for this constraint (e.g., Mandatory).",
+       "value": "Mandatory"
+     }
+   }
+ ]
 }
+
 {
   "description": "List of role records",
   "type": "array",
@@ -1447,6 +2391,7 @@
     }
   ]
 }
+
 {
   "description": "List of route plan records",
   "type": "array",
@@ -1791,3 +2736,4 @@
     }
   ]
 }
+
