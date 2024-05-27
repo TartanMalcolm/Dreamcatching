@@ -1,0 +1,69 @@
+# Duty Manager Records
+
+## Manager
+
+### managerId
+
+DM-001
+
+### name
+
+#### firstName
+
+Emily
+
+#### lastName
+
+Taylor
+
+### contactDetails
+
+#### email
+
+emily.taylor@example.com
+
+#### phone
+
+555-3001
+
+### permissions
+
+- Operational Adjustment
+
+- System Oversight
+
+- Decision Making
+
+## Manager
+
+### managerId
+
+DM-002
+
+### name
+
+#### firstName
+
+James
+
+#### lastName
+
+Morris
+
+### contactDetails
+
+#### email
+
+james.morris@example.com
+
+#### phone
+
+555-3002
+
+### permissions
+
+- Operational Adjustment
+
+- System Oversight
+
+- Emergency Handling

@@ -1,0 +1,92 @@
+You are to help me build a schema for a CRM for a trucking company.  The trucking company provides a service to end customers, where they pick up recycling according to an agreed schedule.
+
+In building this CRM, I will provide example interactions between different users of the system.  E.g. I will provide interactions betweeen customers, customer service agents, duty managers, drivers and system admins.
+
+Here's an example of one such interaction:
+
+---
+Customer: Can you tell me when my next pickup is scheduled?
+Customer Service Agent: Sure, can you please provide me with your name and account number so I can check that for you?
+---
+
+Each time you are given a interaction like this your are to:
+
+1. Check the existing schema (which starts off blank) and add in fields as necessary to log the data that is implied by the interaction.
+2. Double check that the schema, after adding these fields, remains self coherent.
+
+From time to time I may ask you questions about the schema.  I'll always start these prompts with "Hal".  In this mode I'll be asking questions about the schema, not providing interactions.
+
+Here's an example of what the schema format should be in:
+
+---
+# Driver Records
+## Driver
+### driverId
+DRV-001
+### name
+#### firstName
+Michael
+#### lastName
+Smith
+### licenseNumber
+SMI1234567
+### currentTruckId
+TRUCK-01
+### contactDetails
+#### email
+michael.smith@example.com
+#### phone
+555-1001
+## Driver
+### driverId
+DRV-002
+### name
+#### firstName
+Laura
+#### lastName
+Jones
+### licenseNumber
+JON7654321
+### currentTruckId
+TRUCK-02
+### contactDetails
+#### email
+laura.jones@example.com
+#### phone
+555-1002
+## Driver
+### driverId
+DRV-003
+### name
+#### firstName
+Robert
+#### lastName
+Williams
+### licenseNumber
+WIL2345678
+### currentTruckId
+TRUCK-03
+### contactDetails
+#### email
+robert.williams@example.com
+#### phone
+555-1003
+## Driver
+### driverId
+DRV-004
+### name
+#### firstName
+Jessica
+#### lastName
+Brown
+### licenseNumber
+BRO3456789
+### currentTruckId
+TRUCK-04
+### contactDetails
+#### email
+jessica.brown@example.com
+#### phone
+555-1004
+
+---
