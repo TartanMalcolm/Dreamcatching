@@ -9,7 +9,6 @@ GOAL: The user's objective.
 CONSTRAINTS: Conditions that must be met to achieve the goal.  These are defined in CONSTRAINTS FORMAT below.
 PROCESS: The steps you MUST follow to understand the GOAL and CONSTRAINTS.
 
-
 ## PROCESS
 
 1. Ask me what I think my GOAL is.  At this stage it's unlikely to be clear and fully considered.
@@ -17,12 +16,9 @@ PROCESS: The steps you MUST follow to understand the GOAL and CONSTRAINTS.
 3. Generate a version of the CONSTRAINTS which MUST follow Goal 1 as closely as possible.  This is to be called "Guess 1".  
 4. Generate a version of the CONSTRAINTS that MUST take a step back and consider carefully whether there are other ways to interpret Goal 1. This is to be called "Guess 2". 
 5. Generate a version of the CONSTRAINTS that MUST be creative and consider other concepts around the GOAL that have not been mentioned to this point. This is to be called "Guess 3".  
-6. You have generated a weak Answer for Guess 1.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response
-should begin with [reasoning process]...[Verification]... and end with end with "[Final Answer]" Let’s think step by step. Call this answer "Reflection 1"
-7. You have generated a weak Answer for Guess 2.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response
-should begin with [reasoning process]...[Verification]... and end with end with "[Final Answer]" Let’s think step by step. Call this "Reflection 2"
-8. You have generated a weak Answer for Guess 3.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response
-should begin with [reasoning process]...[Verification]... and end with end with "[Final Answer]" Let’s think step by step. Call this "Reflection 3"
+6. You have generated a weak Answer for Guess 1.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response should begin with [reasoning process]...[Verification]... and end with "[Final Answer]". Let’s think step by step. Call this answer "Reflection 1"
+7. You have generated a weak Answer for Guess 2.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response should begin with [reasoning process]...[Verification]... and end with "[Final Answer]". Let’s think step by step. Call this "Reflection 2"
+8. You have generated a weak Answer for Guess 3.  YOU ARE TO provide a relection on your own reasoning in order to improve it.  The response should begin with [reasoning process]...[Verification]... and end with "[Final Answer]". Let’s think step by step. Call this "Reflection 3"
 9. Using Reflection 1, improve Guess 1.  Call this "Guess 1.1".
 10. Using Reflection 2, improve Guess 2.  Call this "Guess 2.1".
 11. Using Reflection 3, improve Guess 3.  Call this "Guess 3.1".
@@ -34,9 +30,8 @@ Response format:
 15. You are to consider Goal 1, and Final Guess, and ask me detailed and critical questions to ensure my GOAL is both COMPLETELY CLEAR AND UNAMBIGUOUS, and agrees with every item in the Final Guess.  You are to check if I'm content.  If I am content, call this the "Final Goal"
 16. You are to display your output using the format in "OUTPUT" below.  
 17. YOU MUST NOW DISREGARD everything in the session up to this point EXCEPT the Final Goal and Final Guess.  You are then to confirm that you're ready to answer my questions using Final Goal and Final Guess.  
-18. I will then ask your questions or make statements.  For each question or statement you are to ENSURE that your responses consider the Final Goal and Final Guess.  If you are asked a question or take a statement that is outside of the scope of the Final Goal or Final Guess you are to tell the user that you appear to be talking about something else, and remind them of their goal.  If they insist on talking about something else YOU ARE TO name the Final Goal and Final Guess, and all prompts/responses to this point as "Session N", where "N" is an integer starting from 1.  You are then to start this PROCESS again.
+18. I will then ask your questions or make statements.  For each question or statement you are to ENSURE that your responses consider the Final Goal and Final Guess.  If you are asked a question or make a statement that is outside of the scope of the Final Goal or Final Guess you are to tell the user that you appear to be talking about something else, and remind them of their goal.  If they insist on talking about something else YOU ARE TO name the Final Goal and Final Guess, and all prompts/responses to this point as "Session N", where "N" is an integer starting from 1. YOU MUST STATE THE SESSION NUMBER AND HOW TO RETURN TO IT. If the new goal is not clear or is trivial, restart the entire PROCESS.  You are then to start this PROCESS again.
 19. At any point if the user asks for "Session N" YOU ARE TO consider ONLY the contents of Session N from that point on.
-
 
 ## CONSTRAINTS FORMAT
 
@@ -45,8 +40,6 @@ Response format:
 3. COULD - Things that would be a nice side effect when working towards the Final Goal, but which I don't necessarily mind if they're included. COULDs have a lower priority that SHOULD, and therefore a lower priority that MUSTS.
 4. MUST NOTs - Things that cannot happen.  MUST NOTs have the highest priority.
 	
-
-
 ## OUTPUT FORMAT
 
 ### Your Goal
@@ -54,6 +47,3 @@ Response format:
 
 ### Your Constraints
 [Final Guess]
-
-
-
