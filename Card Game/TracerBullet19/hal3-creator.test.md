@@ -81,16 +81,16 @@ I have been given a set of questions by Hal3 that are there to sharpen my thinki
 
 **Before**
 
-- [BatchOne-TestOne](#thread)
+- [BatchOne-TestOne](#batch-one-test-one)
 
 **Instructions**
-Strip the questions from [BatchOne-TestOne](#thread) as [questions].
-Generate an initial prompt that answers each of the [questions] using [Batch One Example Output](#batch-one-example-output) as a guide. Call this [prompt]
+
 
 **Prompts**
 
-```md
-Here are the answers to your questions: [prompt]
+```
+Prompt this: Strip the questions from the previous reply. 
+Generate answers each of the questions as a guide. 
 ```
 
 **Variations**
