@@ -1,7 +1,22 @@
-# Dreamcatcher Login Sequence
+# Dreamcatcher Login sequenceTest
 
-Name: Login
-Description: the sequence diagram for loging a user into the Dreamcatcher
+## Header
+ - Name: LoginTest
+ - Description: The sequence used to login a User to Dreamcatcher.
+ - Entities Used:
+    - Dave - The Contributor.
+    - Artifact 
+    - Backchat
+    - Hal
+    - Git
+
+## Starting state
+None.
+
+## Expertation
+
+Dave now logged in and talking to Hal
+
 
 ---
 ```mermaid
@@ -12,8 +27,11 @@ sequenceDiagram
     participant Hal
     participant Git
 
+    %% Note
+    note over Dave, Hal: STARTING STATE: None
+
     %% Login and Initial Setup
-    Dave->>Artifact: Prompt - Logs In
+    Dave->>Artifact: Input - Logs In
     Artifact->>Dave: Authenticate User
     Artifact->>Backchat: Instantiate Backchat
     Backchat->>Artifact: Requests Hal's Files
@@ -25,6 +43,6 @@ sequenceDiagram
     Hal->>Dave: Greets User
 
     %% Note
-    note over Dave, Hal: Dave now talking to Hal
+    note over Dave, Hal: EXPECTATION: Dave now logged in and talking to Hal
 ```
 ---

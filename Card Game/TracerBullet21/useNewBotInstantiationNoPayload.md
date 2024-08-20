@@ -1,7 +1,25 @@
 # Dreamcatcher Switch Bot, no data
 
-Name: SwitchbotnoData
-Description: this sequence is called every time a user (Dave e.g) asks to use a bot other than the one he's currently using, but does not provide any initial data to pass to that bot.
+## Header
+ - Name: SwitchbotnoData
+ - Description: this sequence is called every time an Actor asks to use a bot other than the one he's currently using, but does not provide any initial data to pass to that bot.
+ - Entities Used:
+    - Dave - The Contributor.
+    - Artifact 
+    - Backchat
+    - Hal
+    - Git
+    - TargetBot - the bot to switch to.
+
+## Starting state
+Dave talking to Hal
+
+## Expertation
+Dave now to Target Bot
+
+
+Name: 
+Description: 
 
 ---
 ```mermaid
@@ -14,7 +32,7 @@ sequenceDiagram
     participant newBot
 
     %% Note spanning from the first to the last participant
-    note over Dave, newBot: Initial conditions - Dave talking to Hal
+    note over Dave, newBot: STARTING STATE: Dave talking to Hal
     
     %% Note spanning from the first to the last participant
     note over Dave, newBot: Input - Name of Bot [newBot]
@@ -35,6 +53,6 @@ sequenceDiagram
     newBot->>Dave: Greets User
 
     %% Note specific to newBot interaction
-    note over Dave, newBot: Exit conditions - Dave now talking to newBot
+    note over Dave, newBot: EXPECTATION: Dave now talking to TargetBot.
 ```
 ---
