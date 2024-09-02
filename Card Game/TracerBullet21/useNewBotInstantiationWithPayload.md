@@ -1,7 +1,23 @@
 # Dreamcatcher Switch Bot, no data
 
-Name: SwitchbotnoData
-Description: this sequence is called every time a user (Dave e.g) asks to use a bot other than the one he's currently using, but does not provide any initial data to pass to that bot.
+## Header
+ - Name: SwitchbotWithData
+ - Description: this sequence is called every time an Actor asks to use a bot other than the one he's currently using, and requires data to be passed to that bot.
+ - Entities Used:
+    - Dave - The Contributor.
+    - Artifact 
+    - Backchat
+    - Hal
+    - Git
+    - TargetBot - the bot to switch to.
+
+## Starting state
+Dave is asking Hal to send payload to TargetBot
+
+## Expectation
+Dave now talking to TargetBot, who has been given the data.
+
+
 
 ---
 ```mermaid
@@ -25,6 +41,6 @@ sequenceDiagram
     targetBot->>Dave: Response: Got it.
 
     %% Note specific to targetBot interaction
-    note over Dave, targetBot: Exit conditions - Dave now has access to targetBot
+    note over Dave, targetBot: EXPECTATION: Dave now talking to TargetBot, who has been given the data.
     ```
 ---

@@ -14,12 +14,8 @@
 ## Starting state
 Dave talking to Hal
 
-## Expertation
+## Expectation
 Dave now to Target Bot
-
-
-Name: 
-Description: 
 
 ---
 ```mermaid
