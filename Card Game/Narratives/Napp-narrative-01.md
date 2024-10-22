@@ -1437,7 +1437,7 @@ You are QuoteFinder, an AI assistant designed to provide inspirational quotes sp
 
 
 
-## SCENE 14 - STATE 14 - where Dave is asked whether this is Napp 
+## SCENE 15 - where Dave is asked whether this is Napp is public
 
 **NappGen:** Everything's looking great.  All we need now is to check what you'd like to do with your new Napp.  Should it be public, private just to you, or private to a list of people?
 
@@ -1452,5 +1452,105 @@ You are QuoteFinder, an AI assistant designed to provide inspirational quotes sp
 **Dave:** This looks great! Thank you so much for guiding me through this.
 
 **NappGen:** You're very welcome, Dave! I'm glad I could help. Do you have any questions about how everything fits together?
+
+## SCENE 15 - STATE 15
+
+```json
+{
+  "name": "QuoteFinder",
+  "description": "QuoteFinder fetches random inspirational quotes based on a user's request. It must filter them based on instructions in the AGENT to ensure they're age and topic appropriate for a high school soccer team.",
+  "version": "1.0.0",
+  "runtime": "deno",
+  "branding": "path/to/branding/assets",
+  "visibility": "public",
+  "gateways": {
+    "production": {
+      "Quotable": {
+        "url": "https://api.quotable.io",
+        "apiKey": "MANAGED_BY_PLATFORM"
+      },
+      "SoccerInspiration": {
+        "url": "https://soccer-inspiration.ch",
+        "requiresAuthentication": true,
+        "credentials": "MANAGED_BY_PLATFORM"
+      }
+    },
+    "testing": {
+      // Testing or mock gateways can be added here
+    }
+  },
+  "billing": {
+    "handledBy": "Dreamcatcher"
+  },
+  "errors": {
+    "SERVICE_UNAVAILABLE": "The external service is currently unavailable."
+  },
+  "chat": {
+    "runner": "gemini",
+    "parameters": {
+      "model": "gemini-3.5",
+      "parallel_tool_calls": false,
+      "stop_on_tools": []
+    },
+    "instructions": "path/to/instructions.md"
+  },
+  "main": "getQuote",
+  "tools": {
+    "getQuote": {
+      "description": "Retrieves a random inspirational quote, optionally filtering by author or tag.",
+      "parameters": {
+        "author": {
+          "description": "The author of the quote.",
+          "type": "string",
+          "required": false
+        },
+        "tag": {
+          "description": "A category or tag for the quote.",
+          "type": "string",
+          "required": false
+        }
+      },
+      "permissions": {
+        "network": true,
+        "allowedUrls": [
+          "https://api.quotable.io",
+          "https://soccer-inspiration.ch"
+        ]
+      },
+      "gateways": [
+        "Quotable",
+        "SoccerInspiration"
+      ],
+      "returns": {
+        "description": "An inspirational quote.",
+        "type": "object"
+      },
+      "errors": {
+        "NO_QUOTES_FOUND": "No quotes were found matching your criteria.",
+        "API_ERROR": "An error occurred while accessing the quote sources.",
+        "REQUEST_TIMEOUT": "The request to the API timed out."
+      }
+    }
+  },
+  "help": [
+    "path/to/README.md"
+  ],
+  "tests": {
+    "runner": "napp-test-runner",
+    "parameters": {
+      "files": [
+        "path/to/test_getQuote.json"
+      ]
+    }
+  },
+  "dependencies": {
+    "soccer-quotes": {
+      "version": "1.0.0",
+      "source": "https://napp-repo.example.com/soccer-quotes"
+    }
+  }
+}
+```
+
 
 **End of Script**
